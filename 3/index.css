@@ -326,7 +326,7 @@ transform:rotate(15deg);
 }
 
 .rocket {
-    opacity:1;
+    opacity:0;
     z-index:13;
 background: url(illo/rocket.svg) center center no-repeat;
 
@@ -338,7 +338,8 @@ top:320px;
 width:31px;
 height:138px;
 transform:rotate(15deg);
-
+-webkit-transform:rotate(15deg);
+-moz-transform:rotate(15deg);
 transform-origin: bottom center;
 -webkit-transform-origin: bottom center;
 -moz-transform-origin: bottom center;
@@ -346,34 +347,34 @@ transform-origin: bottom center;
     animation-name: rocket;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
-
     animation-fill-mode: forwards;
 
 
     -webkit-animation-name: rocket;
     -webkit-animation-duration: 1.5s;
-    -webkit-animation-iteration-count: 1;
- 
+    -webkit-animation-iteration-count: 1; 
     -webkit-animation-fill-mode: forwards; 
 
     -moz-animation-name: rocket;
     -moz-animation-duration: 1.5s;
-    -moz-animation-iteration-count: 1;
-  
+    -moz-animation-iteration-count: 1;  
     -moz-animation-fill-mode: forwards; 
 }
 
 @-moz-keyframes rocket {
- 100% { -moz-transform: translate(120px, -600px); } 
-
+ 0% { left:510px; top:320px; } 
+100% { left:640px; top:-320px;  } 
 }
 
 @-webkit-keyframes rocket { 
-     1000% { -webkit-transform: translate(120px, -600px); } 
+     0% { left:510px; top:320px; } 
+     100% { left:640px; top:-320px; } 
 
 }
+
 @keyframes rocket { 
-     100% { transform:translate(120px, -600px); }
+     0% { left:510px; top:320px; }
+     100% { left:640px; top:-320px; }
 
      }
 

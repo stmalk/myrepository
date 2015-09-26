@@ -229,6 +229,14 @@ function randRange( minNum, maxNum) {
 
 // function to generate drops
 function createRain() {
+
+        if (nbDrop == 0) {
+            // remove the drop element(s)
+            $('.rain').children().remove();
+            // exit the function
+            return;
+        }
+	
     for( i=0;i<=nbDrop;i++) {
 	var dropLeft = randRange(0,1280);
 	var dropTop = randRange(-500,590);

@@ -187,7 +187,7 @@ display:block;
 
 .text {
 z-index:9;
-	font-size:50%;
+	font-size:12pt;
 	color:inherit;
 	font-style:;
 	font-family: "Arial Black", Gadget, sans-serif;
@@ -204,21 +204,21 @@ pointer-events: inherit;
 }
 
 text:link{
-	font-size:50%;
+	font-size:12pt;
 	color:white;
 	font-style:;
 	font-family: "Arial Black", Gadget, sans-serif;
 }
 
 text:visited{
-	font-size:50%;
+	font-size:12pt;
 	color:white;
 	font-style:;
 	font-family: "Arial Black", Gadget, sans-serif;	
 }
 
 text:active {
-	font-size:50%;
+	font-size:12pt;
 	color:white;
 	font-style:;
 	font-family: "Arial Black", Gadget, sans-serif;

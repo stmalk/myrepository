@@ -86,7 +86,7 @@ transform: scale(6.9);
 position:relative;
 background-color:rgba(0,0,0,255);
 border-radius: 50%;
-left:50%;
+left:70%;
 top:6%;
 width: 40px;
 height: 40px;
@@ -187,7 +187,7 @@ display:block;
 
 .text {
 z-index:9;
-	font-size:70%;
+	font-size:50%;
 	color:inherit;
 	font-style:;
 	font-family: "Arial Black", Gadget, sans-serif;
@@ -204,21 +204,21 @@ pointer-events: inherit;
 }
 
 text:link{
-	font-size:70%;
+	font-size:50%;
 	color:white;
 	font-style:;
 	font-family: "Arial Black", Gadget, sans-serif;
 }
 
 text:visited{
-	font-size:70%;
+	font-size:50%;
 	color:white;
 	font-style:;
 	font-family: "Arial Black", Gadget, sans-serif;	
 }
 
 text:active {
-	font-size:70%;
+	font-size:50%;
 	color:white;
 	font-style:;
 	font-family: "Arial Black", Gadget, sans-serif;

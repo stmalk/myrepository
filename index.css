@@ -8,7 +8,7 @@ height: 100%;
 
 
 a:link {
-	font-size:70%;
+	font-size:50%;
 	color:white;
 	font-style:;
 	font-family: "Arial Black", Gadget, sans-serif;
@@ -16,7 +16,7 @@ a:link {
 }
 
 a:visited {
-	font-size:70%;
+	font-size:50%;
 	color:white;
 	font-style:;
 	font-family: "Arial Black", Gadget, sans-serif;
@@ -24,7 +24,7 @@ a:visited {
 }
 
 a:hover {
-	font-size:70%;
+	font-size:50%;
 	color:white;
 	font-style:;
 	font-family: "Arial Black", Gadget, sans-serif;
@@ -32,7 +32,7 @@ a:hover {
 }
 
 a:active {
-	font-size:70%;
+	font-size:50%;
 	color:white;
 	font-style:;
 	font-family: "Arial Black", Gadget, sans-serif;
@@ -57,7 +57,7 @@ padding:0;
 .cloud1{
 
 	position:relative;
-	left:20%;
+	left:15%;
 	top:-100px;
 	background-color:rgba(0,0,0,255);
 	border-radius: 50%;
@@ -86,7 +86,7 @@ transform: scale(6.9);
 position:relative;
 background-color:rgba(0,0,0,255);
 border-radius: 50%;
-left:70%;
+left:50%;
 top:6%;
 width: 40px;
 height: 40px;

@@ -525,12 +525,11 @@ background-size: 14px 14px;
 position:absolute;
 
 
-width:70%;
 height:400px;
 min-width:500px;
-margin-left:auto;
+margin-left:-10px;
 margin-right: auto ;
-width:1300px;
+width:1295px;
 padding:0;
 top:770px;
 pointer-events:none;

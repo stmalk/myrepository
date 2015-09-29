@@ -1,0 +1,106 @@
+html, body {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2fcfc+0,26bbcc+49,140e4c+100 */
+
+background: -moz-linear-gradient(top,  #e1c89b 0%, #7f7759 49%, black 100%) ; /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7f7759), color-stop(49%,#eee6d9), color-stop(100%, black)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #e1c89b 0%,#7f7759 49%, black 100%) ; /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #e1c89b 0%,#7f7759 49%, black 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #e1c89b 0%,#7f7759 49%, black 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #e1c89b 0%,#7f7759 49%, black 100%); /* W3C */
+overflow:hidden;
+        background-size:100%;
+        background-repeat: repeat-x;
+         background-position: bottom;
+margin: 0;
+height: 100%;
+width:100%;
+
+}
+
+
+#slideshow{
+    width:500px;
+    margin: 0 auto;
+    text-align: center;
+    position:relative;
+color:#eae2d7;
+font-size:15pt;
+font: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+text-transform: uppercase;
+font-weight:bold;
+}
+
+
+.bigimage1{
+  z-index:1;
+  background: linear-gradient(-55deg,#eee6d9,#eee6d9 ,#e1c89b ,#e1c89b);
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  height:100%;
+  padding:0;
+  pointer-events:none;
+  left: 0;
+  opacity:0;
+min-width:500px;
+  animation-name: wavng;
+  animation-duration: 18s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+
+  -webkit-animation-name: wavng;
+  -webkit-animation-duration: 18s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+
+
+  -moz-animation-name: wavng;
+  -moz-animation-duration: 18s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in;
+
+}
+
+@keyframes wavng {
+    0% {opacity:0;}
+    50% {opacity:.2;}
+     100% {opacity:0;}
+
+}
+
+
+.bigimage2{
+  z-index:0;
+  background: linear-gradient(-55deg,#188C7B,#188C7B,#43AA9B,#43AA9B);
+  bottom: 0;
+  width: 100%;
+  height:100%;
+  padding:0;
+  position:fixed;
+  pointer-events:none;
+  left: 0;
+  opacity:0;
+min-width:500px;
+  animation-name: waving;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+
+  -webkit-animation-name: waving;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+
+  -moz-animation-name: waving;
+  -moz-animation-duration: 4s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in;
+}
+
+
+@keyframes waving {
+    0% {opacity:0;}
+    50% {opacity:.2;}
+     100% {opacity:0;}
+
+}

@@ -134,6 +134,32 @@ transform: scale(6);
 }
 
 
+.cloud4{
+	text-align:center;
+		z-index:2;
+position:relative;
+ background-color:rgba(0,0,0,255);
+ border-radius: 50%;
+left:60%;
+	top:150px;
+	width: 40px;
+	height: 40px;
+	-ms-transform-origin: center ; 
+ -webkit-transform-origin:  center; 
+ transform-origin:  center; 
+color:rgba(0,0,0,0);
+transition: all .2s ease-in-out;
+}
+
+.cloud4:hover{
+-ms-transform-origin: center ; 
+ -webkit-transform-origin:  center; 
+ transform-origin:  center; 
+color:rgba(255,255,255,255);
+transform: scale(6);
+}
+
+
 .svgtop {	
 	z-index:1;
 position:relative;
@@ -330,6 +356,52 @@ opacity:1;
 }
 
 
+
+.text4 {
+
+	  height: auto;
+    margin: 0 auto;
+    padding: 10px;
+z-index:9;
+	font-size:4pt;
+	color:inherit;
+padding-top:9px;
+padding-left:8px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	z-index:5;
+position:absolute;
+
+
+pointer-events: inherit;
+
+  background-color:rgba(0,0,0,0);
+
+
+}
+
+.text4:link{
+	font-size:4pt;
+	color:white;
+
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.text4:visited{
+	font-size:4pt;
+	color:white;
+
+	font-family: "Arial Black", Gadget, sans-serif;	
+}
+
+.text4:active {
+	font-size:4pt;
+	color:white;
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.text4:hover{
+opacity:1;
+}
 
 
 

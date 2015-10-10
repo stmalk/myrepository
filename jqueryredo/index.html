@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Magic 8 Ball</title>
+	<link rel="stylesheet" type="text/css" href="index.css" />
+	<script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+</head>
+
+<body>
+
+	<div id="mainframe">
+
+		<div id="mainframe2">
+			<section class="rain"></section>	
+		<div id="rocketdear"></div><div id="smokedear"></div><div id="launchsmokedear"></div>
+
+
+		</div>
+			
+		<div id="topmask"></div>
+		<div id="bubble"></div>
+		<div id="Hugecat"></div><div id="Hugecatrays"></div>
+
+		<div class="sign">
+			<p id="question"></p>
+			<p id="answer"></p>
+		</div>
+
+		<div id="eight-ball">        
+			<button id="button1" onclick="javascript:shake();"></button>
+		</div>
+		<div id="bottommask"></div>
+	</div>
+
+
+
+	<script>
+
+
+
+
+		function shake(){
+
+			var answersArrayed = ["Yes. So nothing happens", "No. Enjoy your consequences", "Ok, but that's something different", "My answer won't help you, deal with it!", "Your questions don't matter anymore", "Your questions make it rain again"];
+
+        // The question we asked
+        var question = prompt("Ask you question...");
+        var questionText = document.getElementById('question');
+        questionText.innerHTML = question;
+
+        // Number of possible answers  
+        var numberOfAnswers = answersArrayed.length;
+
+        // Answers the 8 Ball can return
+
+
+     // Answer returned by our 8 Ball
+     var chosenAnswer = getAnswerNumber(numberOfAnswers);        
+     displayAnswer(chosenAnswer);
+
+
+
+
+                // Returns a number based on the number of sides
+                function getAnswerNumber(answerCount){
+                	var number = getRandomInt(0,numberOfAnswers);
+                	return number;
+                }
+
+        // Returns a random integer between two numbers
+        function getRandomInt(min,max){
+        	return Math.floor(Math.random() * (max - min)) + min;
+        }
+
+
+                // Show our answer in the document 
+                function displayAnswer(answer) {
+
+
+
+                }
+
+
+            // Access the DOM element we want to to change
+            var fortuneText = document.getElementById('answer');
+
+            if (chosenAnswer == 0){
+
+
+            	$(document).ready(function(){
+            		$('#bubble').hide();
+            		$('#bubble').addClass("bubbleExploading");
+            		$('#bubble').replaceWith($('#bubble').clone(true));
+
+					$('#Hugecat').hide().addClass('bubbleHugecat');
+            		$('#Hugecatrays').hide().addClass('bubbleHugecatrays');
+            		$('#mainframe').css("backgroundImage", "url('illo/desert23.svg')");
+
+            		$('#smokedear').hide();
+            		$('#smokedear').addClass("smoke");
+            		$('#smokedear').replaceWith($('#smokedear').clone(true));
+
+            		$('#launchsmokedear').hide();
+            		$('#launchsmokedear').addClass("launchsmoke");
+            		$('#launchsmokedear').replaceWith($('#launchsmokedear').clone(true));
+
+            		$('#rocketdear').hide();
+            		$('#rocketdear').addClass("rocketstill");
+            		$('#rocketdear').replaceWith($('#rocketdear').clone(true));
+
+
+            	});
+
+            	fortuneText.innerHTML = answersArrayed[0];
+            	nbDrop = 0;
+
+
+            }
+
+            else if (chosenAnswer == 1){
+
+
+            	$(document).ready(function(){
+
+
+            		$('#bubble').show();
+            		$('#bubble').addClass("bubbleExploading");
+            		$('#bubble').replaceWith($('#bubble').clone(true));
+
+            		$('#Hugecat').hide().addClass('bubbleHugecat');
+            		$('#Hugecatrays').hide().addClass('bubbleHugecatrays');
+            		$('#mainframe').css("backgroundImage", "url('illo/desert23.svg')");
+
+
+            		$('#smokedear').hide();
+            		$('#smokedear').addClass("smoke");
+            		$('#smokedear').replaceWith($('#smokedear').clone(true));
+
+            		$('#launchsmokedear').hide();
+            		$('#launchsmokedear').addClass("launchsmoke");
+            		$('#launchsmokedear').replaceWith($('#launchsmokedear').clone(true));
+
+            		$('#rocketdear').hide();
+            		$('#rocketdear').addClass("rocket");
+            		$('#rocketdear').replaceWith($('#rocketdear').clone(true));
+
+            	});
+
+            	nbDrop = 0;
+            	fortuneText.innerHTML = answersArrayed[1];
+
+            }
+
+            else if (chosenAnswer == 2){
+
+
+            	$(document).ready(function(){
+
+            		$('#Hugecat').show().addClass('bubbleHugecat');
+            		$('#Hugecatrays').show().addClass('bubbleHugecatrays');
+           
+
+            		$('#mainframe').css("backgroundImage", "url('illo/desert23.svg')");
+
+            		$('#bubble').hide();
+            		$('#bubble').addClass("bubbleExploading");
+            		$('#bubble').replaceWith($('#bubble').clone(true));
+
+            		$('#smokedear').hide();
+            		$('#smokedear').addClass("smoke");
+            		$('#smokedear').replaceWith($('#smokedear').clone(true));
+
+            		$('#launchsmokedear').hide();
+            		$('#launchsmokedear').addClass("launchsmoke");
+            		$('#launchsmokedear').replaceWith($('#launchsmokedear').clone(true));
+
+            		$('#rocketdear').hide();
+            		$('#rocketdear').addClass("rocket");
+            		$('#rocketdear').replaceWith($('#rocketdear').clone(true));
+
+            	});                
+
+            	fortuneText.innerHTML = answersArrayed[2];
+            	nbDrop = 0;
+
+            }
+
+            else if (chosenAnswer == 3){
+
+            	$(document).ready(function(){
+
+
+            		$('#Hugecat').hide().addClass('bubbleHugecat');
+            		$('#Hugecatrays').hide().addClass('bubbleHugecatrays');
+
+            		$('#bubble').hide();
+            		$('#bubble').removeClass("bubbleExploading");
+            		$('#bubble').replaceWith($('#bubble').clone(true));
+
+            		$('#mainframe').css("backgroundImage", "url('illo/desert_night.svg')");
+
+            		$('#smokedear').hide();
+            		$('#smokedear').addClass("smoke");
+            		$('#smokedear').replaceWith($('#smokedear').clone(true));
+
+            		$('#launchsmokedear').hide();
+            		$('#launchsmokedear').addClass("launchsmoke");
+            		$('#launchsmokedear').replaceWith($('#launchsmokedear').clone(true));
+
+            		$('#rocketdear').hide();
+            		$('#rocketdear').addClass("rocket");
+            		$('#rocketdear').replaceWith($('#rocketdear').clone(true));
+
+            	});    
+
+            	fortuneText.innerHTML = answersArrayed[3];
+            	nbDrop = 0;
+
+
+            }
+
+            else if (chosenAnswer == 4){
+
+
+            	$(document).ready(function(){
+            		$('#smokedear').show();
+            		$('#smokedear').addClass("smoke");
+            		$('#smokedear').replaceWith($('#smokedear').clone(true));
+
+            		$('#launchsmokedear').show();
+            		$('#launchsmokedear').addClass("launchsmoke");
+            		$('#launchsmokedear').replaceWith($('#launchsmokedear').clone(true));
+
+            		$('#rocketdear').show();
+            		$('#rocketdear').addClass("rocket");
+            		$('#rocketdear').replaceWith($('#rocketdear').clone(true));
+
+            		$('#mainframe').css("backgroundImage", "url('illo/desert23.svg')");
+            		$('#Hugecat').hide().addClass('bubbleHugecat');
+            		$('#Hugecatrays').hide().addClass('bubbleHugecatrays');
+
+            		$('#bubble').hide();
+            		$('#bubble').removeClass("bubbleExploading");
+            		$('#bubble').replaceWith($('#bubble').clone(true));
+
+            	});   
+
+            	fortuneText.innerHTML = answersArrayed[4];
+            	nbDrop = 0;
+
+            }
+
+
+
+            else {
+
+            	$(document).ready(function(){
+
+
+
+
+            		$('#bubble').hide();
+            		$('#bubble').removeClass("bubbleExploading");
+            		$('#bubble').replaceWith($('#bubble').clone(true));
+
+            		$('#smokedear').hide();
+            		$('#smokedear').addClass("smoke");
+            		$('#smokedear').replaceWith($('#smokedear').clone(true));
+
+            		$('#launchsmokedear').hide();
+            		$('#launchsmokedear').addClass("launchsmoke");
+            		$('#launchsmokedear').replaceWith($('#launchsmokedear').clone(true));
+
+            		$('#rocketdear').hide();
+            		$('#rocketdear').addClass("rocket");
+            		$('#rocketdear').replaceWith($('#rocketdear').clone(true));
+
+            		$('#mainframe').css("backgroundImage", "url('illo/desert_rain.svg')");
+            		$('#Hugecat').hide().addClass('bubbleHugecat');
+            		$('#Hugecatrays').hide().addClass('bubbleHugecatrays');
+
+
+            	}); 
+
+            	fortuneText.innerHTML = answersArrayed[5];             
+            	nbDrop = 120;
+
+
+            }
+
+
+
+
+
+// function to generate a random number range.
+function randRange( minNum, maxNum) {
+	return (Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum);
+}
+
+
+
+// function to generate drops
+function createRain() {
+
+	if (nbDrop == 0) {
+            // remove the drop element(s)
+            $('.rain').children().remove();
+            // exit the function
+            return;
+        }
+
+        for( i=1;i<=nbDrop;i++) {
+        	var dropLeft = randRange(0,1280);
+        	var dropTop = randRange(-500,590);
+
+        	$('.rain').append('<div class="drop" id="drop'+i+'"></div>');
+        	$('#drop'+i).css('left',dropLeft);
+        	$('#drop'+i).css('top',dropTop);
+        }
+
+
+
+
+    }
+    createRain();
+
+}  
+
+
+
+
+
+
+</script>
+</body>
+</html>

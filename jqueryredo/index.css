@@ -203,10 +203,11 @@ height:256px
 
 #question
 {
-    padding-top:17px;
+    padding-top:37px;
     word-wrap: break-word;
    width: 400px;
 font-size:16pt;
+color:brown;
 text-transform: uppercase;
 font-weight:bold;
     position:absolute;

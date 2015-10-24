@@ -1,6 +1,6 @@
 $(document).ready(function(){
-var animationComplete = true;
 
+	$('.protectiveshield').show();
 			//menu buttons start animations
 			$('#topstickpart').delay(300).show("slide", { direction: "up" }, 700);
 			$('#topstickpart').effect( "bounce",{distance:6}, {times:3}, 600 );
@@ -14,43 +14,38 @@ var animationComplete = true;
 			$('#resumebutton').delay(600).show("slide", { direction: "left" }, 700);
 			$('#screeners').delay(20).show("slide", { direction: "up" }, 700);
 			$('#biowindow').hide();
-			$('#screeners').effect( "bounce",{distance:1}, {times:0}, 10 );		
+			$('#screeners').effect( "bounce",{distance:10}, {times:3}, 10 );		
 
 			$('.mainpanel').delay(50).animate({width:"660px"}, function(){
-				
-				$('.screencontainer').delay(10).animate({height:"236px"},function(){
-					$('#biowindow').fadeIn();
-					 animationComplete = false;
-				
+				$('.protectiveshield').show(function(){
+					$('.screencontainer').delay(10).animate({height:"236px"},function(){
+						$('#biowindow').fadeIn(function(){
+							$('.protectiveshield').hide();
+						});
+					});
 				});
 			});
-
-
-
-
-
 
 //onclick functionality
 
 $('#biobutton').click(function(){
-if (animationComplete == false)  
-	
-	$('#biowindow, #resumewindow, #contactwindow, #dworkswindow').delay(0).hide(function(){
-		animationComplete = true;
+	$('.protectiveshield').show(function(){
+		$('.mainscreen').hide(0,function(){
+			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px",left:"250px"}, function(){
+				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
+					$('#screeners').hide("slide", { direction: "up"}, 0, function(){				
+						$('#screeners').show("slide", { direction: "up"}, 0, function(){						
+							$('.topscreen').animate({top:"-120px"});								
+							$('.mainpanel').animate({height:"246px", width:"660px", paddingTop:"298px"}, function(){
+								$('.screencontainer').delay(10).animate({height:"236px", width:"660px"}, 0, function(){										
+									$('#biowindow').fadeIn(function(){
+										$('.protectiveshield').hide();
+									});
+								});
 
-		$('.mainpanel').animate({width:"100px", height:"100px", queue:false}, function(){
-			$('.screencontainer').animate({height:"100px", width:"100px"}, 100, function(){
-				$('#screeners').delay(0).hide("slide", { direction: "up"}, 300, function(){				
-					$('#screeners').show("slide", { direction: "up"}, 300, function(){						
-								$('.topscreen').animate({top:"-120px"});								
-									$('.mainpanel').animate({height:"246px", width:"660px", paddingTop:"300px"}, function(){
-										$('.screencontainer').delay(10).animate({height:"236px", width:"660px"}, 300, function(){										
-									$('#biowindow').fadeIn();
-									animationComplete = false;
-							
-								});						
-							});
-						
+							});						
+						});
+
 
 					});
 				});
@@ -58,7 +53,7 @@ if (animationComplete == false)
 			});		
 		});
 
-		
+
 	});
 	$('#toppanelslide').slideUp(300,'swing');
 
@@ -68,23 +63,24 @@ if (animationComplete == false)
 
 
 $('#resumebutton').click(function(){
-if (animationComplete == false)
 
-	$('#biowindow, #resumewindow, #contactwindow, #dworkswindow').delay(0).hide(function(){
-		animationComplete = true;
-		$('.mainpanel').animate({width:"100px", height:"100px", queue:false}, function(){
-			$('.screencontainer').animate({height:"100px", width:"100px"}, 100, function(){
-				$('#screeners').delay(0).hide("slide", { direction: "up"}, 300, function(){						
-					$('#screeners').show("slide", { direction: "up"}, 300, function(){					
-								$('.topscreen').animate({top:"-315px"});
-									$('.mainpanel').animate({width:"800px",height:"730px", paddingTop:"100px"}, function(){																				
-										$('.screencontainer').delay(0).animate({height:"720px",width:"800px"},function(){
-									$('#resumewindow').fadeIn();
-									animationComplete = false;
-							
-								});						
-							});
-						
+	$('.protectiveshield').show(function(){
+		$('.mainscreen').hide(0,function(){
+
+			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"250px"}, function(){
+				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
+					$('#screeners').delay(0).hide("slide", { direction: "up"}, 0, function(){						
+						$('#screeners').show("slide", { direction: "up"}, 0, function(){					
+							$('.topscreen').animate({top:"-315px"},100);
+							$('.mainpanel').animate({width:"800px",height:"730px", paddingTop:"100px"}, function(){																				
+								$('.screencontainer').delay(0).animate({height:"720px",width:"800px"},0, function(){
+									$('#resumewindow').fadeIn(function(){
+										$('.protectiveshield').hide();
+									});
+								});	
+							});						
+						});
+
 
 					});
 				});
@@ -92,7 +88,7 @@ if (animationComplete == false)
 			});		
 		});
 
-		
+
 	});
 	$('#toppanelslide').slideUp(300,'swing');
 
@@ -102,24 +98,27 @@ if (animationComplete == false)
 
 
 $('#portfoliobutton').click(function(){
-if (animationComplete == false)
+	$('.protectiveshield').show(function(){
 
-	$('#biowindow, #resumewindow, #contactwindow, #dworkswindow').delay(0).hide(function(){
-		animationComplete = true;
-		$('.mainpanel').animate({width:"100px",height:"100px", queue:false}, function(){
-			$('.screencontainer').animate({height:"100px", width:"100px"}, 100, function(){
-				$('#screeners').delay(0).hide("slide", { direction: "up" }, 300, function(){					
-					$('#screeners').show("slide", { direction: "up"}, 300, function(){							
+		$('.mainscreen').hide(0,function(){
+
+			$('.mainpanel').clearQueue().animate({width:"100px",height:"100px", left:"250px"}, function(){
+				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
+					$('#screeners').delay(0).hide("slide", { direction: "up"}, 0, function(){					
+						$('#screeners').show("slide", { direction: "up"}, 0, function(){							
 							$('.topscreen').animate({top:"-120px"});								
-									$('.mainpanel').animate({height:"350px", width:"800px", paddingTop:"300px"}, function(){
-										$('.screencontainer').delay(10).animate({height:"340px", width:"800px"},function(){										
-									$('#dworkswindow').fadeIn();
-									animationComplete = false;
-									
-										$('#toppanelslide').slideDown(300,'swing');
+							$('.mainpanel').animate({height:"350px", width:"800px", paddingTop:"298px"}, function(){
+								$('.screencontainer').delay(10).animate({height:"340px", width:"800px"},0,function(){										
+									$('#dworkswindow').fadeIn(function(){
+										$('.protectiveshield').hide();
+									});
+
+
+									$('#toppanelslide').slideDown(300,'swing');
 								});						
 							});
-						
+						});	
+
 
 					});
 				});
@@ -127,7 +126,7 @@ if (animationComplete == false)
 			});		
 		});
 
-		
+
 	});
 
 
@@ -135,28 +134,26 @@ if (animationComplete == false)
 });
 
 
-
-
-
 $('#contactbutton').click(function(){
-if (animationComplete == false)
+	$('.protectiveshield').show(function(){
+		$('.mainscreen').hide(0,function(){
 
-	$('#biowindow, #resumewindow, #contactwindow, #dworkswindow').delay(0).hide(function(){
-		animationComplete = true;
-		$('.mainpanel').animate({width:"100px",height:"100px"}, function(){
-			$('.screencontainer').animate({height:"100px",width:"100px", queue:false}, 100, function(){
-				$('#screeners').delay(0).hide("slide", { direction: "up"}, 300, function(){					
-					$('#screeners').show("slide", { direction: "up"}, 300, function(){							
+			$('.mainpanel').clearQueue().animate({width:"100px",height:"100px", left:"250px"}, function(){
+				$('.screencontainer').animate({height:"100px",width:"100px"}, 0, function(){
+					$('#screeners').delay(0).hide("slide", { direction: "up"}, 0, function(){					
+						$('#screeners').show("slide", { direction: "up"}, 0, function(){							
 							$('.topscreen').animate({top:"-120px"});								
-										$('.mainpanel').animate({height:"250px", width:"660px", paddingTop:"300px"}, function(){
-											$('.screencontainer').delay(10).animate({height:"250px", width:"660px"},function(){										
-									$('#contactwindow').fadeIn();
-									animationComplete = false;
-								
+							$('.mainpanel').animate({height:"250px", width:"660px", paddingTop:"298px"}, function(){
+								$('.screencontainer').delay(10).animate({height:"250px", width:"660px"},0,function(){										
+									$('#contactwindow').fadeIn(function(){
+										$('.protectiveshield').hide();
+									});
 
-								});						
-							});
-						
+								});	
+
+							});						
+						});
+
 
 					});
 				});
@@ -164,7 +161,7 @@ if (animationComplete == false)
 			});		
 		});
 
-		
+
 	});
 	$('#toppanelslide').slideUp(300,'swing');
 
@@ -172,12 +169,149 @@ if (animationComplete == false)
 });
 
 
+$('#dbutton').click(function(){
+	$('.protectiveshield').show(function(){
+		$('.mainscreen').hide(0,function(){
+
+			$('.mainpanel').clearQueue().animate({width:"100px",height:"100px", left:"250px"}, function(){
+				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
+					$('#screeners').delay(0).hide("slide", { direction: "up" }, 0, function(){					
+						$('#screeners').show("slide", { direction: "up"}, 0, function(){							
+							$('.topscreen').animate({top:"-120px"});								
+							$('.mainpanel').animate({height:"350px", width:"800px", paddingTop:"298px"}, function(){
+								$('.screencontainer').delay(10).animate({height:"340px", width:"800px"},0,function(){										
+									$('#dworkswindow').fadeIn(function(){
+										$('.protectiveshield').hide();
+									});
+
+									$('#toppanelslide').slideDown(300,'swing');
+								});	
+							});						
+						});
+					});
+				});
+
+			});		
+		});
+	});
+
+});
 
 
+$('#videobutton').click(function(){
+	$('.protectiveshield').show(function(){
+		$('.mainscreen').hide(0,function(){
+
+			$('.mainpanel').clearQueue().animate({width:"100px",height:"100px", left:"250px"}, function(){
+				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
+					$('#screeners').delay(0).hide("slide", { direction: "up" }, 0, function(){					
+						$('#screeners').show("slide", { direction: "up"}, 0, function(){							
+							$('.topscreen').animate({top:"-120px"});								
+							$('.mainpanel').animate({height:"180px", width:"400px", paddingTop:"298px"}, function(){
+								$('.screencontainer').delay(10).animate({height:"170px", width:"400px"},0,function(){										
+									$('#videowindow').fadeIn(function(){
+										$('.protectiveshield').hide();
+									});
+
+
+									$('#toppanelslide').slideDown(300,'swing');
+								});	
+							});						
+						});
+					});
+				});
+
+			});		
+		});
+	});
+});
+
+
+$('#webbutton').click(function(){
+	$('.protectiveshield').show(function(){
+		$('.mainscreen').hide(0,function(){
+
+			$('.mainpanel').clearQueue().animate({width:"100px",height:"100px",left:"250px"}, function(){
+				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
+					$('#screeners').delay(0).hide("slide", { direction: "up" }, 0, function(){					
+						$('#screeners').show("slide", { direction: "up"}, 0, function(){							
+							$('.topscreen').animate({top:"-120px"});								
+							$('.mainpanel').animate({height:"350px", width:"800px", paddingTop:"298px"}, function(){
+								$('.screencontainer').delay(10).animate({height:"340px", width:"800px"},0,function(){										
+									$('#webwindow').fadeIn(function(){
+										$('.protectiveshield').hide();
+									});
+
+
+									$('#toppanelslide').slideDown(300,'swing');
+								});		
+							});					
+						});
+					});
+				});
+
+			});		
+		});
+	});
+});
+
+
+$('#designsbutton').click(function(){
+	$('.protectiveshield').show(function(){
+		$('.mainscreen').hide(0,function(){
+
+			$('.mainpanel').clearQueue().animate({width:"100px",height:"100px", left:"250px"}, function(){
+				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
+					$('#screeners').delay(0).hide("slide", { direction: "up" }, 0, function(){					
+						$('#screeners').show("slide", { direction: "up"}, 0, function(){							
+							$('.topscreen').animate({top:"-120px"});								
+							$('.mainpanel').animate({height:"350px", width:"800px", paddingTop:"298px"}, function(){
+								$('.screencontainer').delay(10).animate({height:"340px", width:"800px"},0,function(){										
+									$('#designswindow').fadeIn(function(){
+										$('.protectiveshield').hide();
+									});
+
+									$('#toppanelslide').slideDown(300,'swing');
+								});	
+							});						
+						});
+					});
+				});
+			});		
+		});
+	});
+});
+
+
+$('#irbis').click(function(){
+
+	$('.protectiveshield').show(function(){
+		$('.mainscreen').hide(0,function(){
+			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"250px"}, function(){
+				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
+					$('#screeners').delay(0).hide("slide", { direction: "up"}, 0, function(){						
+						$('#screeners').show("slide", { direction: "up"}, 0, function(){					
+							$('.topscreen').animate({top:"-315px"},100);
+							$('.mainpanel').animate({width:"1000px",height:"2530px", paddingTop:"100px"}, function(){																				
+								$('.screencontainer').delay(0).animate({height:"2530px",width:"1000px"},0);
+								$('#irbiswindow').fadeIn(function(){
+									$('.mainscreen').append( $("#tableToClone").clone());
+									$('.protectiveshield').hide();
+
+								});	
+							});						
+						});
+					});
+				});
+			});		
+		});
+	});
+});
 
 
 
 });
+
 			//menu buttons start animations
 
 

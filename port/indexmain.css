@@ -38,6 +38,7 @@ html,body {
 	height:991px;
 	top:0px;
 	left:0px;
+	z-index:13;
 }
 
 
@@ -72,6 +73,7 @@ html,body {
 	left:0px;
 	top:415px;
 	display:none;
+	cursor: pointer;
 }
 
 .portfolioplank{
@@ -83,6 +85,7 @@ html,body {
 	left:0px;
 	top:450px;
 	display:none;
+	cursor: pointer;
 }
 
 .resumeplank{
@@ -94,6 +97,7 @@ html,body {
 	left:0px;
 	top:485px;
 	display:none;
+	cursor: pointer;
 }
 
 .contactplank{
@@ -105,6 +109,7 @@ html,body {
 	left:0px;
 	top:520px;
 	display:none;
+	cursor: pointer;
 }
 
 .toppanel{
@@ -115,6 +120,7 @@ html,body {
 	top:0px;
 	left:350px;
 	display:none;
+	z-index:10;
 }
 
 
@@ -122,6 +128,7 @@ html,body {
 	background:url(img/dplank.svg) no-repeat;
 	background-size:100% 100%;
 	position:absolute;
+	cursor: pointer;
 	width:65px;
 	height:35px;
 	left:0px;
@@ -143,6 +150,7 @@ html,body {
 	background:url(img/designsplank.svg) no-repeat;
 	background-size:100% 100%;
 	position:absolute;
+	cursor: pointer;
 	width:128px;
 	height:28px;
 	left:100px;
@@ -152,6 +160,7 @@ html,body {
 	background:url(img/designsplank_stick.svg) no-repeat;
 	background-size:100% 100%;
 	position:absolute;
+
 	width:11px;
 	height:22px;
 	left:100px;
@@ -163,6 +172,7 @@ html,body {
 	background-size:100% 100%;
 	position:absolute;
 	width:96px;
+	cursor: pointer;
 	height:30px;
 	left:280px;
 	top:21px;
@@ -181,6 +191,7 @@ html,body {
 	background-size:100% 100%;
 	position:absolute;
 	width:62px;
+	cursor: pointer;
 	height:32px;
 	left:410px;
 	top:18px;
@@ -203,6 +214,7 @@ html,body {
 	top:0px;
 	padding-top:300px;
 	display:none;
+	z-index:8;
 }
 
 .screencontainer{
@@ -229,6 +241,7 @@ html,body {
 	height:501px;
 	top:-120px;
 	left:0px;
+	pointer-events:none;
 }
 
 .bottomscreen{
@@ -239,6 +252,7 @@ html,body {
 	height:91px;
 	bottom:0px;
 	right:0px;
+	pointer-events:none;
 }
 
 .tg  {
@@ -271,8 +285,8 @@ html,body {
 }
 
 .tg .tg-yw4l{
-
-	vertical-align:top
+position:relative;
+	vertical-align:top;
 }
 
 
@@ -281,7 +295,7 @@ html,body {
 	border-collapse:collapse;
 	border-spacing:0;
 	width:100%;
-	height:100%;
+	
 
 }
 
@@ -325,9 +339,11 @@ html,body {
 .dworks{
 	display:none;
 }
-
 .worksrules{
 	height:340px;
+}
+.worksrulesvideo{
+	height:170px;
 }
 
 .video{
@@ -349,6 +365,10 @@ html,body {
 {
 	display:none;
 
+}
+
+.irbispanel{
+	display:none;
 }
 
 .resumerules{
@@ -390,17 +410,21 @@ html,body {
 }
 
 .captiontext{
-	text-transform: uppercase;
-	font-family:Tahoma, Geneva, sans-serif;
-	font-size:12px;
-	color:#e7e7e7;
-	font-weight:bold;
-	height: 140px;
-	line-height: 140px;
-	width:200px;
-	height:170px;
-	display:block;
-	position:absolute;
+  background:black;
+ margin-top:35%;
+  text-transform: uppercase;
+  text-align: right;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 12px;
+  color: #e7e7e7;
+  font-weight: bold;
+  right:0px;
+  width: 150px;
+  
+  display: block;
+  padding-right:10px;
+  position: absolute; 
+  word-break: keep-all;
 
 }
 
@@ -429,4 +453,12 @@ html,body {
 	padding:25px;
 
 
+}
+
+.protectiveshield{
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index:20;
+	display:none;
 }

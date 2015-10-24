@@ -1,0 +1,432 @@
+html,body {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f7f7f7+13,969696+84,6d6d6d+100 */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f7f7f7 13%, #969696 84%, #6d6d6d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(13%,#f7f7f7), color-stop(84%,#969696), color-stop(100%,#6d6d6d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f7f7f7 13%,#969696 84%,#6d6d6d 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#f7f7f7 13%,#969696 84%,#6d6d6d 100%); /* W3C */
+	height:100%;
+	margin: 0px 0px;
+	background-attachment: fixed;
+
+}
+
+
+
+
+
+.mainframe{
+	background:rgba(237,135,41,0) url(img/backx.svg);	
+	width:100%;
+	position:absolute;
+	overflow:scroll;
+	margin:0 auto;
+	height:100%;
+	overflow-x:hidden;
+	animation: backgroundchange 15s ease-in-out 2s infinite alternate;
+}
+
+@keyframes backgroundchange {
+	0%   {background-color:rgba(237,135,41,0)}
+	50%  {background-color: rgba(237,135,41,0.08)}
+	100% {background-color: rgba(237,135,41,0)}
+}
+
+.sidepanel{
+	position:fixed;
+	background:transparent;
+	width:200px;
+	height:991px;
+	top:0px;
+	left:0px;
+}
+
+
+.topstick{
+	background:url(img/topstick.svg) no-repeat;
+	background-size:100% 100%;
+	position:absolute;
+	width:32px;
+	height:415px;
+	left:32px;
+	top:0px;
+	display:none;
+}
+
+.bottomstick{
+	background:url(img/bottomstick.svg) no-repeat;
+	background-size:100% 100%;
+	position:absolute;
+	width:32px;
+	height:449px;
+	left:72px;
+	bottom:0px;
+	display:none;
+}
+
+.bioplank{
+	background:url(img/bioplank.svg) no-repeat;
+	background-size:100% 100%;
+	position:absolute;
+	width:175px;
+	height:22px;
+	left:0px;
+	top:415px;
+	display:none;
+}
+
+.portfolioplank{
+	background:url(img/portfolioplank.svg) no-repeat;
+	background-size:100% 100%;
+	position:absolute;
+	width:207px;
+	height:22px;
+	left:0px;
+	top:450px;
+	display:none;
+}
+
+.resumeplank{
+	background:url(img/resumeplank.svg) no-repeat;
+	background-size:100% 100%;
+	position:absolute;
+	width:164px;
+	height:22px;
+	left:0px;
+	top:485px;
+	display:none;
+}
+
+.contactplank{
+	background:url(img/contactplank.svg) no-repeat;
+	background-size:100% 100%;
+	position:absolute;
+	width:175px;
+	height:22px;
+	left:0px;
+	top:520px;
+	display:none;
+}
+
+.toppanel{
+	position:absolute;
+	background:transparent;
+	width:600px;
+	height:100px;
+	top:0px;
+	left:350px;
+	display:none;
+}
+
+
+.dplank{
+	background:url(img/dplank.svg) no-repeat;
+	background-size:100% 100%;
+	position:absolute;
+	width:65px;
+	height:35px;
+	left:0px;
+	top:20px;
+}
+
+.dplank_stick{
+	background:url(img/dplank_stick.svg) no-repeat;
+	background-size:100% 100%;
+	position:absolute;
+	width:23px;
+	height:35px;
+	left:0px;
+	top:0px;
+}
+
+
+.designsplank{
+	background:url(img/designsplank.svg) no-repeat;
+	background-size:100% 100%;
+	position:absolute;
+	width:128px;
+	height:28px;
+	left:100px;
+	top:20px;
+}
+.designsplank_stick{
+	background:url(img/designsplank_stick.svg) no-repeat;
+	background-size:100% 100%;
+	position:absolute;
+	width:11px;
+	height:22px;
+	left:100px;
+	top:0px;
+}
+
+.videoplank{
+	background:url(img/videoplank.svg) no-repeat;
+	background-size:100% 100%;
+	position:absolute;
+	width:96px;
+	height:30px;
+	left:280px;
+	top:21px;
+}
+.videoplank_stick{
+	background:url(img/videoplank_stick.svg) no-repeat;
+	background-size:100% 100%;
+	position:absolute;
+	width:22px;
+	height:25px;
+	left:270px;
+	top:0px;
+}
+.webplank{
+	background:url(img/webplank.svg) no-repeat;
+	background-size:100% 100%;
+	position:absolute;
+	width:62px;
+	height:32px;
+	left:410px;
+	top:18px;
+}
+.webplank_stick{
+	background:url(img/webplank_stick.svg) no-repeat;
+	background-size:100% 100%;
+	position:absolute;
+	width:24px;
+	height:39px;
+	left:462px;
+	top:0px;
+}
+
+.mainpanel{
+	position:relative;
+	width:100px;
+	padding-right:20px;
+	left:250px; 
+	top:0px;
+	padding-top:300px;
+	display:none;
+}
+
+.screencontainer{
+	padding-left:10px;
+	padding-right:20px;
+	padding-bottom:10px;
+ 	width:100%;
+ 	height:100px;
+  	position:relative;
+}
+
+.mainscreen{
+	width:100%;
+	top:0px;
+	left:0px;
+	background: radial-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.1));
+}
+
+.topscreen{
+	background:url(img/topscreen.svg) no-repeat;
+	background-size:100% 100%;
+	position:absolute;
+	width:101px;
+	height:501px;
+	top:-120px;
+	left:0px;
+}
+
+.bottomscreen{
+	background:url(img/bottomscreen.svg) no-repeat;
+	background-size:100% 100%;
+	position:absolute;
+	width:103px;
+	height:91px;
+	bottom:0px;
+	right:0px;
+}
+
+.tg  {
+	border-collapse:collapse;
+	border-spacing:0;
+	width:100%;
+	height:100%;
+
+}
+
+.tg td{
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	font-family:Arial, sans-serif;font-size:14px;
+	padding:0px 0px;
+	border-style:none;
+	border-width:0px;
+	overflow:hidden;word-break:normal;
+}
+
+.tg th{
+
+	font-family:Arial, sans-serif;
+	font-size:14px;font-weight:normal;
+	padding:0px 0px;
+	border-style:none;
+	border-width:0px;
+	overflow:hidden;
+	word-break:normal;
+}
+
+.tg .tg-yw4l{
+
+	vertical-align:top
+}
+
+
+
+.ts  {
+	border-collapse:collapse;
+	border-spacing:0;
+	width:100%;
+	height:100%;
+
+}
+
+.ts td{
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	font-family:Arial, sans-serif;font-size:14px;
+	padding:0px 0px;
+	border-style:none;
+	border-width:0px;
+	overflow:hidden;word-break:normal;
+}
+
+.ts th{
+
+	font-family:Arial, sans-serif;
+	font-size:14px;font-weight:normal;
+	padding:0px 0px;
+	border-style:none;
+	border-width:0px;
+	overflow:hidden;
+	word-break:normal;
+}
+
+.ts .ts-yw4l{
+
+	vertical-align:top
+}
+
+
+
+
+.designs{
+	display:none;
+}
+
+.web{
+	display:none;
+}
+
+.dworks{
+	display:none;
+}
+
+.worksrules{
+	height:340px;
+}
+
+.video{
+	display:none;
+}
+
+.biorules {
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	color:black;
+	font-weight:bold;
+	text-align:justify;
+	padding:15px;
+	height:100%;
+
+}
+
+.resume
+{
+	display:none;
+
+}
+
+.resumerules{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	color:black;
+	font-weight:bold;
+	text-align:justify;
+	padding:35px;
+	padding-right:35px;
+}
+
+.contact{
+	display:none;
+}
+
+.portfolio{
+	display:none;
+}
+
+
+
+
+
+.thumbimg{
+	width:200px;
+	height:170px;
+	display:block;
+	position:absolute;
+	opacity:0;
+	transition: opacity .4s ease-in-out;
+	-moz-transition: opacity .4s ease-in-out;
+	-webkit-transition: opacity .4s ease-in-out;
+	-o-transition: opacity .4s ease-in-out;
+}
+
+.thumbimg:hover{
+	opacity:1;
+}
+
+.captiontext{
+	text-transform: uppercase;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	color:#e7e7e7;
+	font-weight:bold;
+	height: 140px;
+	line-height: 140px;
+	width:200px;
+	height:170px;
+	display:block;
+	position:absolute;
+
+}
+
+.dframe{
+	
+	display:none;
+	height:auto !important;
+	width:auto !important;
+
+}
+
+.previewing{
+	padding-bottom:0px;
+	margin-bottom:0px;
+	width:800px;
+}
+
+.comment{
+	
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	color:black;
+	font-weight:bold;
+	width:300px;
+	text-align:justify;
+	padding:25px;
+
+
+}

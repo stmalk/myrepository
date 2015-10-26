@@ -16,9 +16,9 @@ $(window).load(function(){
 			$('#biowindow').hide();
 			$('#screeners').effect( "bounce",{distance:10}, {times:3}, 10 );		
 
-			$('.mainpanel').delay(50).animate({width:"400px", height:"357px"}, function(){
+			$('.mainpanel').delay(50).animate({width:"400px", height:"337px"}, function(){
 				$('.protectiveshield').show(function(){
-					$('.screencontainer').delay(10).animate({width:"400px", height:"357px"},function(){
+					$('.screencontainer').delay(10).animate({width:"400px", height:"337px"},function(){
 						$('#biowindow').fadeIn(function(){
 							$('.protectiveshield').hide();
 							$(this).dequeue();

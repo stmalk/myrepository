@@ -259,7 +259,7 @@ html,body {
 .mainpanel{
 	position:relative;
 	width:100px;
-	padding-right:20px;
+	padding-right:40px;
 	left:250px; 
 	top:0px;
 	padding-top:300px;
@@ -268,7 +268,7 @@ html,body {
 }
 
 .screencontainer{
-	padding-left:10px;
+	padding-left:20px;
 	padding-right:20px;
 	padding-bottom:10px;
 	width:100%;
@@ -287,7 +287,7 @@ html,body {
 	background:url(img/topscreen.svg) no-repeat;
 	background-size:100% 100%;
 	position:absolute;
-	width:101px;
+	width:111px;
 	height:501px;
 	top:-118px;
 	left:0px;
@@ -299,12 +299,12 @@ html,body {
 	background:url(img/bottomscreen.svg) no-repeat;
 	background-size:100% 100%;
 	position:absolute;
-	width:103px;
-	height:31px;
+	width:114px;
+	height:91px;
 	bottom:0px;
 	right:0px;
 	pointer-events:none;
-	padding-bottom: 90px;
+	padding-bottom: 45px;
 }
 
 .tg  {
@@ -570,6 +570,69 @@ html,body {
 	margin-left: 20px;
 }
 
+.blinklight{
+	background:white;
+	position:absolute;
+	width:3px;
+	height:3px;
+	top:15px;
+	right:20px;
+	border-radius: 3px;
+	pointer-events:none;
+-webkit-animation: lightbeacon 3s infinite;
+-moz-animation: lightbeacon 3s infinite;
+animation: lightbeacon 3s infinite;
+
+}
+
+@keyframes lightbeacon {
+	0% { opacity: 0; }
+	25% { opacity: 0; }
+	26% { opacity: 1; }
+	75%   { opacity: 1; }
+	76%   { opacity: 0; }
+	100%   { opacity: 0; }
+
+}
+
+@-moz-keyframes lightbeacon {
+	0% { opacity: 0; }
+	25% { opacity: 0; }
+	26% { opacity: 1; }
+	75%   { opacity: 1; }
+	76%   { opacity: 0; }
+	100%   { opacity: 0; }
+}
+
+@-webkit-keyframes lightbeacon {
+	0% { opacity: 0; }
+	25% { opacity: 0; }
+	26% { opacity: 1; }
+	75%   { opacity: 1; }
+	76%   { opacity: 0; }
+	100%   { opacity: 0; }
+}
+
+@-ms-keyframes lightbeacon {
+	0% { opacity: 0; }
+	25% { opacity: 0; }
+	26% { opacity: 1; }
+	75%   { opacity: 1; }
+	76%   { opacity: 0; }
+	100%   { opacity: 0; }
+}
+
+@-o-keyframes lightbeacon {
+	0% { opacity: 0; }
+	25% { opacity: 0; }
+	26% { opacity: 1; }
+	75%   { opacity: 1; }
+	76%   { opacity: 0; }
+	100%   { opacity: 0; }
+}
+
+
+
 .iconic{
 	
 	width: 150px;
@@ -597,7 +660,7 @@ html,body {
 	position:absolute;
 	width:161px;
 	height:17px;
-	right:0px;
+	right:20px;
 	bottom:50px;
 	
 	cursor: pointer;
@@ -629,51 +692,35 @@ html,body {
 	background:url(img/logo.svg) no-repeat;
 	background-size:100% 100%;
 	position:absolute;
-	width:79px;
+	width:96px;
 	height:104px;
 	bottom:10px;
-	right:133px;
+	right:126px;
 	pointer-events:none;
+ box-shadow:none;
+
+
 -webkit-animation: blinkers 1.2s steps(10) alternate infinite;
+-moz-animation: blinkers 1.2s steps(10) alternate infinite;
+animation: blinkers 1.2s steps(10) alternate infinite;
 
 }
 
 @keyframes blinkers {
-	0% { opacity: 0.4; }
-	1% { opacity: 0.9; }
-	10%   { opacity: 0.9; }
-	20%   { opacity: 0.9; }
-	30%   { opacity: 0.9; }
-	40%   { opacity: 0.9; }
-	41%   { opacity: 0.4; }
-	42%   { opacity: 0.9; }
-	70%   { opacity: 0.9; }
-	71%   { opacity: 0.4; }
-	72%   { opacity: 0.9; }
-	100%   { opacity: 0.9; }
+	0% { opacity: 0.8;  box-shadow:none;}
+	1% { opacity: 0.9; box-shadow: 0 0 20px #FFFAF3;}
+	10%   { opacity: 0.9; box-shadow:  0 0 20px #FFFAF3;}
+	20%   { opacity: 0.9; box-shadow:  0 0 20px #FFFAF3;}
+	30%   { opacity: 0.9; box-shadow:  0 0 20px #FFFAF3;}
+	40%   { opacity: 0.9; box-shadow:  0 0 20px #FFFAF3;}
+	41%   { opacity: 0.8;  box-shadow:none;}
+	42%   { opacity: 0.9; box-shadow:  0 0 20px #FFFAF3;}
+	70%   { opacity: 0.9; box-shadow:  0 0 20px #FFFAF3;}
+	71%   { opacity: 0.8;  box-shadow:none;}
+	72%   { opacity: 0.9; box-shadow: 0 0 20px #FFFAF3;}
+	100%   { opacity: 0.9; box-shadow:  0 0 20px #FFFAF3;}
 
 }
 
-@-moz-keyframes blinkers {
-	0% { opacity: 0.6; }
-	50%   { opacity: 0.8; }
-	100%   { opacity: 0.6; }
-}
 
-@-webkit-keyframes blinkers {
-	0% { opacity: 0.6; }
-	50%   { opacity: 0.8; }
-	100%   { opacity: 0.6; }
-}
 
-@-ms-keyframes blinkers {
-	0% {{ opacity: 0.6; }
-	50%   { opacity: 0.8; }
-	100%   { opacity: 0.6; }
-}
-
-@-o-keyframes blinkers {
-	0% { opacity: 0.6; }
-	50%   { opacity: 0.8; }
-	100%   { opacity: 0.6; }
-}

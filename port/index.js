@@ -27,6 +27,26 @@ $(window).load(function(){
 				});
 			});
 
+$( "#biobutton").hover( 
+	function() {
+  $('#topstickpart').animate({top:"-15px"}, 150);  
+},
+function() {
+  $('#topstickpart').animate({top:"0px"}, 150);  
+}
+);
+
+$( "#contactbutton").hover( 
+	function() {
+  $('#bottomstickpart').animate({bottom:"-15px"}, 150);  
+},
+function() {
+  $('#bottomstickpart').animate({bottom:"0px"}, 150);  
+}
+);
+
+
+
 //onclick functionality
 
 $('#biobutton').click(function(){

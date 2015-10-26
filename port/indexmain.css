@@ -47,6 +47,7 @@ html,body {
 	left:32px;
 	top:0px;
 	display:none;
+
 }
 
 .bottomstick{
@@ -70,6 +71,13 @@ html,body {
 	top:415px;
 	display:none;
 	cursor: pointer;
+
+	transition-timing-function:ease-in-out;;
+
+}
+
+.bioplank:hover{
+	background:url(img/bioplank_w.svg) no-repeat;
 }
 
 .portfolioplank{
@@ -84,6 +92,10 @@ html,body {
 	cursor: pointer;
 }
 
+.portfolioplank:hover{
+	background:url(img/portfolioplank_w.svg) no-repeat;
+}
+
 .resumeplank{
 	background:url(img/resumeplank.svg) no-repeat;
 	background-size:100% 100%;
@@ -94,6 +106,10 @@ html,body {
 	top:485px;
 	display:none;
 	cursor: pointer;
+}
+
+.resumeplank:hover{
+	background:url(img/resumeplank_w.svg) no-repeat;
 }
 
 .contactplank{
@@ -107,6 +123,12 @@ html,body {
 	display:none;
 	cursor: pointer;
 }
+
+
+.contactplank:hover{
+	background:url(img/contactplank_w.svg) no-repeat;
+}
+
 
 .toppanel{
 	position:absolute;
@@ -129,6 +151,11 @@ html,body {
 	height:35px;
 	left:0px;
 	top:20px;
+	z-index:3;
+}
+
+.dplank:hover{
+	background:url(img/dplank_w.svg) no-repeat;
 }
 
 .dplank_stick{
@@ -139,6 +166,7 @@ html,body {
 	height:35px;
 	left:0px;
 	top:0px;
+	z-index:2;
 }
 
 
@@ -151,12 +179,19 @@ html,body {
 	height:28px;
 	left:100px;
 	top:20px;
+	z-index:3;
 }
+
+.designsplank:hover{
+	background:url(img/designsplank_w.svg) no-repeat;
+}
+
+
 .designsplank_stick{
 	background:url(img/designsplank_stick.svg) no-repeat;
 	background-size:100% 100%;
 	position:absolute;
-
+	z-index:2;
 	width:11px;
 	height:22px;
 	left:100px;
@@ -168,11 +203,20 @@ html,body {
 	background-size:100% 100%;
 	position:absolute;
 	width:96px;
+	z-index:3;
 	cursor: pointer;
 	height:30px;
 	left:280px;
 	top:21px;
 }
+
+
+.videoplank:hover{
+	background:url(img/videoplank_w.svg) no-repeat;
+}
+
+
+
 .videoplank_stick{
 	background:url(img/videoplank_stick.svg) no-repeat;
 	background-size:100% 100%;
@@ -181,6 +225,7 @@ html,body {
 	height:25px;
 	left:270px;
 	top:0px;
+	z-index:2;
 }
 .webplank{
 	background:url(img/webplank.svg) no-repeat;
@@ -191,7 +236,15 @@ html,body {
 	height:32px;
 	left:410px;
 	top:18px;
+	z-index:3;
 }
+
+.webplank:hover{
+	background:url(img/webplank_w.svg) no-repeat;
+}
+
+
+
 .webplank_stick{
 	background:url(img/webplank_stick.svg) no-repeat;
 	background-size:100% 100%;
@@ -200,6 +253,7 @@ html,body {
 	height:39px;
 	left:462px;
 	top:0px;
+	z-index:2;
 }
 
 .mainpanel{
@@ -238,6 +292,7 @@ html,body {
 	top:-118px;
 	left:0px;
 	pointer-events:none;
+	
 }
 
 .bottomscreen{
@@ -245,10 +300,11 @@ html,body {
 	background-size:100% 100%;
 	position:absolute;
 	width:103px;
-	height:91px;
+	height:31px;
 	bottom:0px;
 	right:0px;
 	pointer-events:none;
+	padding-bottom: 90px;
 }
 
 .tg  {
@@ -378,6 +434,36 @@ html,body {
 
 .contact{
 	display:none;
+	font-family:sans-serif;
+	font-size:13px;
+	color:black;
+	font-weight:bold;
+	text-align:justify;
+	
+	width:98%;
+	padding-left:10px;
+
+}
+
+.contact a:link { color: #000000; text-decoration: none; }
+.contact a:visited { color: #000000;  text-decoration: none;}
+.contact a:hover { color: #ffffff;  text-decoration: none;}
+.contact a:active { color: #000000;  text-decoration: none;}
+
+
+
+.contactrules{
+	width:300px;
+	padding:5px;
+
+}
+
+
+.contactext{
+	line-height: 2;
+    margin-left: 15px;
+
+
 }
 
 .portfolio{
@@ -433,59 +519,63 @@ html,body {
 	width:600px;
 	border-width: 0px;
 	border-style:none;
-	    -webkit-animation: fadein 2s;
-       -moz-animation: fadein 2s; 
-        -ms-animation: fadein 2s;
-         -o-animation: fadein 2s; 
-            animation: fadein 2s;
+	transition: all .2s ease-in-out;
+	-webkit-animation: fadein 2s;
+	-moz-animation: fadein 2s; 
+	-ms-animation: fadein 2s;
+	-o-animation: fadein 2s; 
+	animation: fadein 2s;
 }
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+	from { opacity: 0; }
+	to   { opacity: 1; }
 }
 
 @-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+	from { opacity: 0; }
+	to   { opacity: 1; }
 }
 
 @-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+	from { opacity: 0; }
+	to   { opacity: 1; }
 }
 
 @-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+	from { opacity: 0; }
+	to   { opacity: 1; }
 }
 
 @-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+	from { opacity: 0; }
+	to   { opacity: 1; }
 }
 
 
+.previewing:hover{ 
+	transform: scale(1.02);
+}
 
 
 .comment{
 	
-    font-family: sans-serif;
-    font-size: 11px;
-    color: black;
-    font-weight: bold;
-    width: 160px;
-    text-align: left;
-    padding-right: 20px;
-    margin-left: 20px;
+	font-family: sans-serif;
+	font-size: 11px;
+	color: black;
+	font-weight: bold;
+	width: 160px;
+	text-align: left;
+	padding-right: 20px;
+	margin-left: 20px;
 }
 
 .iconic{
 	
-    width: 150px;
-    text-align: justify;
-    padding-right: 20px;
-    margin-left: 20px;
+	width: 150px;
+	text-align: justify;
+	padding-right: 20px;
+	margin-left: 20px;
 }
 
 .smallicon{
@@ -499,4 +589,91 @@ html,body {
 	position:absolute;
 	z-index:20;
 	display:none;
+}
+
+.backtotopplank{
+	background:url(img/backtotop.svg) no-repeat;
+	background-size:100% 100%;
+	position:absolute;
+	width:161px;
+	height:17px;
+	right:0px;
+	bottom:50px;
+	
+	cursor: pointer;
+
+	transition-timing-function:ease-in-out;;
+
+}
+
+.backtotopplank:hover{
+	background:url(img/backtotop_w.svg) no-repeat;
+}
+
+
+.logopanelclass{
+	background:url(img/logopanel.svg) no-repeat;
+	background-size:100% 100%;
+	position:relative;
+	width:339px;
+	height:169px;
+	top:0px;
+	left:0px;
+	pointer-events:none;
+	margin-bottom:-180px;
+
+}
+
+
+.logoclass{
+	background:url(img/logo.svg) no-repeat;
+	background-size:100% 100%;
+	position:absolute;
+	width:79px;
+	height:104px;
+	bottom:10px;
+	right:133px;
+	pointer-events:none;
+-webkit-animation: blinkers 1.2s steps(10) alternate infinite;
+
+}
+
+@keyframes blinkers {
+	0% { opacity: 0.4; }
+	1% { opacity: 0.9; }
+	10%   { opacity: 0.9; }
+	20%   { opacity: 0.9; }
+	30%   { opacity: 0.9; }
+	40%   { opacity: 0.9; }
+	41%   { opacity: 0.4; }
+	42%   { opacity: 0.9; }
+	70%   { opacity: 0.9; }
+	71%   { opacity: 0.4; }
+	72%   { opacity: 0.9; }
+	100%   { opacity: 0.9; }
+
+}
+
+@-moz-keyframes blinkers {
+	0% { opacity: 0.6; }
+	50%   { opacity: 0.8; }
+	100%   { opacity: 0.6; }
+}
+
+@-webkit-keyframes blinkers {
+	0% { opacity: 0.6; }
+	50%   { opacity: 0.8; }
+	100%   { opacity: 0.6; }
+}
+
+@-ms-keyframes blinkers {
+	0% {{ opacity: 0.6; }
+	50%   { opacity: 0.8; }
+	100%   { opacity: 0.6; }
+}
+
+@-o-keyframes blinkers {
+	0% { opacity: 0.6; }
+	50%   { opacity: 0.8; }
+	100%   { opacity: 0.6; }
 }

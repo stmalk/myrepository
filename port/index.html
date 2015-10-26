@@ -20,16 +20,13 @@
 <body>
 
 
-
-			
-
-
-
-
-
-
 	<div class="mainframe">
+<div id="#logopanel" class="logopanelclass">
+	<div id="#logo" class="logoclass"></div>
+</div>
+
 		<div id="#protecting" class="protectiveshield"></div>
+
 		<div class="sidepanel"> 
 
 			<div id="topstickpart" class="topstick"></div>    
@@ -51,7 +48,7 @@
 
 		<div id="screeners" class="mainpanel">
 
-			<div class="topscreen"></div>
+			<div id="topanchor" class="topscreen"></div>
 			<div class="screencontainer">
 				<div id="dworkswindow" class="mainscreen  dworks">
 					<div class="worksrules">
@@ -109,16 +106,16 @@
 					<div class="worksrules">
 						<table class="tg">
 							<tr>
-								<th class="tg-yw4l" style="background:url(img/thumbs/6_1.jpg) no-repeat;"><p class="captiontext">Indo-Europica Information Portal</p><img src="img/thumbs/6_1_1.jpg" class="thumbimg"></th>
-								<th class="tg-yw4l" style="background:url(img/thumbs/6_2.jpg) no-repeat;"><p class="captiontext">Global Warming Awareness Project</p><img src="img/thumbs/6_2_1.jpg" class="thumbimg"></th>
-								<th class="tg-yw4l" style="background:url(img/thumbs/6_3.jpg) no-repeat;"><p class="captiontext">Past/Present Perspective </p><img src="img/thumbs/6_3_1.jpg" class="thumbimg"></th>
-								<th class="tg-yw4l" style="background:url(img/thumbs/6_4.jpg) no-repeat;"><p class="captiontext">International Space Station Explorer</p><img src="img/thumbs/6_4_1.jpg" class="thumbimg"></th>
+								<th id="indoeuropica" class="tg-yw4l" style="background:url(img/thumbs/6_1.jpg) no-repeat;"><p class="captiontext">Indo-Europica Information Portal</p><img src="img/thumbs/6_1_1.jpg" class="thumbimg"></th>
+								<th id="warming" class="tg-yw4l" style="background:url(img/thumbs/6_2.jpg) no-repeat;"><p class="captiontext">Global Warming Awareness Project</p><img src="img/thumbs/6_2_1.jpg" class="thumbimg"></th>
+								<th id="pastpresent" class="tg-yw4l" style="background:url(img/thumbs/6_3.jpg) no-repeat;"><p class="captiontext">Past/Present Perspective </p><img src="img/thumbs/6_3_1.jpg" class="thumbimg"></th>
+								<th id="iss" class="tg-yw4l" style="background:url(img/thumbs/6_4.jpg) no-repeat;"><p class="captiontext">International Space Station Explorer</p><img src="img/thumbs/6_4_1.jpg" class="thumbimg"></th>
 							</tr>
 							<tr>
 								<th class="tg-yw4l"></th>
 								<th class="tg-yw4l"></th>
-								<th class="tg-yw4l" style="background:url(img/thumbs/6_5.jpg) no-repeat;"><p class="captiontext">Madlib in Nature</p><img src="img/thumbs/6_5_1.jpg" class="thumbimg"></th>
-								<th class="tg-yw4l" style="background:url(img/thumbs/6_6.jpg) no-repeat;"><p class="captiontext">JavaScript Test Site</p><img src="img/thumbs/6_6_1.jpg" class="thumbimg"></th>
+								<th id="madlib" class="tg-yw4l" style="background:url(img/thumbs/6_5.jpg) no-repeat;"><p class="captiontext">Madlib in Nature</p><img src="img/thumbs/6_5_1.jpg" class="thumbimg"></th>
+								<th id="testingsite" class="tg-yw4l" style="background:url(img/thumbs/6_6.jpg) no-repeat;"><p class="captiontext">JavaScript Test Site</p><img src="img/thumbs/6_6_1.jpg" class="thumbimg"></th>
 							</tr>
 						</table>
 					</div>
@@ -220,26 +217,14 @@
 
 
 				<div id="contactwindow" class="mainscreen  contact">
-					<table class="tg">
-						<tr>
-							<th class="tg-yw4l"></th>
-							<th class="tg-yw4l"></th>
-							<th class="tg-yw4l"></th>
-							<th class="tg-yw4l"></th>
-						</tr>
-						<tr>
-							<td class="tg-yw4l"></td>
-							<td class="tg-yw4l"></td>
-							<td class="tg-yw4l"></td>
-							<td class="tg-yw4l"></td>
-						</tr>
-						<tr>
-							<td class="tg-yw4l"></td>
-							<td class="tg-yw4l"></td>
-							<td class="tg-yw4l"></td>
-							<td class="tg-yw4l"></td>
-						</tr>
-					</table>
+					<div class="contactrules">
+
+						<p><a target="_blank" href="mailto:mnabievart@gmail.com?subject=Hello Murad"><img class="smallicon" src="logos/email.png" width="15px" height="15px"><span class="contactext">E-Mail: mnabievart@gmail.com</span></a></p>
+						<p><a target="_blank" href="http://behance.net/stmalk"><img class="smallicon" src="logos/behance.png" width="15px" height="15px"><span class="contactext">BeHance: behance.net/stmalk</span></a></p>
+						<p><a target="_blank" href="http://artstation.com/artist/mnabiev"><img class="smallicon" src="logos/artstation.png" width="15px" height="15px"><span class="contactext">ArtStation: artstation.com/artist/mnabiev</span></a></p>
+						<p><span class="contactext" style="margin-left:210px;">Brooklyn, NY</span></p>
+
+					</div>
 
 				</div>
 
@@ -282,34 +267,48 @@
 				</div>
 
 
+				<div id="indoeuropicawindow" class="mainscreen irbispanel">
+				</div>
+				<div id="warmingwindow" class="mainscreen irbispanel">
+				</div>
+				<div id="pastpresentwindow" class="mainscreen irbispanel">
+				</div>
+				<div id="isswindow" class="mainscreen irbispanel">
+				</div>
+				<div id="madlibwindow" class="mainscreen irbispanel">
+				</div>
+				<div id="testingsitewindow" class="mainscreen irbispanel">
+				</div>
+
+
 				<div style="display:none">
 					<table id="tableToClone" class="ts">
 						<tr>
 							<th class="ts-yw4l" rowspan="3">
-								<img id="galleryone" src="" class="previewing">
-								<img id="gallerytwo" src="" class="previewing">
-								<img id="gallerythree" src="" class="previewing">
-								<img id="galleryfour" src="" class="previewing">
-								<img id="galleryfive" src="" class="previewing">
-								<img id="gallerysix" src="" class="previewing">
-								<img id="galleryseven" src="" class="previewing">
-								<img id="galleryeight" src="" class="previewing">
+								<a id="galleryonelink" target="_blank" href=""><img id="galleryone" src="" class="previewing"></a>
+								<a id="gallerytwolink" target="_blank" href=""><img id="gallerytwo" src="" class="previewing"></a>
+								<a id="gallerythreelink" target="_blank" href=""><img id="gallerythree" src="" class="previewing"></a>
+								<a id="galleryfourlink" target="_blank" href=""><img id="galleryfour" src="" class="previewing"></a>
+								<a id="galleryfivelink" target="_blank" href=""><img id="galleryfive" src="" class="previewing"></a>
+								<a id="gallerysixlink" target="_blank" href=""><img id="gallerysix" src="" class="previewing"></a>
+								<a id="gallerysevenlink" target="_blank" href=""><img id="galleryseven" src="" class="previewing"></a>
+								<a id="galleryeightlink" target="_blank" href=""><img id="galleryeight" src="" class="previewing"></a>
 
-								<img id="gallerynine" src="" class="previewing">
-								<img id="galleryten" src="" class="previewing">
-								<img id="galleryeleven" src="" class="previewing">
-								<img id="gallerytwelve" src="" class="previewing">
+								<a id="galleryninelink" target="_blank" href=""><img id="gallerynine" src="" class="previewing"></a>
+								<a id="gallerytenlink" target="_blank" href=""><img id="galleryten" src="" class="previewing"></a>
+								<a id="galleryelevenlink" target="_blank" href=""><img id="galleryeleven" src="" class="previewing"></a>
+								<a id="gallerytwelvelink" target="_blank" href=""><img id="gallerytwelve" src="" class="previewing"></a>
 
-								<img id="gallerythirteen" src="" class="previewing">
-								<img id="galleryfourteen" src="" class="previewing">
-								<img id="galleryfifteen" src="" class="previewing">
-								<img id="gallerysixteen" src="" class="previewing">
+								<a id="gallerythirteenlink" target="_blank" href=""><img id="gallerythirteen" src="" class="previewing"></a>
+								<a id="galleryfourteenlink" target="_blank" href=""><img id="galleryfourteen" src="" class="previewing"></a>
+								<a id="galleryfifteenlink" target="_blank" href=""><img id="galleryfifteen" src="" class="previewing"></a>
+								<a id="gallerysixteenlink" target="_blank" href=""><img id="gallerysixteen" src="" class="previewing"></a>
 
-								<img id="galleryseventeen" src="" class="previewing">
-								<img id="galleryeighteen" src="" class="previewing">
-								<img id="gallerynineteen" src="" class="previewing">
-								<img id="gallerytwenty" src="" class="previewing">
-								<img id="gallerytwentyone" src="" class="previewing">
+								<a id="galleryseventeenlink" target="_blank" href=""><img id="galleryseventeen" src="" class="previewing"></a>
+								<a id="galleryeighteenlink" target="_blank" href=""><img id="galleryeighteen" src="" class="previewing"></a>
+								<a id="gallerynineteenlink" target="_blank" href=""><img id="gallerynineteen" src="" class="previewing"></a>
+								<a id="gallerytwentylink" target="_blank" href=""><img id="gallerytwenty" src="" class="previewing"></a>
+								<a id="gallerytwentyonelink" target="_blank" href=""><img id="gallerytwentyone" src="" class="previewing"></a>
 								<iframe id="videoframe" src="" class="previewing"></iframe>
 								
 							</th>
@@ -323,7 +322,7 @@
 							<td class="ts-yw4l"></td>
 						</tr>
 						<tr>
-							<td class="ts-yw4l"></td>
+							<td class="ts-yw4l"><a class="backtotop" href="#topanchor"><div class="backtotopplank"></div></a></td>
 						</tr>
 					</table>
 				</div>

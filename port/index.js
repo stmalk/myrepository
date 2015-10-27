@@ -93,9 +93,9 @@ $('#resumebutton').click(function(){
 			$('.mainpanel').clearQueue().animate({width:"100px",height:"300px", left:"250px"}, function(){
 				$('.screencontainer').animate({height:"300px",width:"100px"}, 0, function(){
 
-					$('.mainpanel').animate({height:"805px", width:"660px", paddingTop:"98px"}, function(){
+					$('.mainpanel').animate({height:"820px", width:"660px", paddingTop:"98px"}, function(){
 
-						$('.screencontainer').delay(10).animate({height:"805px", width:"660px"},0,function(){										
+						$('.screencontainer').delay(10).animate({height:"820px", width:"660px"},0,function(){										
 							$('#resumewindow').fadeIn(function(){
 								$('.protectiveshield').hide();
 								$(this).dequeue();

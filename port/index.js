@@ -16,9 +16,9 @@ $(window).load(function(){
 			$('#biowindow').hide();
 			$('#screeners').effect( "bounce",{distance:10}, {times:3}, 10 );		
 
-			$('.mainpanel').delay(50).animate({width:"400px", height:"327px"}, function(){
+			$('.mainpanel').delay(50).animate({width:"400px", height:"320px"}, function(){
 				$('.protectiveshield').show(function(){
-					$('.screencontainer').delay(10).animate({width:"400px", height:"327px"},function(){
+					$('.screencontainer').delay(10).animate({width:"400px", height:"320px"},function(){
 						$('#biowindow').fadeIn(function(){
 							$('.protectiveshield').hide();
 							$(this).dequeue();
@@ -56,8 +56,8 @@ $('#biobutton').click(function(){
 			$('.mainpanel').clearQueue().animate({width:"100px", height:"300px",left:"250px"}, function(){
 				$('.screencontainer').animate({height:"300px", width:"100px"}, 0, function(){
 
-					$('.mainpanel').animate({height:"357px", width:"400px", paddingTop:"298px"}, function(){
-						$('.screencontainer').delay(10).animate({height:"357px",  width:"400px"}, 0, function(){										
+					$('.mainpanel').animate({height:"320px", width:"400px", paddingTop:"298px"}, function(){
+						$('.screencontainer').delay(10).animate({height:"320px",  width:"400px"}, 0, function(){										
 							$('#biowindow').fadeIn(function(){
 								$('.protectiveshield').hide();
 								$(this).dequeue();
@@ -93,9 +93,9 @@ $('#resumebutton').click(function(){
 			$('.mainpanel').clearQueue().animate({width:"100px",height:"300px", left:"250px"}, function(){
 				$('.screencontainer').animate({height:"300px",width:"100px"}, 0, function(){
 
-					$('.mainpanel').animate({height:"775px", width:"660px", paddingTop:"98px"}, function(){
+					$('.mainpanel').animate({height:"760px", width:"660px", paddingTop:"98px"}, function(){
 
-						$('.screencontainer').delay(10).animate({height:"775px", width:"660px"},0,function(){										
+						$('.screencontainer').delay(10).animate({height:"760px", width:"660px"},0,function(){										
 							$('#resumewindow').fadeIn(function(){
 								$('.protectiveshield').hide();
 								$(this).dequeue();

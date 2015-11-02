@@ -19,8 +19,8 @@ $(window).load(function(){
 					$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
 
 
-						$('.mainpanel').animate({width:"805px",height:"1956px", paddingTop:"98px"}, function(){	
-							$('.topscreen').stop(true,true).animate({top:"-320px"},20);																			
+						$('.mainpanel').animate({width:"805px",height:"1956px", paddingTop:"218px"}, function(){	
+							$('.topscreen').stop(true,true).animate({top:"-200px"},20);																			
 							$('.screencontainer').delay(0).animate({height:"1956px",width:"805px"},0);
 
 
@@ -88,12 +88,12 @@ $('#opportunists').click(function(){
 
 	$('.protectiveshield').show(function(){
 		$('.mainscreen').hide(0,function(){
-			$('.topscreen').stop(true,true).animate({top:"-320px"},120);
-			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"250px"}, function(){
+			$('.topscreen').stop(true,true).animate({top:"-200px"},120);
+			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"350px"}, function(){
 
 				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
 					
-					$('.mainpanel').animate({width:"805px",height:"3010px", paddingTop:"98px"}, function(){	
+					$('.mainpanel').animate({width:"805px",height:"3010px", paddingTop:"218px"}, function(){	
 
 						$('.screencontainer').delay(0).animate({height:"3010px",width:"805px"},0);
 
@@ -106,7 +106,7 @@ $('#opportunists').click(function(){
 						$('#gallerysix').attr('src','img/previews/4_1_6.jpg');
 						$('#galleryseven').attr('src','img/previews/4_1_7.jpg');
 						$('#galleryeight').attr('src','img/previews/4_1_8.jpg');
-
+$('.previewing').css('display','block');
 						$('#galleryonelink').attr('href','img/original/4_1_1.jpg');
 						$('#gallerytwolink').attr('href','img/original/4_1_2.jpg');
 						$('#gallerythreelink').attr('href','img/original/4_1_3.jpg');
@@ -116,7 +116,7 @@ $('#opportunists').click(function(){
 						$('#gallerysevenlink').attr('href','img/original/4_1_7.jpg');
 						$('#galleryeightlink').attr('href','img/original/4_1_8.jpg');
 
-						$('.previewing').css('display','block');
+						
 						$('#gallerynine').hide();
 						$('#galleryten').hide();
 						$('#galleryeleven').hide();
@@ -169,12 +169,12 @@ $('#promise').click(function(){
 
 	$('.protectiveshield').show(function(){
 		$('.mainscreen').hide(0,function(){
-			$('.topscreen').stop(true,true).animate({top:"-320px"},120);
-			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"250px"}, function(){
+			$('.topscreen').stop(true,true).animate({top:"-200px"},120);
+			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"350px"}, function(){
 
 				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
 					
-					$('.mainpanel').animate({width:"805px",height:"2015px", paddingTop:"98px"}, function(){	
+					$('.mainpanel').animate({width:"805px",height:"2015px", paddingTop:"218px"}, function(){	
 
 						$('.screencontainer').delay(0).animate({height:"2015px",width:"805px"},0);
 
@@ -184,14 +184,14 @@ $('#promise').click(function(){
 						$('#gallerythree').attr('src','img/previews/5_1_3.jpg');
 						$('#galleryfour').attr('src','img/previews/5_1_4.jpg');
 						$('#galleryfive').attr('src','img/previews/5_1_5.jpg');
-
+$('.previewing').css('display','block');
 						$('#galleryonelink').attr('href','img/original/5_1_2.jpg');
 						$('#gallerytwolink').attr('href','img/original/5_1_1.jpg');
 						$('#gallerythreelink').attr('href','img/original/5_1_3.jpg');
 						$('#galleryfourlink').attr('href','img/original/5_1_4.jpg');
 						$('#galleryfivelink').attr('href','img/original/5_1_5.jpg');
 
-						$('.previewing').css('display','block');
+						
 						$('#gallerysix').hide();
 						$('#galleryseven').hide();
 						$('#galleryeight').hide();
@@ -245,12 +245,12 @@ $('#cyborg').click(function(){
 
 	$('.protectiveshield').show(function(){
 		$('.mainscreen').hide(0,function(){
-			$('.topscreen').stop(true,true).animate({top:"-320px"},120);
-			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"250px"}, function(){
+			$('.topscreen').stop(true,true).animate({top:"-200px"},120);
+			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"350px"}, function(){
 
 				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
 					
-					$('.mainpanel').animate({width:"805px",height:"3470px", paddingTop:"98px"}, function(){	
+					$('.mainpanel').animate({width:"805px",height:"3470px", paddingTop:"218px"}, function(){	
 
 						$('.screencontainer').delay(0).animate({height:"3470px",width:"805px"},0);
 
@@ -261,7 +261,7 @@ $('#cyborg').click(function(){
 						$('#galleryfour').attr('src','img/previews/6_1_3.jpg');
 						$('#galleryfive').attr('src','img/previews/6_1_4.jpg');
 						$('#gallerysix').attr('src','img/previews/6_1_5.jpg');
-
+$('.previewing').css('display','block');
 						$('#galleryonelink').attr('href','img/original/6_1_1.jpg');
 						$('#gallerytwolink').attr('href','img/original/6_1_2.jpg');
 						$('#gallerythreelink').attr('href','img/original/6_1_6.jpg');
@@ -269,7 +269,7 @@ $('#cyborg').click(function(){
 						$('#galleryfivelink').attr('href','img/original/6_1_4.jpg');
 						$('#gallerysixlink').attr('href','img/original/6_1_5.jpg');
 
-						$('.previewing').css('display','block');
+						
 						$('#galleryseven').hide();
 						$('#galleryeight').hide();
 
@@ -326,12 +326,12 @@ $('#robo').click(function(){
 	}
 	$('.protectiveshield').show(function(){
 		$('.mainscreen').hide(0,function(){
-			$('.topscreen').stop(true,true).animate({top:"-320px"},120);
-			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"250px"}, function(){
+			$('.topscreen').stop(true,true).animate({top:"-200px"},120);
+			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"350px"}, function(){
 
 				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
 					
-					$('.mainpanel').animate({width:"805px",height:"4748px", paddingTop:"98px"}, function(){	
+					$('.mainpanel').animate({width:"805px",height:"4748px", paddingTop:"218px"}, function(){	
 
 						$('.screencontainer').delay(0).animate({height:"4748px",width:"805px"},0);
 
@@ -342,7 +342,7 @@ $('#robo').click(function(){
 						$('#galleryfive').attr('src','img/previews/7_1_5.jpg');
 						$('#gallerysix').attr('src','img/previews/7_1_6.jpg');
 						$('#galleryseven').attr('src','img/previews/7_1_7.jpg');
-
+$('.previewing').css('display','block');
 						$('#galleryonelink').attr('href','img/original/7_1_1.jpg');
 						$('#gallerytwolink').attr('href','img/original/7_1_2.jpg');
 						$('#gallerythreelink').attr('href','img/original/7_1_3.jpg');
@@ -351,7 +351,7 @@ $('#robo').click(function(){
 						$('#gallerysixlink').attr('href','img/original/7_1_6.jpg');
 						$('#gallerysevenlink').attr('href','img/original/7_1_7.jpg');
 
-						$('.previewing').css('display','block');
+						
 						$('#galleryeight').hide();
 
 						$('#gallerynine').hide();
@@ -408,12 +408,12 @@ $('#roller').click(function(){
 
 	$('.protectiveshield').show(function(){
 		$('.mainscreen').hide(0,function(){
-			$('.topscreen').stop(true,true).animate({top:"-320px"},120);
-			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"250px"}, function(){
+			$('.topscreen').stop(true,true).animate({top:"-200px"},120);
+			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"350px"}, function(){
 
 				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
 					
-					$('.mainpanel').animate({width:"805px",height:"2035px", paddingTop:"98px"}, function(){	
+					$('.mainpanel').animate({width:"805px",height:"2035px", paddingTop:"218px"}, function(){	
 
 						$('.screencontainer').delay(0).animate({height:"2035px",width:"805px"},0);
 
@@ -421,13 +421,13 @@ $('#roller').click(function(){
 						$('#gallerytwo').attr('src','img/previews/8_1_1.jpg');
 						$('#gallerythree').attr('src','img/previews/8_1_3.jpg');
 						$('#galleryfour').attr('src','img/previews/8_1_4.jpg');
-
+$('.previewing').css('display','block');
 						$('#galleryonelink').attr('href','img/original/8_1_2.jpg');
 						$('#gallerytwolink').attr('href','img/original/8_1_1.jpg');
 						$('#gallerythreelink').attr('href','img/original/8_1_3.jpg');
 						$('#galleryfourlink').attr('href','img/original/8_1_4.jpg');
 
-						$('.previewing').css('display','block');
+						
 						$('#galleryfive').hide();
 						$('#gallerysix').hide();
 						$('#galleryseven').hide();
@@ -486,24 +486,24 @@ $('#pantheon').click(function(){
 
 	$('.protectiveshield').show(function(){
 		$('.mainscreen').hide(0,function(){
-			$('.topscreen').stop(true,true).animate({top:"-320px"},120);
-			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"250px"}, function(){
+			$('.topscreen').stop(true,true).animate({top:"-200px"},120);
+			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"350px"}, function(){
 
 				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
 					
-					$('.mainpanel').animate({width:"805px",height:"1445px", paddingTop:"98px"}, function(){	
+					$('.mainpanel').animate({width:"805px",height:"1445px", paddingTop:"218px"}, function(){	
 
 						$('.screencontainer').delay(0).animate({height:"1445px",width:"805px"},0);
 
 						$('#galleryone').attr('src','img/previews/9_1_1.jpg');
 						$('#gallerytwo').attr('src','img/previews/9_1_2.jpg');
 						$('#gallerythree').attr('src','img/previews/9_1_3.jpg');
-
+	$('.previewing').css('display','block');
 						$('#galleryonelink').attr('href','img/original/9_1_1.jpg');
 						$('#gallerytwolink').attr('href','img/original/9_1_2.jpg');
 						$('#gallerythreelink').attr('href','img/original/9_1_3.jpg');
 
-						$('.previewing').css('display','block');
+					
 						$('#galleryfour').hide();
 						$('#galleryfive').hide();
 						$('#gallerysix').hide();
@@ -559,12 +559,12 @@ $('#hoplite').click(function(){
 
 	$('.protectiveshield').show(function(){
 		$('.mainscreen').hide(0,function(){
-			$('.topscreen').stop(true,true).animate({top:"-320px"},120);
-			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"250px"}, function(){
+			$('.topscreen').stop(true,true).animate({top:"-200px"},120);
+			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"350px"}, function(){
 
 				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
 					
-					$('.mainpanel').animate({width:"805px",height:"5640px", paddingTop:"98px"}, function(){	
+					$('.mainpanel').animate({width:"805px",height:"5640px", paddingTop:"218px"}, function(){	
 
 						$('.screencontainer').delay(0).animate({height:"5640px",width:"805px"},0);
 
@@ -579,7 +579,7 @@ $('#hoplite').click(function(){
 						$('#gallerynine').attr('src','img/previews/10_1_3.jpg');
 						$('#galleryten').attr('src','img/previews/10_1_4.jpg');
 						$('#galleryeleven').attr('src','img/previews/10_1_1.jpg');
-
+$('.previewing').css('display','block');
 						$('#galleryonelink').attr('href','img/original/10_1_5.jpg');
 						$('#gallerytwolink').attr('href','img/original/10_1_2.jpg');
 						$('#gallerythreelink').attr('href','img/original/10_1_8.jpg');
@@ -592,7 +592,7 @@ $('#hoplite').click(function(){
 						$('#gallerytenlink').attr('href','img/original/10_1_4.jpg');
 						$('#galleryelevenlink').attr('href','img/original/10_1_1.jpg');
 
-						$('.previewing').css('display','block');
+						
 
 						$('#gallerytwelve').hide();
 						$('#gallerythirteen').hide();
@@ -642,12 +642,12 @@ $('#cards').click(function(){
 
 	$('.protectiveshield').show(function(){
 		$('.mainscreen').hide(0,function(){
-			$('.topscreen').stop(true,true).animate({top:"-320px"},120);
-			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"250px"}, function(){
+			$('.topscreen').stop(true,true).animate({top:"-200px"},120);
+			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"350px"}, function(){
 
 				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
 					
-					$('.mainpanel').animate({width:"805px",height:"4780px", paddingTop:"98px"}, function(){	
+					$('.mainpanel').animate({width:"805px",height:"4780px", paddingTop:"218px"}, function(){	
 
 						$('.screencontainer').delay(0).animate({height:"4780px",width:"805px"},0);
 
@@ -663,7 +663,7 @@ $('#cards').click(function(){
 						$('#galleryten').attr('src','img/previews/11_1_10.jpg');
 						$('#galleryeleven').attr('src','img/previews/11_1_11.jpg');
 						$('#gallerytwelve').attr('src','img/previews/11_1_12.jpg');
-
+$('.previewing').css('display','block');
 						$('#galleryonelink').attr('href','img/original/11_1_1.jpg');
 						$('#gallerytwolink').attr('href','img/original/11_1_2.jpg');
 						$('#gallerythreelink').attr('href','img/original/11_1_3.jpg');
@@ -677,7 +677,7 @@ $('#cards').click(function(){
 						$('#galleryelevenlink').attr('href','img/original/11_1_11.jpg');
 						$('#gallerytwelvelink').attr('href','img/original/11_1_12.jpg');
 
-						$('.previewing').css('display','block');
+						
 						$('#gallerythirteen').hide();
 						$('#galleryfourteen').hide();
 						$('#galleryfifteen').hide();
@@ -718,12 +718,12 @@ $('#apple').click(function(){
 
 	$('.protectiveshield').show(function(){
 		$('.mainscreen').hide(0,function(){
-			$('.topscreen').stop(true,true).animate({top:"-320px"},120);
-			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"250px"}, function(){
+			$('.topscreen').stop(true,true).animate({top:"-200px"},120);
+			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"350px"}, function(){
 
 				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
 					
-					$('.mainpanel').animate({width:"805px",height:"6332px", paddingTop:"98px"}, function(){	
+					$('.mainpanel').animate({width:"805px",height:"6332px", paddingTop:"218px"}, function(){	
 
 						$('.screencontainer').delay(0).animate({height:"6332px",width:"805px"},0);
 
@@ -737,7 +737,7 @@ $('#apple').click(function(){
 						$('#galleryeight').attr('src','img/previews/12_1_10.jpg');
 						$('#gallerynine').attr('src','img/previews/12_1_11.gif');
 						$('#galleryten').attr('src','img/previews/12_1_14.gif');
-
+	$('.previewing').css('display','block');
 
 						$('#galleryonelink').attr('href','img/original/12_1_1.jpg');
 						$('#gallerytwolink').attr('href','img/original/12_1_2.jpg');
@@ -750,7 +750,7 @@ $('#apple').click(function(){
 						$('#galleryninelink').attr('href','img/original/12_1_11.gif');
 						$('#gallerytenlink').attr('href','img/original/12_1_14.gif');
 
-						$('.previewing').css('display','block');
+					
 						$('#galleryeleven').hide();
 						$('#gallerytwelve').hide();
 
@@ -799,12 +799,12 @@ $('#mashup').click(function(){
 
 	$('.protectiveshield').show(function(){
 		$('.mainscreen').hide(0,function(){
-			$('.topscreen').stop(true,true).animate({top:"-320px"},120);
-			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"250px"}, function(){
+			$('.topscreen').stop(true,true).animate({top:"-200px"},120);
+			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"350px"}, function(){
 
 				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
 					
-					$('.mainpanel').animate({width:"805px",height:"9508px", paddingTop:"98px"}, function(){	
+					$('.mainpanel').animate({width:"805px",height:"9508px", paddingTop:"218px"}, function(){	
 
 						$('.screencontainer').delay(0).animate({height:"9508px",width:"805px"},0);
 
@@ -829,7 +829,7 @@ $('#mashup').click(function(){
 						$('#gallerynineteen').attr('src','img/previews/13_1_18.jpg');
 						$('#gallerytwenty').attr('src','img/previews/13_1_19.jpg');
 						$('#gallerytwentyone').attr('src','img/previews/13_1_21.jpg');
-
+$('.previewing').css('display','block');
 
 						$('#galleryonelink').attr('href','img/original/13_1_20.jpg');
 						$('#gallerytwolink').attr('href','img/original/13_1_1.jpg');
@@ -853,7 +853,7 @@ $('#mashup').click(function(){
 						$('#gallerytwentylink').attr('href','img/original/13_1_19.jpg');
 						$('#gallerytwentyonelink').attr('href','img/original/13_1_21.jpg');
 
-						$('.previewing').css('display','block');
+						
 						$('#videoframe').hide();
 						$('#captionone').html('MASH-UP BOOK');
 						$('#captiontwo').html("A collection of small vector based and 3D based posters gathered and layed out in one brochure. All 3d models are done in Cinema4D. Vector graphics created in Illustrator. This book is supposed to show a combination of typography, illustration and 3d modelling in one project.");
@@ -890,12 +890,12 @@ $('#virgil').click(function(){
 
 	$('.protectiveshield').show(function(){
 		$('.mainscreen').hide(0,function(){
-			$('.topscreen').stop(true,true).animate({top:"-320px"},120);
-			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"250px"}, function(){
+			$('.topscreen').stop(true,true).animate({top:"-200px"},120);
+			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"350px"}, function(){
 
 				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
 					
-					$('.mainpanel').animate({width:"805px",height:"3385px", paddingTop:"98px"}, function(){	
+					$('.mainpanel').animate({width:"805px",height:"3385px", paddingTop:"218px"}, function(){	
 
 						$('.screencontainer').delay(0).animate({height:"3850px",width:"805px"},0);
 
@@ -906,7 +906,7 @@ $('#virgil').click(function(){
 						$('#galleryfive').attr('src','img/previews/14_1_5.jpg');
 						$('#gallerysix').attr('src','img/previews/14_1_6.jpg');
 						$('#galleryseven').attr('src','img/previews/14_1_7.jpg');
-
+$('.previewing').css('display','block');
 						$('#galleryonelink').attr('href','img/original/14_1_1.jpg');
 						$('#gallerytwolink').attr('href','img/original/14_1_2.jpg');
 						$('#gallerythreelink').attr('href','img/original/14_1_3.jpg');
@@ -915,7 +915,7 @@ $('#virgil').click(function(){
 						$('#gallerysixlink').attr('href','img/original/14_1_6.jpg');
 						$('#gallerysevenlink').attr('href','img/original/14_1_7.jpg');
 
-						$('.previewing').css('display','block');
+						
 						$('#galleryeight').hide();
 						$('#gallerynine').hide();
 						$('#galleryten').hide();
@@ -967,12 +967,12 @@ $('#record').click(function(){
 
 	$('.protectiveshield').show(function(){
 		$('.mainscreen').hide(0,function(){
-			$('.topscreen').stop(true,true).animate({top:"-320px"},120);
-			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"250px"}, function(){
+			$('.topscreen').stop(true,true).animate({top:"-200px"},120);
+			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"350px"}, function(){
 
 				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
 					
-					$('.mainpanel').animate({width:"805px",height:"2440px", paddingTop:"98px"}, function(){	
+					$('.mainpanel').animate({width:"805px",height:"2440px", paddingTop:"218px"}, function(){	
 
 						$('.screencontainer').delay(0).animate({height:"2440px",width:"805px"},0);
 
@@ -982,8 +982,7 @@ $('#record').click(function(){
 						$('#galleryfour').attr('src','img/previews/15_1_4.jpg');
 						$('#galleryfive').attr('src','img/previews/15_1_5.jpg');
 						$('#gallerysix').attr('src','img/previews/15_1_6.jpg');
-
-
+$('.previewing').css('display','block');
 
 						$('#galleryonelink').attr('href','img/original/15_1_3.jpg');
 						$('#gallerytwolink').attr('href','img/original/15_1_2.jpg');
@@ -992,7 +991,7 @@ $('#record').click(function(){
 						$('#galleryfivelink').attr('href','img/original/15_1_5.jpg');
 						$('#gallerysixlink').attr('href','img/original/15_1_6.jpg');
 
-						$('.previewing').css('display','block');
+						
 						$('#galleryseven').hide();
 						$('#galleryeight').hide();
 						$('#gallerynine').hide();
@@ -1043,12 +1042,12 @@ $('#subway').click(function(){
 
 	$('.protectiveshield').show(function(){
 		$('.mainscreen').hide(0,function(){
-			$('.topscreen').stop(true,true).animate({top:"-320px"},120);
-			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"250px"}, function(){
+			$('.topscreen').stop(true,true).animate({top:"-200px"},120);
+			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"350px"}, function(){
 
 				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
 					
-					$('.mainpanel').animate({width:"805px",height:"2680px", paddingTop:"98px"}, function(){	
+					$('.mainpanel').animate({width:"805px",height:"2680px", paddingTop:"218px"}, function(){	
 
 						$('.screencontainer').delay(0).animate({height:"2680px",width:"805px"},0);
 
@@ -1057,14 +1056,14 @@ $('#subway').click(function(){
 						$('#gallerythree').attr('src','img/previews/16_1_3.jpg');
 						$('#galleryfour').attr('src','img/previews/16_1_4.jpg');
 						$('#galleryfive').attr('src','img/previews/16_1_5.jpg');
-
+$('.previewing').css('display','block');
 						$('#galleryonelink').attr('href','img/original/16_1_1.jpg');
 						$('#gallerytwolink').attr('href','img/original/16_1_2.jpg');
 						$('#gallerythreelink').attr('href','img/original/16_1_3.jpg');
 						$('#galleryfourlink').attr('href','img/original/16_1_4.jpg');
 						$('#galleryfivelink').attr('href','img/original/16_1_5.jpg');
 
-						$('.previewing').css('display','block');
+						
 						$('#gallerysix').hide();
 						$('#galleryseven').hide();
 						$('#galleryeight').hide();
@@ -1112,12 +1111,12 @@ $('#octopus').click(function(){
 
 	$('.protectiveshield').show(function(){
 		$('.mainscreen').hide(0,function(){
-			$('.topscreen').stop(true,true).animate({top:"-320px"},120);
-			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"250px"}, function(){
+			$('.topscreen').stop(true,true).animate({top:"-200px"},120);
+			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"350px"}, function(){
 
 				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
 					
-					$('.mainpanel').animate({width:"805px",height:"3503px", paddingTop:"98px"}, function(){	
+					$('.mainpanel').animate({width:"805px",height:"3503px", paddingTop:"218px"}, function(){	
 
 						$('.screencontainer').delay(0).animate({height:"3503px",width:"805px"},0);
 
@@ -1129,7 +1128,10 @@ $('#octopus').click(function(){
 						$('#gallerysix').attr('src','img/previews/17_1_6.jpg');
 						$('#galleryseven').attr('src','img/previews/17_1_7.jpg');
 						$('#galleryeight').attr('src','img/previews/17_1_8.jpg');
-
+						$('#videoframe').attr('src','https://www.youtube.com/embed/wM--qNO1ii4');
+						$('#videoframe').attr('height','315px');
+						$('#videoframe').attr('showinfo','0');
+						$('.previewing').css('display','block');
 						$('#galleryonelink').attr('href','img/original/17_1_1.jpg');
 						$('#gallerytwolink').attr('href','img/original/17_1_2.jpg');
 						$('#gallerythreelink').attr('href','img/original/17_1_3.jpg');
@@ -1138,8 +1140,6 @@ $('#octopus').click(function(){
 						$('#gallerysixlink').attr('href','img/original/17_1_6.jpg');
 						$('#gallerysevenlink').attr('href','img/original/17_1_7.jpg');
 						$('#galleryeightlink').attr('href','img/original/17_1_8.jpg');
-
-						$('.previewing').css('display','block');
 						$('#gallerynine').hide();
 						$('#galleryten').hide();
 						$('#galleryeleven').hide();
@@ -1153,9 +1153,7 @@ $('#octopus').click(function(){
 						$('#gallerynineteen').hide();
 						$('#gallerytwenty').hide();
 						$('#gallerytwentyone').hide();
-						$('#videoframe').attr('src','https://www.youtube.com/embed/wM--qNO1ii4');
-						$('#videoframe').attr('height','315px');
-						$('#videoframe').attr('showinfo','0');
+						
 						$('#captionone').html("OCTOPUS ANIMATION");
 						$('#captiontwo').html("A Cinema4D short animation showing a fragile life of a tiny octopus. Octopus model was sculpted and textured in ZBrush and then brought into Cinema4D for animation. Post-production done in Adobe After Effects and Adobe Premiere.");
 						$('#captionthree').html(										
@@ -1192,12 +1190,12 @@ $('#umbrella').click(function(){
 	}
 	$('.protectiveshield').show(function(){
 		$('.mainscreen').hide(0,function(){
-			$('.topscreen').stop(true,true).animate({top:"-320px"},120);
-			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"250px"}, function(){
+			$('.topscreen').stop(true,true).animate({top:"-200px"},120);
+			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"350px"}, function(){
 
 				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
 					
-					$('.mainpanel').animate({width:"805px",height:"3070px", paddingTop:"98px"}, function(){	
+					$('.mainpanel').animate({width:"805px",height:"3070px", paddingTop:"218px"}, function(){	
 
 						$('.screencontainer').delay(0).animate({height:"3070px",width:"805px"},0);
 
@@ -1208,7 +1206,9 @@ $('#umbrella').click(function(){
 						$('#galleryfive').attr('src','img/previews/18_1_6.jpg');
 						$('#gallerysix').attr('src','img/previews/18_1_7.jpg');
 						$('#galleryseven').attr('src','img/previews/18_1_8.jpg');
-
+						$('#videoframe').attr('src','https://www.youtube.com/embed/k7BCWxulqWs');
+						$('#videoframe').attr('height','315px');
+						$('#videoframe').attr('showinfo','0');
 						$('#galleryonelink').attr('href','img/original/18_1_1.jpg');
 						$('#gallerytwolink').attr('href','img/original/18_1_2.jpg');
 						$('#gallerythreelink').attr('href','img/original/18_1_4.jpg');
@@ -1216,7 +1216,6 @@ $('#umbrella').click(function(){
 						$('#galleryfivelink').attr('href','img/original/18_1_6.jpg');
 						$('#gallerysixlink').attr('href','img/original/18_1_7.jpg');
 						$('#gallerysevenlink').attr('href','img/original/18_1_8.jpg');
-
 						$('.previewing').css('display','block');
 						$('#galleryeight').hide();									
 						$('#gallerynine').hide();
@@ -1232,9 +1231,7 @@ $('#umbrella').click(function(){
 						$('#gallerynineteen').hide();
 						$('#gallerytwenty').hide();
 						$('#gallerytwentyone').hide();
-						$('#videoframe').attr('src','https://www.youtube.com/embed/k7BCWxulqWs');
-						$('#videoframe').attr('height','315px');
-						$('#videoframe').attr('showinfo','0');
+						
 						$('#captionone').html("UMBRELLA PROJECT ANIMATION");
 						$('#captiontwo').html("A short 3D/Vector video composition about umbrellas and their role in our life. A project is a combination of various techinques aimed at a final video result. Umbrella was modelled in 3Ds Max and brought to Cinema4D and Marmoset Toolbag for animation. Vector based elements were done in Adobe Illustrator and video footage was produced by a regular mobile phone camera.");
 						$('#captionthree').html(										
@@ -1270,12 +1267,12 @@ $('#indoeuropica').click(function(){
 	}
 	$('.protectiveshield').show(function(){
 		$('.mainscreen').hide(0,function(){
-			$('.topscreen').stop(true,true).animate({top:"-320px"},120);
-			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"250px"}, function(){
+			$('.topscreen').stop(true,true).animate({top:"-200px"},120);
+			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"350px"}, function(){
 
 				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
 					
-					$('.mainpanel').animate({width:"805px",height:"857px", paddingTop:"98px"}, function(){	
+					$('.mainpanel').animate({width:"805px",height:"857px", paddingTop:"218px"}, function(){	
 
 						$('.screencontainer').delay(0).animate({height:"857px",width:"805px"},0);
 
@@ -1344,12 +1341,12 @@ $('#warming').click(function(){
 	}
 	$('.protectiveshield').show(function(){
 		$('.mainscreen').hide(0,function(){
-			$('.topscreen').stop(true,true).animate({top:"-320px"},120);
-			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"250px"}, function(){
+			$('.topscreen').stop(true,true).animate({top:"-200px"},120);
+			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"350px"}, function(){
 
 				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
 					
-					$('.mainpanel').animate({width:"805px",height:"1368px", paddingTop:"98px"}, function(){	
+					$('.mainpanel').animate({width:"805px",height:"1368px", paddingTop:"218px"}, function(){	
 
 						$('.screencontainer').delay(0).animate({height:"1368px",width:"805px"},0);
 
@@ -1421,12 +1418,12 @@ $('#pastpresent').click(function(){
 	}
 	$('.protectiveshield').show(function(){
 		$('.mainscreen').hide(0,function(){
-			$('.topscreen').stop(true,true).animate({top:"-320px"},120);
-			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"250px"}, function(){
+			$('.topscreen').stop(true,true).animate({top:"-200px"},120);
+			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"350px"}, function(){
 
 				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
 					
-					$('.mainpanel').animate({width:"805px",height:"1835px", paddingTop:"98px"}, function(){	
+					$('.mainpanel').animate({width:"805px",height:"1835px", paddingTop:"218px"}, function(){	
 
 						$('.screencontainer').delay(0).animate({height:"1835px",width:"805px"},0);
 
@@ -1496,12 +1493,12 @@ $('#iss').click(function(){
 	}
 	$('.protectiveshield').show(function(){
 		$('.mainscreen').hide(0,function(){
-			$('.topscreen').stop(true,true).animate({top:"-320px"},120);
-			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"250px"}, function(){
+			$('.topscreen').stop(true,true).animate({top:"-200px"},120);
+			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"350px"}, function(){
 
 				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
 					
-					$('.mainpanel').animate({width:"805px",height:"2379px", paddingTop:"98px"}, function(){	
+					$('.mainpanel').animate({width:"805px",height:"2379px", paddingTop:"218px"}, function(){	
 
 						$('.screencontainer').delay(0).animate({height:"2379px",width:"805px"},0);
 
@@ -1570,12 +1567,12 @@ $('#madlib').click(function(){
 	}
 	$('.protectiveshield').show(function(){
 		$('.mainscreen').hide(0,function(){
-			$('.topscreen').stop(true,true).animate({top:"-320px"},120);
-			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"250px"}, function(){
+			$('.topscreen').stop(true,true).animate({top:"-200px"},120);
+			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"350px"}, function(){
 
 				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
 					
-					$('.mainpanel').animate({width:"805px",height:"1246px", paddingTop:"98px"}, function(){	
+					$('.mainpanel').animate({width:"805px",height:"1246px", paddingTop:"218px"}, function(){	
 
 						$('.screencontainer').delay(0).animate({height:"1246px",width:"805px"},0);
 
@@ -1643,12 +1640,12 @@ $('#testingsite').click(function(){
 	}
 	$('.protectiveshield').show(function(){
 		$('.mainscreen').hide(0,function(){
-			$('.topscreen').stop(true,true).animate({top:"-320px"},120);
-			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"250px"}, function(){
+			$('.topscreen').stop(true,true).animate({top:"-200px"},120);
+			$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"350px"}, function(){
 
 				$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
 					
-					$('.mainpanel').animate({width:"805px",height:"938px", paddingTop:"98px"}, function(){	
+					$('.mainpanel').animate({width:"805px",height:"938px", paddingTop:"218px"}, function(){	
 
 						$('.screencontainer').delay(0).animate({height:"938px",width:"805px"},0);
 

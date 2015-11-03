@@ -3,8 +3,11 @@ $(window).load(function(){
 	var globalswitchNumber;
 
 	$.getJSON('database.json', function(data)
-	{
-		$('#irbis').click(function(){
+	{	
+		console.log(data);
+		var database = data.projects;
+		$('#irbis').click(function(e){
+			console.log(e);
 
 			globalswitchNumber = 0;
 
@@ -25,9 +28,9 @@ $(window).load(function(){
 								$('.screencontainer').delay(0).animate({height:database[globalswitchNumber].frameheight,width:"805px"},0);
 
 
-								$('#galleryone').attr('src','database[globalswitchNumber].galleryone');
-								$('#galleryonelink').attr('href','database[globalswitchNumber].galleryonelink');
-								$('#galleryone').css("display", "database[globalswitchNumber].galleryonedisplay");
+								$('#galleryone').attr('src',database[globalswitchNumber].galleryone);
+								$('#galleryonelink').attr('href',database[globalswitchNumber].galleryonelink);
+								$('#galleryone').css("display", database[globalswitchNumber].galleryonedisplay);
 
 								$('#gallerytwo').attr('src','database[globalswitchNumber].gallerytwo');
 								$('#gallerytwolink').attr('href','database[globalswitchNumber].gallerytwolink');

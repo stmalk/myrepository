@@ -1,81 +1,148 @@
 $(window).load(function(){
 
+	var globalswitchNumber;
 
+	$.getJSON('database.json', function(data)
+	{
+		$('#irbis').click(function(){
 
+			globalswitchNumber = 0;
 
-
-
-	$('#irbis').click(function(){
-
-		function clearjQueryCache(){
-			for (var x in jQuery.cache){
-				delete jQuery.cache[x];
+			function clearjQueryCache(){
+				for (var x in jQuery.cache){
+					delete jQuery.cache[x];
+				}
 			}
-		}
 
-		$('.protectiveshield').show(function(){
-			$('.mainscreen').hide(0,function(){
-				$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"250px"}, function(){
-					$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
-
-
-						$('.mainpanel').animate({width:"805px",height:"1956px", paddingTop:"218px"}, function(){	
-							$('.topscreen').stop(true,true).animate({top:"-200px"},20);																			
-							$('.screencontainer').delay(0).animate({height:"1956px",width:"805px"},0);
+			$('.protectiveshield').show(function(){
+				$('.mainscreen').hide(0,function(){
+					$('.mainpanel').clearQueue().animate({width:"100px", height:"100px", left:"250px"}, function(){
+						$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
 
 
-							$('#galleryone').attr('src','img/previews/3_1_1.jpg');
-							$('#galleryonelink').attr('href','img/original/3_1_1.jpg');
-							$('#gallerytwo').attr('src','img/previews/3_1_2.jpg');
-							$('#gallerytwolink').attr('href','img/original/3_1_2.jpg');
-							$('#gallerythree').attr('src','img/previews/3_1_3.jpg');
-							$('#gallerythreelink').attr('href','img/original/3_1_3.jpg');
-							$('#galleryfour').attr('src','img/previews/3_1_4.jpg');
-							$('#galleryfourlink').attr('href','img/original/3_1_4.jpg');
-							$('#galleryfive').attr('src','img/previews/3_1_5.jpg');
-							$('#galleryfivelink').attr('href','img/original/3_1_5.jpg');
-							$('.previewing').css('display','block');
-							$('#gallerysix').hide();
-							$('#galleryseven').hide();
-							$('#galleryeight').hide();
-							$('#gallerynine').hide();
-							$('#galleryten').hide();
-							$('#galleryeleven').hide();
-							$('#gallerytwelve').hide();
-							$('#gallerythirteen').hide();
-							$('#galleryfourteen').hide();
-							$('#galleryfifteen').hide();
-							$('#gallerysixteen').hide();
-							$('#galleryseventeen').hide();
-							$('#galleryeighteen').hide();
-							$('#gallerynineteen').hide();
-							$('#gallerytwenty').hide();
-							$('#gallerytwentyone').hide();
-							$('#videoframe').hide();
-							$('#captionone').html('HUNTING IRBIS');
-							$('#captiontwo').html('Rare and gorgeous "irbis" snow leopards observe the surroundings ready to hunt. Scuplted with Zbrush, retopoed with Topogun, textured with MARI, scene assembled in 3dsMax using standard Hair&Fur plugin and rendered with Vray. Post-processed in Adobe Photoshop');
-							$('#captionthree').html(
-								'<img class="smallicon" src="logos/3dmax.png" height="20px" width="20px" title="3D Stuio Max">'+
-								'<img class="smallicon" src="logos/zbrush.png" height="20px" width="20px" title="ZBrush">'+
-								'<img class="smallicon" src="logos/topogun.png" height="20px" width="20px" title="Topogun">'+
-								'<img class="smallicon" src="logos/vray.png" height="20px" width="20px" title="V-Ray">'+
-								'<img class="smallicon" src="logos/mari.png" height="20px" width="20px" title="MARI Foundry">'+
-								'<img class="smallicon" src="logos/photoshop.png" height="20px" width="20px" title="Adobe Photoshop">'
-								);
-
-							setTimeout(function(){$('#irbiswindow').html($("#tableToClone").clone());},0);
-
-							$('#irbiswindow').show();
-							$('.protectiveshield').hide();
+							$('.mainpanel').animate({width:"805px",height:database.contentMassive[globalswitchNumber].frameheight, paddingTop:"218px"}, function(){	
+								$('.topscreen').stop(true,true).animate({top:"-200px"},20);																			
+								$('.screencontainer').delay(0).animate({height:database.contentMassive[globalswitchNumber].frameheight,width:"805px"},0);
 
 
+								$('#galleryone').attr('src','database.contentMassive[globalswitchNumber].galleryone');
+								$('#galleryonelink').attr('href','database.contentMassive[globalswitchNumber].galleryonelink');
+								$('#galleryone').css("display", "database.contentMassive[globalswitchNumber].galleryonedisplay");
 
-						});
+								$('#gallerytwo').attr('src','database.contentMassive[globalswitchNumber].gallerytwo');
+								$('#gallerytwolink').attr('href','database.contentMassive[globalswitchNumber].gallerytwolink');
+								$('#gallerytwo').css("display", "database.contentMassive[globalswitchNumber].gallerytwodisplay");
+
+								$('#gallerythree').attr('src','database.contentMassive[globalswitchNumber].gallerythree');
+								$('#gallerythreelink').attr('href','database.contentMassive[globalswitchNumber].gallerythreelink');
+								$('#gallerythree').css("display", "database.contentMassive[globalswitchNumber].gallerythreedisplay");
+
+								$('#galleryfour').attr('src','database.contentMassive[globalswitchNumber].galleryfour');
+								$('#galleryfourlink').attr('href','database.contentMassive[globalswitchNumber].galleryfourlink');
+								$('#galleryfour').css("display", "database.contentMassive[globalswitchNumber].images.galleryfourdisplay");
+
+								$('#galleryfive').attr('src','database.contentMassive[globalswitchNumber].galleryfive');
+								$('#galleryfivelink').attr('href','database.contentMassive[globalswitchNumber].galleryfivelink');
+								$('#galleryfive').css("display", "database.contentMassive[globalswitchNumber].galleryfivedisplay");
+
+								$('#gallerysix').attr('src','database.contentMassive[globalswitchNumber].gallerysix');
+								$('#gallerysixlink').attr('href','database.contentMassive[globalswitchNumber].gallerysixlink');
+								$('#gallerysix').css("display", "database.contentMassive[globalswitchNumber].gallerysixdisplay");
+
+								$('#galleryseven').attr('src','database.contentMassive[globalswitchNumber].galleryseven');
+								$('#gallerysevenlink').attr('href','database.contentMassive[globalswitchNumber].gallerysevenlink');
+								$('#galleryseven').css("display", "database.contentMassive[globalswitchNumber].gallerysevendisplay");
+
+								$('#galleryeight').attr('src','database.contentMassive[globalswitchNumber].galleryeight');
+								$('#galleryeightlink').attr('href','database.contentMassive[globalswitchNumber].galleryeightlink');
+								$('#galleryeight').css("display", "database.contentMassive[globalswitchNumber].galleryeightdisplay");
+
+								$('#gallerynine').attr('src','database.contentMassive[globalswitchNumber].gallerynine');
+								$('#galleryninelink').attr('href','database.contentMassive[globalswitchNumber].galleryninelink');
+								$('#gallerynine').css("display", "database.contentMassive[globalswitchNumber].galleryninedisplay");
+
+								$('#galleryten').attr('src','database.contentMassive[globalswitchNumber].galleryten');
+								$('#gallerytenlink').attr('href','database.contentMassive[globalswitchNumber].gallerytenlink');
+								$('#galleryten').css("display", "database.contentMassive[globalswitchNumber].gallerytendisplay");
+
+								$('#galleryeleven').attr('src','database.contentMassive[globalswitchNumber].galleryeleven');
+								$('#galleryelevenlink').attr('href','database.contentMassive[globalswitchNumber].galleryelevenlink');
+								$('#galleryeleven').css("display", "database.contentMassive[globalswitchNumber].galleryelevendisplay");
+
+								$('#gallerytwelve').attr('src','database.contentMassive[globalswitchNumber].gallerytwelve');
+								$('#gallerytwelvelink').attr('href','database.contentMassive[globalswitchNumber].gallerytwelvelink');
+								$('#gallerytwelve').css("display", "database.contentMassive[globalswitchNumber].gallerytwelvedisplay");
+
+								$('#gallerythirteen').attr('src','database.contentMassive[globalswitchNumber].gallerythirteen');
+								$('#gallerythirteenlink').attr('href','database.contentMassive[globalswitchNumber].gallerythirteenlink');
+								$('#gallerythirteen').css("display", "database.contentMassive[globalswitchNumber].gallerythirteendisplay");
+
+								$('#galleryfourteen').attr('src','database.contentMassive[globalswitchNumber].galleryfourteen');
+								$('#galleryfourteenlink').attr('href','database.contentMassive[globalswitchNumber].galleryfourteenlink');
+								$('#galleryfourteen').css("display", "database.contentMassive[globalswitchNumber].galleryfourteendisplay");
+
+								$('#galleryfifteen').attr('src','database.contentMassive[globalswitchNumber].galleryfifteen');
+								$('#galleryfifteenlink').attr('href','database.contentMassive[globalswitchNumber].galleryfifteenlink');
+								$('#galleryfifteen').css("display", "database.contentMassive[globalswitchNumber].galleryfifteendisplay");
+
+								$('#gallerysixteen').attr('src','database.contentMassive[globalswitchNumber].gallerysixteen');
+								$('#gallerysixteenlink').attr('href','database.contentMassive[globalswitchNumber].gallerysixteenlink');
+								$('#gallerysixteen').css("display", "database.contentMassive[globalswitchNumber].gallerysixteendisplay");
+
+								$('#galleryseventeen').attr('src','database.contentMassive[globalswitchNumber].galleryseventeen');
+								$('#galleryseventeenlink').attr('href','database.contentMassive[globalswitchNumber].galleryseventeenlink');
+								$('#galleryseventeen').css("display", "database.contentMassive[globalswitchNumber].galleryseventeendisplay");
+
+								$('#galleryeighteen').attr('src','database.contentMassive[globalswitchNumber].galleryeighteen');
+								$('#galleryeighteenlink').attr('href','database.contentMassive[globalswitchNumber].galleryeighteenlink');
+								$('#galleryeighteen').css("display", "database.contentMassive[globalswitchNumber].galleryeighteendisplay");
+
+								$('#gallerynineteen').attr('src','database.contentMassive[globalswitchNumber].gallerynineteen');
+								$('#gallerynineteenlink').attr('href','database.contentMassive[globalswitchNumber].gallerynineteenlink');
+								$('#gallerynineteen').css("display", "database.contentMassive[globalswitchNumber].gallerynineteendisplay");
+
+								$('#gallerytwenty').attr('src','database.contentMassive[globalswitchNumber].gallerytwenty');
+								$('#gallerytwentylink').attr('href','database.contentMassive[globalswitchNumber].gallerytwentylink');
+								$('#gallerytwenty').css("display", "database.contentMassive[globalswitchNumber].gallerytwentydisplay");
+
+								$('#gallerytwentyone').attr('src','database.contentMassive[globalswitchNumber].gallerytwentyone');
+								$('#gallerytwentyonelink').attr('href','database.contentMassive[globalswitchNumber].gallerytwentyonelink');
+								$('#gallerytwentyone').css("display", "database.contentMassive[globalswitchNumber].gallerytwentyonedisplay");
+
+
+								$('#videoframe').css("display", "database.contentMassive[globalswitchNumber].videoframedisplay");
+								$('#videoframe').attr('src',"database.contentMassive[globalswitchNumber].videoframe");
+								$('#videoframe').attr('height','database.contentMassive[globalswitchNumber].videoframeheight');
+
+								$('#captionone').html('database.contentMassive[globalswitchNumber].captionone');
+								$('#captiontwo').html('database.contentMassive[globalswitchNumber].captiontwo');
+								$('#captionthree').html('database.contentMassive[globalswitchNumber].captionthree');
+
+								$('.previewing').css('display','block');
+								setTimeout(function(){$('#irbiswindow').html($("#tableToClone").clone());},0);
+
+								$('#irbiswindow').show();
+								$('.protectiveshield').hide();
+
+
+
+							});
 });
 });		
 });
 });
 });
+
+
+
+
+
+
+
+}); 
+
+
+
 
 
 $('#opportunists').click(function(){
@@ -106,7 +173,7 @@ $('#opportunists').click(function(){
 						$('#gallerysix').attr('src','img/previews/4_1_6.jpg');
 						$('#galleryseven').attr('src','img/previews/4_1_7.jpg');
 						$('#galleryeight').attr('src','img/previews/4_1_8.jpg');
-$('.previewing').css('display','block');
+						$('.previewing').css('display','block');
 						$('#galleryonelink').attr('href','img/original/4_1_1.jpg');
 						$('#gallerytwolink').attr('href','img/original/4_1_2.jpg');
 						$('#gallerythreelink').attr('href','img/original/4_1_3.jpg');
@@ -184,7 +251,7 @@ $('#promise').click(function(){
 						$('#gallerythree').attr('src','img/previews/5_1_3.jpg');
 						$('#galleryfour').attr('src','img/previews/5_1_4.jpg');
 						$('#galleryfive').attr('src','img/previews/5_1_5.jpg');
-$('.previewing').css('display','block');
+						$('.previewing').css('display','block');
 						$('#galleryonelink').attr('href','img/original/5_1_2.jpg');
 						$('#gallerytwolink').attr('href','img/original/5_1_1.jpg');
 						$('#gallerythreelink').attr('href','img/original/5_1_3.jpg');
@@ -261,7 +328,7 @@ $('#cyborg').click(function(){
 						$('#galleryfour').attr('src','img/previews/6_1_3.jpg');
 						$('#galleryfive').attr('src','img/previews/6_1_4.jpg');
 						$('#gallerysix').attr('src','img/previews/6_1_5.jpg');
-$('.previewing').css('display','block');
+						$('.previewing').css('display','block');
 						$('#galleryonelink').attr('href','img/original/6_1_1.jpg');
 						$('#gallerytwolink').attr('href','img/original/6_1_2.jpg');
 						$('#gallerythreelink').attr('href','img/original/6_1_6.jpg');
@@ -342,7 +409,7 @@ $('#robo').click(function(){
 						$('#galleryfive').attr('src','img/previews/7_1_5.jpg');
 						$('#gallerysix').attr('src','img/previews/7_1_6.jpg');
 						$('#galleryseven').attr('src','img/previews/7_1_7.jpg');
-$('.previewing').css('display','block');
+						$('.previewing').css('display','block');
 						$('#galleryonelink').attr('href','img/original/7_1_1.jpg');
 						$('#gallerytwolink').attr('href','img/original/7_1_2.jpg');
 						$('#gallerythreelink').attr('href','img/original/7_1_3.jpg');
@@ -421,7 +488,7 @@ $('#roller').click(function(){
 						$('#gallerytwo').attr('src','img/previews/8_1_1.jpg');
 						$('#gallerythree').attr('src','img/previews/8_1_3.jpg');
 						$('#galleryfour').attr('src','img/previews/8_1_4.jpg');
-$('.previewing').css('display','block');
+						$('.previewing').css('display','block');
 						$('#galleryonelink').attr('href','img/original/8_1_2.jpg');
 						$('#gallerytwolink').attr('href','img/original/8_1_1.jpg');
 						$('#gallerythreelink').attr('href','img/original/8_1_3.jpg');
@@ -498,12 +565,12 @@ $('#pantheon').click(function(){
 						$('#galleryone').attr('src','img/previews/9_1_1.jpg');
 						$('#gallerytwo').attr('src','img/previews/9_1_2.jpg');
 						$('#gallerythree').attr('src','img/previews/9_1_3.jpg');
-	$('.previewing').css('display','block');
+						$('.previewing').css('display','block');
 						$('#galleryonelink').attr('href','img/original/9_1_1.jpg');
 						$('#gallerytwolink').attr('href','img/original/9_1_2.jpg');
 						$('#gallerythreelink').attr('href','img/original/9_1_3.jpg');
 
-					
+
 						$('#galleryfour').hide();
 						$('#galleryfive').hide();
 						$('#gallerysix').hide();
@@ -579,7 +646,7 @@ $('#hoplite').click(function(){
 						$('#gallerynine').attr('src','img/previews/10_1_3.jpg');
 						$('#galleryten').attr('src','img/previews/10_1_4.jpg');
 						$('#galleryeleven').attr('src','img/previews/10_1_1.jpg');
-$('.previewing').css('display','block');
+						$('.previewing').css('display','block');
 						$('#galleryonelink').attr('href','img/original/10_1_5.jpg');
 						$('#gallerytwolink').attr('href','img/original/10_1_2.jpg');
 						$('#gallerythreelink').attr('href','img/original/10_1_8.jpg');
@@ -663,7 +730,7 @@ $('#cards').click(function(){
 						$('#galleryten').attr('src','img/previews/11_1_10.jpg');
 						$('#galleryeleven').attr('src','img/previews/11_1_11.jpg');
 						$('#gallerytwelve').attr('src','img/previews/11_1_12.jpg');
-$('.previewing').css('display','block');
+						$('.previewing').css('display','block');
 						$('#galleryonelink').attr('href','img/original/11_1_1.jpg');
 						$('#gallerytwolink').attr('href','img/original/11_1_2.jpg');
 						$('#gallerythreelink').attr('href','img/original/11_1_3.jpg');
@@ -737,7 +804,7 @@ $('#apple').click(function(){
 						$('#galleryeight').attr('src','img/previews/12_1_10.jpg');
 						$('#gallerynine').attr('src','img/previews/12_1_11.gif');
 						$('#galleryten').attr('src','img/previews/12_1_14.gif');
-	$('.previewing').css('display','block');
+						$('.previewing').css('display','block');
 
 						$('#galleryonelink').attr('href','img/original/12_1_1.jpg');
 						$('#gallerytwolink').attr('href','img/original/12_1_2.jpg');
@@ -750,7 +817,7 @@ $('#apple').click(function(){
 						$('#galleryninelink').attr('href','img/original/12_1_11.gif');
 						$('#gallerytenlink').attr('href','img/original/12_1_14.gif');
 
-					
+
 						$('#galleryeleven').hide();
 						$('#gallerytwelve').hide();
 
@@ -829,7 +896,7 @@ $('#mashup').click(function(){
 						$('#gallerynineteen').attr('src','img/previews/13_1_18.jpg');
 						$('#gallerytwenty').attr('src','img/previews/13_1_19.jpg');
 						$('#gallerytwentyone').attr('src','img/previews/13_1_21.jpg');
-$('.previewing').css('display','block');
+						$('.previewing').css('display','block');
 
 						$('#galleryonelink').attr('href','img/original/13_1_20.jpg');
 						$('#gallerytwolink').attr('href','img/original/13_1_1.jpg');
@@ -906,7 +973,7 @@ $('#virgil').click(function(){
 						$('#galleryfive').attr('src','img/previews/14_1_5.jpg');
 						$('#gallerysix').attr('src','img/previews/14_1_6.jpg');
 						$('#galleryseven').attr('src','img/previews/14_1_7.jpg');
-$('.previewing').css('display','block');
+						$('.previewing').css('display','block');
 						$('#galleryonelink').attr('href','img/original/14_1_1.jpg');
 						$('#gallerytwolink').attr('href','img/original/14_1_2.jpg');
 						$('#gallerythreelink').attr('href','img/original/14_1_3.jpg');
@@ -982,7 +1049,7 @@ $('#record').click(function(){
 						$('#galleryfour').attr('src','img/previews/15_1_4.jpg');
 						$('#galleryfive').attr('src','img/previews/15_1_5.jpg');
 						$('#gallerysix').attr('src','img/previews/15_1_6.jpg');
-$('.previewing').css('display','block');
+						$('.previewing').css('display','block');
 
 						$('#galleryonelink').attr('href','img/original/15_1_3.jpg');
 						$('#gallerytwolink').attr('href','img/original/15_1_2.jpg');
@@ -1056,7 +1123,7 @@ $('#subway').click(function(){
 						$('#gallerythree').attr('src','img/previews/16_1_3.jpg');
 						$('#galleryfour').attr('src','img/previews/16_1_4.jpg');
 						$('#galleryfive').attr('src','img/previews/16_1_5.jpg');
-$('.previewing').css('display','block');
+						$('.previewing').css('display','block');
 						$('#galleryonelink').attr('href','img/original/16_1_1.jpg');
 						$('#gallerytwolink').attr('href','img/original/16_1_2.jpg');
 						$('#gallerythreelink').attr('href','img/original/16_1_3.jpg');

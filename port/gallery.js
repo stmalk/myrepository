@@ -20,103 +20,103 @@ $(window).load(function(){
 						$('.screencontainer').animate({height:"100px", width:"100px"}, 0, function(){
 
 
-							$('.mainpanel').animate({width:"805px",height:database.contentMassive[globalswitchNumber].frameheight, paddingTop:"218px"}, function(){	
+							$('.mainpanel').animate({width:"805px",height:database[globalswitchNumber].frameheight, paddingTop:"218px"}, function(){	
 								$('.topscreen').stop(true,true).animate({top:"-200px"},20);																			
-								$('.screencontainer').delay(0).animate({height:database.contentMassive[globalswitchNumber].frameheight,width:"805px"},0);
+								$('.screencontainer').delay(0).animate({height:database[globalswitchNumber].frameheight,width:"805px"},0);
 
 
-								$('#galleryone').attr('src','database.contentMassive[globalswitchNumber].galleryone');
-								$('#galleryonelink').attr('href','database.contentMassive[globalswitchNumber].galleryonelink');
-								$('#galleryone').css("display", "database.contentMassive[globalswitchNumber].galleryonedisplay");
+								$('#galleryone').attr('src','database[globalswitchNumber].galleryone');
+								$('#galleryonelink').attr('href','database[globalswitchNumber].galleryonelink');
+								$('#galleryone').css("display", "database[globalswitchNumber].galleryonedisplay");
 
-								$('#gallerytwo').attr('src','database.contentMassive[globalswitchNumber].gallerytwo');
-								$('#gallerytwolink').attr('href','database.contentMassive[globalswitchNumber].gallerytwolink');
-								$('#gallerytwo').css("display", "database.contentMassive[globalswitchNumber].gallerytwodisplay");
+								$('#gallerytwo').attr('src','database[globalswitchNumber].gallerytwo');
+								$('#gallerytwolink').attr('href','database[globalswitchNumber].gallerytwolink');
+								$('#gallerytwo').css("display", "database[globalswitchNumber].gallerytwodisplay");
 
-								$('#gallerythree').attr('src','database.contentMassive[globalswitchNumber].gallerythree');
-								$('#gallerythreelink').attr('href','database.contentMassive[globalswitchNumber].gallerythreelink');
-								$('#gallerythree').css("display", "database.contentMassive[globalswitchNumber].gallerythreedisplay");
+								$('#gallerythree').attr('src','database[globalswitchNumber].gallerythree');
+								$('#gallerythreelink').attr('href','database[globalswitchNumber].gallerythreelink');
+								$('#gallerythree').css("display", "database[globalswitchNumber].gallerythreedisplay");
 
-								$('#galleryfour').attr('src','database.contentMassive[globalswitchNumber].galleryfour');
-								$('#galleryfourlink').attr('href','database.contentMassive[globalswitchNumber].galleryfourlink');
-								$('#galleryfour').css("display", "database.contentMassive[globalswitchNumber].images.galleryfourdisplay");
+								$('#galleryfour').attr('src','database[globalswitchNumber].galleryfour');
+								$('#galleryfourlink').attr('href','database[globalswitchNumber].galleryfourlink');
+								$('#galleryfour').css("display", "database[globalswitchNumber].images.galleryfourdisplay");
 
-								$('#galleryfive').attr('src','database.contentMassive[globalswitchNumber].galleryfive');
-								$('#galleryfivelink').attr('href','database.contentMassive[globalswitchNumber].galleryfivelink');
-								$('#galleryfive').css("display", "database.contentMassive[globalswitchNumber].galleryfivedisplay");
+								$('#galleryfive').attr('src','database[globalswitchNumber].galleryfive');
+								$('#galleryfivelink').attr('href','database[globalswitchNumber].galleryfivelink');
+								$('#galleryfive').css("display", "database[globalswitchNumber].galleryfivedisplay");
 
-								$('#gallerysix').attr('src','database.contentMassive[globalswitchNumber].gallerysix');
-								$('#gallerysixlink').attr('href','database.contentMassive[globalswitchNumber].gallerysixlink');
-								$('#gallerysix').css("display", "database.contentMassive[globalswitchNumber].gallerysixdisplay");
+								$('#gallerysix').attr('src','database[globalswitchNumber].gallerysix');
+								$('#gallerysixlink').attr('href','database[globalswitchNumber].gallerysixlink');
+								$('#gallerysix').css("display", "database[globalswitchNumber].gallerysixdisplay");
 
-								$('#galleryseven').attr('src','database.contentMassive[globalswitchNumber].galleryseven');
-								$('#gallerysevenlink').attr('href','database.contentMassive[globalswitchNumber].gallerysevenlink');
-								$('#galleryseven').css("display", "database.contentMassive[globalswitchNumber].gallerysevendisplay");
+								$('#galleryseven').attr('src','database[globalswitchNumber].galleryseven');
+								$('#gallerysevenlink').attr('href','database[globalswitchNumber].gallerysevenlink');
+								$('#galleryseven').css("display", "database[globalswitchNumber].gallerysevendisplay");
 
-								$('#galleryeight').attr('src','database.contentMassive[globalswitchNumber].galleryeight');
-								$('#galleryeightlink').attr('href','database.contentMassive[globalswitchNumber].galleryeightlink');
-								$('#galleryeight').css("display", "database.contentMassive[globalswitchNumber].galleryeightdisplay");
+								$('#galleryeight').attr('src','database[globalswitchNumber].galleryeight');
+								$('#galleryeightlink').attr('href','database[globalswitchNumber].galleryeightlink');
+								$('#galleryeight').css("display", "database[globalswitchNumber].galleryeightdisplay");
 
-								$('#gallerynine').attr('src','database.contentMassive[globalswitchNumber].gallerynine');
-								$('#galleryninelink').attr('href','database.contentMassive[globalswitchNumber].galleryninelink');
-								$('#gallerynine').css("display", "database.contentMassive[globalswitchNumber].galleryninedisplay");
+								$('#gallerynine').attr('src','database[globalswitchNumber].gallerynine');
+								$('#galleryninelink').attr('href','database[globalswitchNumber].galleryninelink');
+								$('#gallerynine').css("display", "database[globalswitchNumber].galleryninedisplay");
 
-								$('#galleryten').attr('src','database.contentMassive[globalswitchNumber].galleryten');
-								$('#gallerytenlink').attr('href','database.contentMassive[globalswitchNumber].gallerytenlink');
-								$('#galleryten').css("display", "database.contentMassive[globalswitchNumber].gallerytendisplay");
+								$('#galleryten').attr('src','database[globalswitchNumber].galleryten');
+								$('#gallerytenlink').attr('href','database[globalswitchNumber].gallerytenlink');
+								$('#galleryten').css("display", "database[globalswitchNumber].gallerytendisplay");
 
-								$('#galleryeleven').attr('src','database.contentMassive[globalswitchNumber].galleryeleven');
-								$('#galleryelevenlink').attr('href','database.contentMassive[globalswitchNumber].galleryelevenlink');
-								$('#galleryeleven').css("display", "database.contentMassive[globalswitchNumber].galleryelevendisplay");
+								$('#galleryeleven').attr('src','database[globalswitchNumber].galleryeleven');
+								$('#galleryelevenlink').attr('href','database[globalswitchNumber].galleryelevenlink');
+								$('#galleryeleven').css("display", "database[globalswitchNumber].galleryelevendisplay");
 
-								$('#gallerytwelve').attr('src','database.contentMassive[globalswitchNumber].gallerytwelve');
-								$('#gallerytwelvelink').attr('href','database.contentMassive[globalswitchNumber].gallerytwelvelink');
-								$('#gallerytwelve').css("display", "database.contentMassive[globalswitchNumber].gallerytwelvedisplay");
+								$('#gallerytwelve').attr('src','database[globalswitchNumber].gallerytwelve');
+								$('#gallerytwelvelink').attr('href','database[globalswitchNumber].gallerytwelvelink');
+								$('#gallerytwelve').css("display", "database[globalswitchNumber].gallerytwelvedisplay");
 
-								$('#gallerythirteen').attr('src','database.contentMassive[globalswitchNumber].gallerythirteen');
-								$('#gallerythirteenlink').attr('href','database.contentMassive[globalswitchNumber].gallerythirteenlink');
-								$('#gallerythirteen').css("display", "database.contentMassive[globalswitchNumber].gallerythirteendisplay");
+								$('#gallerythirteen').attr('src','database[globalswitchNumber].gallerythirteen');
+								$('#gallerythirteenlink').attr('href','database[globalswitchNumber].gallerythirteenlink');
+								$('#gallerythirteen').css("display", "database[globalswitchNumber].gallerythirteendisplay");
 
-								$('#galleryfourteen').attr('src','database.contentMassive[globalswitchNumber].galleryfourteen');
-								$('#galleryfourteenlink').attr('href','database.contentMassive[globalswitchNumber].galleryfourteenlink');
-								$('#galleryfourteen').css("display", "database.contentMassive[globalswitchNumber].galleryfourteendisplay");
+								$('#galleryfourteen').attr('src','database[globalswitchNumber].galleryfourteen');
+								$('#galleryfourteenlink').attr('href','database[globalswitchNumber].galleryfourteenlink');
+								$('#galleryfourteen').css("display", "database[globalswitchNumber].galleryfourteendisplay");
 
-								$('#galleryfifteen').attr('src','database.contentMassive[globalswitchNumber].galleryfifteen');
-								$('#galleryfifteenlink').attr('href','database.contentMassive[globalswitchNumber].galleryfifteenlink');
-								$('#galleryfifteen').css("display", "database.contentMassive[globalswitchNumber].galleryfifteendisplay");
+								$('#galleryfifteen').attr('src','database[globalswitchNumber].galleryfifteen');
+								$('#galleryfifteenlink').attr('href','database[globalswitchNumber].galleryfifteenlink');
+								$('#galleryfifteen').css("display", "database[globalswitchNumber].galleryfifteendisplay");
 
-								$('#gallerysixteen').attr('src','database.contentMassive[globalswitchNumber].gallerysixteen');
-								$('#gallerysixteenlink').attr('href','database.contentMassive[globalswitchNumber].gallerysixteenlink');
-								$('#gallerysixteen').css("display", "database.contentMassive[globalswitchNumber].gallerysixteendisplay");
+								$('#gallerysixteen').attr('src','database[globalswitchNumber].gallerysixteen');
+								$('#gallerysixteenlink').attr('href','database[globalswitchNumber].gallerysixteenlink');
+								$('#gallerysixteen').css("display", "database[globalswitchNumber].gallerysixteendisplay");
 
-								$('#galleryseventeen').attr('src','database.contentMassive[globalswitchNumber].galleryseventeen');
-								$('#galleryseventeenlink').attr('href','database.contentMassive[globalswitchNumber].galleryseventeenlink');
-								$('#galleryseventeen').css("display", "database.contentMassive[globalswitchNumber].galleryseventeendisplay");
+								$('#galleryseventeen').attr('src','database[globalswitchNumber].galleryseventeen');
+								$('#galleryseventeenlink').attr('href','database[globalswitchNumber].galleryseventeenlink');
+								$('#galleryseventeen').css("display", "database[globalswitchNumber].galleryseventeendisplay");
 
-								$('#galleryeighteen').attr('src','database.contentMassive[globalswitchNumber].galleryeighteen');
-								$('#galleryeighteenlink').attr('href','database.contentMassive[globalswitchNumber].galleryeighteenlink');
-								$('#galleryeighteen').css("display", "database.contentMassive[globalswitchNumber].galleryeighteendisplay");
+								$('#galleryeighteen').attr('src','database[globalswitchNumber].galleryeighteen');
+								$('#galleryeighteenlink').attr('href','database[globalswitchNumber].galleryeighteenlink');
+								$('#galleryeighteen').css("display", "database[globalswitchNumber].galleryeighteendisplay");
 
-								$('#gallerynineteen').attr('src','database.contentMassive[globalswitchNumber].gallerynineteen');
-								$('#gallerynineteenlink').attr('href','database.contentMassive[globalswitchNumber].gallerynineteenlink');
-								$('#gallerynineteen').css("display", "database.contentMassive[globalswitchNumber].gallerynineteendisplay");
+								$('#gallerynineteen').attr('src','database[globalswitchNumber].gallerynineteen');
+								$('#gallerynineteenlink').attr('href','database[globalswitchNumber].gallerynineteenlink');
+								$('#gallerynineteen').css("display", "database[globalswitchNumber].gallerynineteendisplay");
 
-								$('#gallerytwenty').attr('src','database.contentMassive[globalswitchNumber].gallerytwenty');
-								$('#gallerytwentylink').attr('href','database.contentMassive[globalswitchNumber].gallerytwentylink');
-								$('#gallerytwenty').css("display", "database.contentMassive[globalswitchNumber].gallerytwentydisplay");
+								$('#gallerytwenty').attr('src','database[globalswitchNumber].gallerytwenty');
+								$('#gallerytwentylink').attr('href','database[globalswitchNumber].gallerytwentylink');
+								$('#gallerytwenty').css("display", "database[globalswitchNumber].gallerytwentydisplay");
 
-								$('#gallerytwentyone').attr('src','database.contentMassive[globalswitchNumber].gallerytwentyone');
-								$('#gallerytwentyonelink').attr('href','database.contentMassive[globalswitchNumber].gallerytwentyonelink');
-								$('#gallerytwentyone').css("display", "database.contentMassive[globalswitchNumber].gallerytwentyonedisplay");
+								$('#gallerytwentyone').attr('src','database[globalswitchNumber].gallerytwentyone');
+								$('#gallerytwentyonelink').attr('href','database[globalswitchNumber].gallerytwentyonelink');
+								$('#gallerytwentyone').css("display", "database[globalswitchNumber].gallerytwentyonedisplay");
 
 
-								$('#videoframe').css("display", "database.contentMassive[globalswitchNumber].videoframedisplay");
-								$('#videoframe').attr('src',"database.contentMassive[globalswitchNumber].videoframe");
-								$('#videoframe').attr('height','database.contentMassive[globalswitchNumber].videoframeheight');
+								$('#videoframe').css("display", "database[globalswitchNumber].videoframedisplay");
+								$('#videoframe').attr('src',"database[globalswitchNumber].videoframe");
+								$('#videoframe').attr('height','database[globalswitchNumber].videoframeheight');
 
-								$('#captionone').html('database.contentMassive[globalswitchNumber].captionone');
-								$('#captiontwo').html('database.contentMassive[globalswitchNumber].captiontwo');
-								$('#captionthree').html('database.contentMassive[globalswitchNumber].captionthree');
+								$('#captionone').html('database[globalswitchNumber].captionone');
+								$('#captiontwo').html('database[globalswitchNumber].captiontwo');
+								$('#captionthree').html('database[globalswitchNumber].captionthree');
 
 								$('.previewing').css('display','block');
 								setTimeout(function(){$('#irbiswindow').html($("#tableToClone").clone());},0);

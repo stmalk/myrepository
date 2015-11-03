@@ -282,7 +282,7 @@ $('#promise').click(function(){
 						$('#captionone').html('YET SHE PROMISED');
 						$('#captiontwo').html('Personal work showing thoughts about relationship expectations and outcomes. Hands were based on my own hand and modelled in Cinema4D. Liquid particles were implemented using XParticles plugin.');
 						$('#captionthree').html(
-							'<img class="smallicon" src="logos/cinema4d.png" height="20px" width="20px" title="Cinema4D">'+										
+							'<img class="smallicon" src="logos/Cinema4d.png" height="20px" width="20px" title="Cinema4D">'+										
 							'<img class="smallicon" src="logos/photoshop.png" height="20px" width="20px" title="Adobe Photoshop">'
 
 							);
@@ -1225,7 +1225,7 @@ $('#octopus').click(function(){
 						$('#captiontwo').html("A Cinema4D short animation showing a fragile life of a tiny octopus. Octopus model was sculpted and textured in ZBrush and then brought into Cinema4D for animation. Post-production done in Adobe After Effects and Adobe Premiere.");
 						$('#captionthree').html(										
 							'<img class="smallicon" src="logos/zbrush.png" height="20px" width="20px" title="ZBrush">'+
-							'<img class="smallicon" src="logos/cinema4d.png" height="20px" width="20px" title="Cinema4D">'+
+							'<img class="smallicon" src="logos/Cinema4d.png" height="20px" width="20px" title="Cinema4D">'+
 							'<img class="smallicon" src="logos/aftereffects.png" height="20px" width="20px" title="Adobe AfterEffects">'+											
 							'<img class="smallicon" src="logos/premiere.png" height="20px" width="20px" title="Adobe Premiere">'
 							);
@@ -1303,7 +1303,7 @@ $('#umbrella').click(function(){
 						$('#captiontwo').html("A short 3D/Vector video composition about umbrellas and their role in our life. A project is a combination of various techinques aimed at a final video result. Umbrella was modelled in 3Ds Max and brought to Cinema4D and Marmoset Toolbag for animation. Vector based elements were done in Adobe Illustrator and video footage was produced by a regular mobile phone camera.");
 						$('#captionthree').html(										
 							'<img class="smallicon" src="logos/marmoset.png" height="20px" width="20px" title="Marmoset Toolbag">'+
-							'<img class="smallicon" src="logos/cinema4d.png" height="20px" width="20px" title="Cinema4D">'+
+							'<img class="smallicon" src="logos/Cinema4d.png" height="20px" width="20px" title="Cinema4D">'+
 							'<img class="smallicon" src="logos/3dmax.png" height="20px" width="20px" title="3D Studio Max">'+
 							'<img class="smallicon" src="logos/aftereffects.png" height="20px" width="20px" title="Adobe AfterEffects">'+	
 							'<img class="smallicon" src="logos/illustrator.png" height="20px" width="20px" title="Adobe Illustrator">'+										

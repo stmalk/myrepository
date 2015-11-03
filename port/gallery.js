@@ -282,7 +282,7 @@ $('#promise').click(function(){
 						$('#captionone').html('YET SHE PROMISED');
 						$('#captiontwo').html('Personal work showing thoughts about relationship expectations and outcomes. Hands were based on my own hand and modelled in Cinema4D. Liquid particles were implemented using XParticles plugin.');
 						$('#captionthree').html(
-							'<img class="smallicon" src="logos/Cinema4d.png" height="20px" width="20px" title="Cinema4D">'+										
+							'<img class="smallicon" src="logos/cinema4d.png" height="20px" width="20px" title="Cinema4D">'+										
 							'<img class="smallicon" src="logos/photoshop.png" height="20px" width="20px" title="Adobe Photoshop">'
 
 							);
@@ -445,7 +445,7 @@ $('#robo').click(function(){
 							'<img class="smallicon" src="logos/substancedesigner.png" height="20px" width="20px" title="Substance Designer">'+
 							'<img class="smallicon" src="logos/vray.png" height="20px" width="20px" title="V-Ray">'+
 							'<img class="smallicon" src="logos/marmoset.png" height="20px" width="20px" title="Marmoset Toolbag">'+
-							'<img class="smallicon" src="logos/Cinema4d.png" height="20px" width="20px" title="Cinema4D">'+
+							'<img class="smallicon" src="logos/cinema4d.png" height="20px" width="20px" title="Cinema4D">'+
 							'<img class="smallicon" src="logos/aftereffects.png" height="20px" width="20px" title="Adobe After Effects">'+
 							'<img class="smallicon" src="logos/photoshop.png" height="20px" width="20px" title="Adobe Photoshop">'
 
@@ -521,7 +521,7 @@ $('#roller').click(function(){
 						$('#captiontwo').html("Game-ready piece of heave roadwork machinery with procedural textures and animated short. Modelled in 3Ds Max, textured with Substance Painter and then rendered in V-Ray and animated in Cinema4D.");
 						$('#captionthree').html(
 							'<img class="smallicon" src="logos/3dmax.png" height="20px" width="20px" title="3D Stuio Max">'+
-							'<img class="smallicon" src="logos/Cinema4d.png" height="20px" width="20px" title="Cinema4D">'+
+							'<img class="smallicon" src="logos/cinema4d.png" height="20px" width="20px" title="Cinema4D">'+
 							'<img class="smallicon" src="logos/substancedesigner.png" height="20px" width="20px" title="Substance Designer">'+
 							'<img class="smallicon" src="logos/vray.png" height="20px" width="20px" title="V-Ray">'+
 							'<img class="smallicon" src="logos/photoshop.png" height="20px" width="20px" title="Adobe Photoshop">'
@@ -596,7 +596,7 @@ $('#pantheon').click(function(){
 						$('#captionone').html('PANTHEON');
 						$('#captiontwo').html("Architectural piece of Roman Pantheon. Modelled and textured with Cinema4D.");
 						$('#captionthree').html(										
-							'<img class="smallicon" src="logos/Cinema4d.png" height="20px" width="20px" title="Cinema4D">'+										
+							'<img class="smallicon" src="logos/cinema4d.png" height="20px" width="20px" title="Cinema4D">'+										
 							'<img class="smallicon" src="logos/photoshop.png" height="20px" width="20px" title="Adobe Photoshop">'
 							);
 						setTimeout(function(){$('#pantheonwindow').html($("#tableToClone").clone());},0);
@@ -759,7 +759,7 @@ $('#cards').click(function(){
 						$('#captionone').html('DECK OF CARDS DESIGNS');
 						$('#captiontwo').html("Suit of diamonds deck of card design as well as package design for the deck of cards. Robots where modelled and posed in Cinema4D. Physical mockup was made and photographed. ");
 						$('#captionthree').html(										
-							'<img class="smallicon" src="logos/Cinema4d.png" height="20px" width="20px" title="Cinema4D">'+
+							'<img class="smallicon" src="logos/cinema4d.png" height="20px" width="20px" title="Cinema4D">'+
 							'<img class="smallicon" src="logos/illustrator.png" height="20px" width="20px" title="Adobde Illustrator">'+															
 							'<img class="smallicon" src="logos/photoshop.png" height="20px" width="20px" title="Adobe Photoshop">'
 							);
@@ -835,7 +835,7 @@ $('#apple').click(function(){
 						$('#captionone').html('APPLE TRIBUTE E-MAGAZINE');
 						$('#captiontwo').html("Tribute to Apple prducts and designs put into a digital magazine layout format. All imagery was either 3d modelled and rendered with Cinema4D or drawn in Adobe Illustrator. Final layout is assembled in Adobe Indesign.");
 						$('#captionthree').html(										
-							'<img class="smallicon" src="logos/Cinema4d.png" height="20px" width="20px" title="Cinema4D">'+
+							'<img class="smallicon" src="logos/cinema4d.png" height="20px" width="20px" title="Cinema4D">'+
 							'<img class="smallicon" src="logos/illustrator.png" height="20px" width="20px" title="Adobde Illustrator">'+
 							'<img class="smallicon" src="logos/indesign.png" height="20px" width="20px" title="Adobe Indesign">'+										
 							'<img class="smallicon" src="logos/photoshop.png" height="20px" width="20px" title="Adobe Photoshop">'
@@ -925,7 +925,7 @@ $('#mashup').click(function(){
 						$('#captionone').html('MASH-UP BOOK');
 						$('#captiontwo').html("A collection of small vector based and 3D based posters gathered and layed out in one brochure. All 3d models are done in Cinema4D. Vector graphics created in Illustrator. This book is supposed to show a combination of typography, illustration and 3d modelling in one project.");
 						$('#captionthree').html(										
-							'<img class="smallicon" src="logos/Cinema4d.png" height="20px" width="20px" title="Cinema4D">'+
+							'<img class="smallicon" src="logos/cinema4d.png" height="20px" width="20px" title="Cinema4D">'+
 							'<img class="smallicon" src="logos/illustrator.png" height="20px" width="20px" title="Adobde Illustrator">'+
 							'<img class="smallicon" src="logos/indesign.png" height="20px" width="20px" title="Adobe Indesign">'+										
 							'<img class="smallicon" src="logos/photoshop.png" height="20px" width="20px" title="Adobe Photoshop">'
@@ -1003,7 +1003,7 @@ $('#virgil').click(function(){
 						$('#captionone').html("VIRGIL'S BBQ REBRANDING");
 						$('#captiontwo').html("Redesigned branding for NYC's Virgil's Barbeque. Reworked logo, menus, business cards and BBQ sauce package. Mock-up are made physically as well as rendered in Cinema4D");
 						$('#captionthree').html(										
-							'<img class="smallicon" src="logos/Cinema4d.png" height="20px" width="20px" title="Cinema4D">'+
+							'<img class="smallicon" src="logos/cinema4d.png" height="20px" width="20px" title="Cinema4D">'+
 							'<img class="smallicon" src="logos/illustrator.png" height="20px" width="20px" title="Adobde Illustrator">'+
 							'<img class="smallicon" src="logos/indesign.png" height="20px" width="20px" title="Adobe Indesign">'+										
 							'<img class="smallicon" src="logos/photoshop.png" height="20px" width="20px" title="Adobe Photoshop">'
@@ -1225,7 +1225,7 @@ $('#octopus').click(function(){
 						$('#captiontwo').html("A Cinema4D short animation showing a fragile life of a tiny octopus. Octopus model was sculpted and textured in ZBrush and then brought into Cinema4D for animation. Post-production done in Adobe After Effects and Adobe Premiere.");
 						$('#captionthree').html(										
 							'<img class="smallicon" src="logos/zbrush.png" height="20px" width="20px" title="ZBrush">'+
-							'<img class="smallicon" src="logos/Cinema4d.png" height="20px" width="20px" title="Cinema4D">'+
+							'<img class="smallicon" src="logos/cinema4d.png" height="20px" width="20px" title="Cinema4D">'+
 							'<img class="smallicon" src="logos/aftereffects.png" height="20px" width="20px" title="Adobe AfterEffects">'+											
 							'<img class="smallicon" src="logos/premiere.png" height="20px" width="20px" title="Adobe Premiere">'
 							);
@@ -1303,7 +1303,7 @@ $('#umbrella').click(function(){
 						$('#captiontwo').html("A short 3D/Vector video composition about umbrellas and their role in our life. A project is a combination of various techinques aimed at a final video result. Umbrella was modelled in 3Ds Max and brought to Cinema4D and Marmoset Toolbag for animation. Vector based elements were done in Adobe Illustrator and video footage was produced by a regular mobile phone camera.");
 						$('#captionthree').html(										
 							'<img class="smallicon" src="logos/marmoset.png" height="20px" width="20px" title="Marmoset Toolbag">'+
-							'<img class="smallicon" src="logos/Cinema4d.png" height="20px" width="20px" title="Cinema4D">'+
+							'<img class="smallicon" src="logos/cinema4d.png" height="20px" width="20px" title="Cinema4D">'+
 							'<img class="smallicon" src="logos/3dmax.png" height="20px" width="20px" title="3D Studio Max">'+
 							'<img class="smallicon" src="logos/aftereffects.png" height="20px" width="20px" title="Adobe AfterEffects">'+	
 							'<img class="smallicon" src="logos/illustrator.png" height="20px" width="20px" title="Adobe Illustrator">'+										

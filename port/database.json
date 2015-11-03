@@ -1,0 +1,52 @@
+ {
+
+ 	contentMassive:
+
+ 	[
+
+ 	{
+ 		
+ 			galleryone:"img/previews/3_1_1.jpg", galleryonelink:"img/original/3_1_1.jpg", galleryonedisplay:"block",
+ 			gallerytwo:"img/previews/3_1_2.jpg", gallerytwolink:"img/original/3_1_2.jpg", gallerytwodisplay:"block",
+ 			gallerythree:"img/previews/3_1_3.jpg", gallerythreelink:"img/original/3_1_3.jpg", gallerythreedisplay:"block",
+ 			galleryfour:"img/previews/3_1_4.jpg", galleryfourlink:"img/original/3_1_4.jpg", galleryfourdisplay:"block",
+ 			galleryfive:"img/previews/3_1_5.jpg", galleryfivelink:"img/original/3_1_5.jpg", galleryfivedisplay:"block",
+ 			gallerysix:"", gallerysixlink:"", gallerysixdisplay:"none",
+ 			galleryseven:"", gallerysevenlink:"", gallerysevendisplay:"none",
+ 			galleryeight:"", galleryeightlink:"", galleryeightdisplay:"none",
+ 			gallerynine:"", galleryninelink:"", galleryninedisplay:"none",
+ 			galleryten:"", gallerytenlink:"", gallerytendisplay:"none",
+ 			galleryeleven:"", galleryelevenlink:"", galleryelevendisplay:"none",
+ 			gallerytwelve:"", gallerytwelvelink:"", gallerytwelvedisplay:"none",
+ 			gallerythirteen:"", gallerythirteenlink:"", gallerythirteendisplay:"none",
+ 			galleryfourteen:"", galleryfourteenlink:"", galleryfourteendisplay:"none",
+ 			galleryfifteen:"", galleryfifteenlink:"", galleryfifteendisplay:"none",
+ 			gallerysixteen:"", gallerysixteenlink:"", gallerysixteendisplay:"none",
+ 			galleryseventeen:"", galleryseventeenlink:"", galleryseventeendisplay:"none",
+ 			galleryeighteen:"", galleryeighteenlink:"", galleryeighteendisplay:"none",
+ 			gallerynineteen:"", gallerynineteenlink:"", gallerynineteendisplay:"none",
+ 			gallerytwenty:"", gallerytwentylink:"", gallerytwentydisplay:"none",
+ 			gallerytwentyone:"", gallerytwentyonelink:"", gallerytwentyonedisplay:"none",
+ 		
+ 		videoframe:"", videoframedisplay:"none", videoframeheight:"",
+ 		captionone:"HUNTING IRBIS",
+ 		captiontwo:"Rare and gorgeous "irbis" snow leopards observe the surroundings ready to hunt. Scuplted with Zbrush, retopoed with Topogun, textured with MARI, scene assembled in 3dsMax using standard Hair&Fur plugin and rendered with Vray. Post-processed in Adobe Photoshop",
+ 		
+ 		captionthree:
+
+ 		"<img class="smallicon" src="logos/3dmax.png" height="20px" width="20px" title="3D Stuio Max">'+
+ 		'<img class="smallicon" src="logos/zbrush.png" height="20px" width="20px" title="ZBrush">'+
+ 		'<img class="smallicon" src="logos/topogun.png" height="20px" width="20px" title="Topogun">'+
+ 		'<img class="smallicon" src="logos/vray.png" height="20px" width="20px" title="V-Ray">'+
+ 		'<img class="smallicon" src="logos/mari.png" height="20px" width="20px" title="MARI Foundry">'+
+ 		'<img class="smallicon" src="logos/photoshop.png" height="20px" width="20px" title="Adobe Photoshop">",
+
+ 		frameheight:"1956px"
+
+
+ 	} 
+
+
+ 	]
+
+ }

@@ -705,10 +705,10 @@ html,body {
 	-webkit-backface-visibility: hidden;
 	width:153px;
 	height:56px;
-	left:950px;
 	top:0px;
+	left:950px;
 	cursor: pointer;
-    display:none;
+    	display:none;
 }
 
 .backtotopplank:hover{

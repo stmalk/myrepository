@@ -705,11 +705,7 @@ html,body {
 	-webkit-backface-visibility: hidden;
 	width:153px;
 	height:56px;
-<<<<<<< HEAD
 	left:950px;
-=======
-	left:1000px;
->>>>>>> origin/master
 	top:0px;
 	cursor: pointer;
     display:none;

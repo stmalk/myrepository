@@ -1,354 +1,377 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-	<meta name=viewport content="width=device-width, initial-scale=1">
-	<meta content="text/html;charset=us-ascii" http-equiv="Content-Type">
-	<link rel="shortcut icon" href="img/favicon.ico">
-	<meta content="keywords" content="mnabiev,murad nabiev,3d,modeling,graphic design">
-	<title>Murad Nabiev Art</title>
+   <head>
+      <meta name=viewport content="width=device-width, initial-scale=1">
+      <meta content="text/html;charset=us-ascii" http-equiv="Content-Type">
+      <link rel="shortcut icon" href="img/favicon.ico">
+      <meta content="keywords" content="mnabiev,murad nabiev,3d,modeling,graphic design">
+      <title>Murad Nabiev Art</title>
+      <link rel="stylesheet" type="text/css"  href="indexmain.css" />
+      <link href='https://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
+      <script src="jquery-2.1.4.js"></script>
+      <script src="index.js"></script>
+      <script src="gallery.js"></script>
+      <script src="jquery.color-2.1.2.js"></script>
+      <script src="jquery-ui.min.js"></script>
+   </head>
+   <body>
+      <div id="#protecting" class="protectiveshield"></div>
+      <div class="mainframesl"></div>
+      <div class="mainframe">
+         <div id="#logopanel" class="logopanelclass">
+            <div id="#logo" class="logoclass"></div>
+            <div class="blinklight"></div>
+            <div class="clickcounter" id="counter"></div>
+         </div>
+         <div class="sidepanel">
+            <div id="topstickpart" class="topstick"></div>
+            <div id="bottomstickpart" class="bottomstick"></div>
+            <div id="biobutton" class="bioplank"></div>
+            <div id="portfoliobutton" class="portfolioplank"></div>
+            <div id="resumebutton" class="resumeplank"></div>
+            <div id="contactbutton" class="contactplank"></div>
+         </div>
+         <div id="toppanelslide" class="toppanel">
+            <div id="dbutton" class="dplank"></div>
+            <div id="designsbutton" class="designsplank"></div>
+            <div id="videobutton" class="videoplank"></div>
+            <div id="webbutton"   class="webplank"></div>
+         </div>
+         <div id="screeners" class="mainpanel">
+            <div id="topanchor" class="topscreen"></div>
+            <div class="screencontainer">
+               <a href="#topanchor">
+                  <div class="backtotopplank"></div>
+               </a>
+               <div id="dworkswindow" class="mainscreen  dworks">
+                  <div class="worksrules">
+                     <table class="tg">
+                        <tr>
+                           <th id="irbis" class="tg-yw4l" style="background:url(img/thumbs/3d_1.jpg) no-repeat;">
+                              <p class="captiontext">Hunting Irbis</p>
+                              <img src="img/thumbs/3d_1_1.jpg" class="thumbimg">
+                           </th>
+                           <th id="opportunists" class="tg-yw4l" style="background:url(img/thumbs/3d_2.jpg) no-repeat;">
+                              <p class="captiontext">Opportunists</p>
+                              <img src="img/thumbs/3d_2_1.jpg" class="thumbimg">
+                           </th>
+                           <th id="promise" class="tg-yw4l" style="background:url(img/thumbs/3d_3.jpg) no-repeat;">
+                              <p class="captiontext">Yet She Promised</p>
+                              <img src="img/thumbs/3d_3_1.jpg" class="thumbimg">
+                           </th>
+                           <th id="cyborg" class="tg-yw4l" style="background:url(img/thumbs/3d_4.jpg) no-repeat;">
+                              <p class="captiontext">Cyborg Head</p>
+                              <img src="img/thumbs/3d_4_1.jpg" class="thumbimg">
+                           </th>
+                        </tr>
+                        <tr>
+                           <th class="tg-yw4l"></th>
+                           <th id="robo" class="tg-yw4l" style="background:url(img/thumbs/3d_5.jpg) no-repeat;">
+                              <p class="captiontext">Robo Runner</p>
+                              <img src="img/thumbs/3d_5_1.jpg" class="thumbimg">
+                           </th>
+                           <th id="roller" class="tg-yw4l" style="background:url(img/thumbs/3d_6.jpg) no-repeat;">
+                              <p class="captiontext">Roadroller</p>
+                              <img src="img/thumbs/3d_6_1.jpg" class="thumbimg">
+                           </th>
+                           <th id="pantheon" class="tg-yw4l" style="background:url(img/thumbs/3d_7.jpg) no-repeat;">
+                              <p class="captiontext">Pantheon</p>
+                              <img src="img/thumbs/3d_7_1.jpg" class="thumbimg">
+                           </th>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+               <div id="designswindow" class="mainscreen  dworks">
+                  <div class="worksrules">
+                     <table class="tg">
+                        <tr>
+                           <th id="hoplite" class="tg-yw4l" style="background:url(img/thumbs/4_1.jpg) no-repeat;">
+                              <p class="captiontext">HOPLITE Daily Bar Branding and Logo</p>
+                              <img src="img/thumbs/4_1_1.jpg" class="thumbimg">
+                           </th>
+                           <th id="cards" class="tg-yw4l" style="background:url(img/thumbs/4_2.jpg) no-repeat;">
+                              <p class="captiontext">Deck of Cards Design</p>
+                              <img src="img/thumbs/4_2_1.jpg" class="thumbimg">
+                           </th>
+                           <th id="apple" class="tg-yw4l" style="background:url(img/thumbs/4_3.jpg) no-repeat;">
+                              <p class="captiontext">Apple Ipad Issue Tribute Project</p>
+                              <img src="img/thumbs/4_3_1.jpg" class="thumbimg">
+                           </th>
+                           <th id="mashup" class="tg-yw4l" style="background:url(img/thumbs/4_4.jpg) no-repeat;">
+                              <p class="captiontext">Mash Up Book</p>
+                              <img src="img/thumbs/4_4_1.jpg" class="thumbimg">
+                           </th>
+                        </tr>
+                        <tr>
+                           <th class="tg-yw4l"></th>
+                           <th id="virgil" class="tg-yw4l" style="background:url(img/thumbs/4_6.jpg) no-repeat;">
+                              <p class="captiontext">Virgil's BBQ Re-Branding</p>
+                              <img src="img/thumbs/4_6_1.jpg" class="thumbimg">
+                           </th>
+                           <th id="record" class="tg-yw4l" style="background:url(img/thumbs/4_7.jpg) no-repeat;">
+                              <p class="captiontext">Record Company Logo</p>
+                              <img src="img/thumbs/4_7_1.jpg" class="thumbimg">
+                           </th>
+                           <th id="subway" class="tg-yw4l" style="background:url(img/thumbs/4_5.jpg) no-repeat;">
+                              <p class="captiontext">NYC Subway Poster Proposal</p>
+                              <img src="img/thumbs/4_5_1.jpg" class="thumbimg">
+                           </th>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+               <div id="videowindow" class="mainscreen  dworks">
+                  <div class="worksrulesvideo">
+                     <table class="tg">
+                        <th id="octopus" class="tg-yw4l" style="background:url(img/thumbs/5_1.jpg) no-repeat;">
+                           <p class="captiontext">The Octopus Animation</p>
+                           <img src="img/thumbs/5_1_1.jpg" class="thumbimg">
+                        </th>
+                        <th id="umbrella" class="tg-yw4l" style="background:url(img/thumbs/5_2.jpg) no-repeat;">
+                           <p class="captiontext">Umbrella Project Animation</p>
+                           <img src="img/thumbs/5_2_1.jpg" class="thumbimg">
+                        </th>
+                     </table>
+                  </div>
+               </div>
+               <div id="webwindow" class="mainscreen  dworks">
+                  <div class="worksrules">
+                     <table class="tg">
+                        <tr>
+                           <th id="indoeuropica" class="tg-yw4l" style="background:url(img/thumbs/6_1.jpg) no-repeat;">
+                              <p class="captiontext">Indo-Europica Information Portal</p>
+                              <img src="img/thumbs/6_1_1.jpg" class="thumbimg">
+                           </th>
+                           <th id="warming" class="tg-yw4l" style="background:url(img/thumbs/6_2.jpg) no-repeat;">
+                              <p class="captiontext">Global Warming Awareness Project</p>
+                              <img src="img/thumbs/6_2_1.jpg" class="thumbimg">
+                           </th>
+                           <th id="pastpresent" class="tg-yw4l" style="background:url(img/thumbs/6_3.jpg) no-repeat;">
+                              <p class="captiontext">Past/Present Perspective </p>
+                              <img src="img/thumbs/6_3_1.jpg" class="thumbimg">
+                           </th>
+                           <th id="iss" class="tg-yw4l" style="background:url(img/thumbs/6_4.jpg) no-repeat;">
+                              <p class="captiontext">International Space Station Explorer</p>
+                              <img src="img/thumbs/6_4_1.jpg" class="thumbimg">
+                           </th>
+                        </tr>
+                        <tr>
+                           <th class="tg-yw4l"></th>
+                           <th class="tg-yw4l"></th>
+                           <th id="madlib" class="tg-yw4l" style="background:url(img/thumbs/6_5.jpg) no-repeat;">
+                              <p class="captiontext">Madlib in Nature</p>
+                              <img src="img/thumbs/6_5_1.jpg" class="thumbimg">
+                           </th>
+                           <th id="testingsite" class="tg-yw4l" style="background:url(img/thumbs/6_6.jpg) no-repeat;">
+                              <p class="captiontext">JavaScript Test Site</p>
+                              <img src="img/thumbs/6_6_1.jpg" class="thumbimg">
+                           </th>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+               <div id="biowindow" class="mainscreen bio">
+                  <div class="biorules">
+                     <table class="tg">
+                        <tr>
+                           <p> <img src="img/mypic.jpg" height="105px" width="100px" align="left" style="padding-right:10px; padding-bottom:6px;">I'm Murad Nabiev a digital designer and 3D modeling generalist. I'm currently an Electronic Design and Multimedia senior at City College of New York and I plan to graduate next spring. My designer path began several years ago and quickly became my major field of interest and my main goal in life. I concentrate on 3D graphics and animation and I extensively use it in my work. I worked as a Christmas decorator in the past and a set of old skills combined with new ones allows me to succefully finish projects while maintaining their artistic uniqueness. </p>
+                           <p>I admire various digital artists and 3D modelers such as Rafael Grasetti, Marek Denko and Roman Senko, while in graphic design I was influenced by Massimo Vignelli style. I'm constantly exploring new talents in the field and my current experience enrichment wouldn't be possible without it. I dedicate my free time to personal projects and my hobbies such as translation, playing piano, making music and playing videogames. </p>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+               <div id="resumewindow" class="mainscreen  resume">
+                  <div class="resumerules">
+                     <table class="tg">
+                        <tr>
+                           <ul style="list-style-type: square;">
+                              <li>
+                                 <span style="color:white; background:black;"> EDUCATION            </span>
+                                 <br><br>
+                                 <ul>
+                                    <li><i>2013-current</i>
+                                       <br>City College of New York
+                                       <br>New York, NY
+                                       <br><i>major</i>: Bachelor of Fine Arts - Electronic Design and Multimedia
+                                    </li>
+                                    <br>
+                                    <li><i>2006 - 2010</i>
+                                       <br>Institute of International Relations
+                                       <br>Yekaterinburg, Russia
+                                       <br><i>major</i>: linguistics/translation/interpreting
+                                    </li>
+                                    <br>
+                                    <li><i>06/2005-07/2005</i> 
+                                       <br>Ural State University
+                                       <br>Yekaterinburg, Russia
+                                       <br>PC assembly and tuning training courses
+                                    </li>
+                                 </ul>
+                              </li>
+                              <br>
+                              <li>
+                                 <span style="color:white; background:black;"> WORK EXPERIENCE            </span>
+                                 <br><br>
+                                 <ul>
+                                    <li><i>09/2011 - 01/2012 , 01/2015</i>
+                                       <br>
+                                       American Christmas Inc.
+                                       <br>
+                                       Decorator
+                                       <br>
+                                       Provided decorating services to various vendors for the holiday season including Madison Square Garden, Radio City Music Hall, Marriott Marquis Hotel, Disney Store, Bergdorf Goodman etc.
+                                    </li>
+                                 </ul>
+                              </li>
+                              <br>
+                              <li>
+                                 <span style="color:white; background:black;"> SKILLS            </span>
+                                 <br><br>
+                                 <ul>
+                                    <li><i>Languages known</i>: English (fluent),  Russian (fluent), German (intermediate)</li>
+                                    <li>
+                                       <p><i>Software knowledge</i>: Adobe Photoshop, Adobe Illustrator, Adobe InDesign, Adobe Premiere, Adobe After Effects, Cinema 4D, 3Ds Max, ZBrush, Substance Designer, MARI, Topogun, UVLayout, E-on Vue, SpeedTree, HTML/CSS, MS Office, Windows, MacOS.</p>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <br>
+                              <li>
+                                 <span style="color:white; background:black;"> ACCOMPLISHMENTS            </span>
+                                 <br><br>
+                                 <ul>
+                                    <li>Illustrations for a book <i>Tabletop Game Design for Video Game Designers</i> by Ethan Ham</li>
+                                    <li>Top 20 participant of 2014 Human Rights Poster competition, displayed at CCNY's Center for Worked Education at 25 Broadway in downtown Manhattan</li>
+                                    <li>2014 Spring Term Dean's List, current average GPA  3.948</li>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <br>
+                              <li>
+                                 <span style="color:white; background:black;"> INTERESTS            </span>
+                                 <br><br>
+                                 <ul>
+                                    <li>
+                                       3D Modelling, 3D Animation, Digital Sculpting, Sound Editing/Composing, Playing Piano, Translating Texts/Lyrics, Videogames, Digital Illustration/Painting.
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </tr>
+                     </table>
+                  </div>
+                  <a href="pdf/resume.pdf" target="_blank" title="Download PDF version">
+                     <div class="pdf"></div>
+                  </a>
+               </div>
+               <div id="contactwindow" class="mainscreen  contact">
+                  <div class="contactrules">
+                     <p><a target="_blank" href="mailto:mnabievart@gmail.com?subject=Hello Murad"><img class="smallicon" src="logos/email.png" width="12px" height="12px"><span class="contactext">E-Mail: mnabievart@gmail.com</span></a></p>
+                     <p><a target="_blank" href="http://behance.net/stmalk"><img class="smallicon" src="logos/behance.png" width="12px" height="12px"><span class="contactext">BeHance: behance.net/stmalk</span></a></p>
+                     <p><a target="_blank" href="http://artstation.com/artist/mnabiev"><img class="smallicon" src="logos/artstation.png" width="12px" height="12px"><span class="contactext">ArtStation: artstation.com/artist/mnabiev</span></a></p>
+                     <p><a target="_blank" href="https://www.google.com/maps/@40.6319652,-73.9746467,14z"><span class="contactext" style="margin-left:200px;">BROOKLYN, NY</span></a></p>
+                  </div>
+               </div>
+               <div id="irbiswindow" class="mainscreen irbispanel">
+               </div>
+               <div id="opportunistswindow" class="mainscreen irbispanel">
+               </div>
+               <div id="promisewindow" class="mainscreen irbispanel">
+               </div>
+               <div id="cyborgwindow" class="mainscreen irbispanel">
+               </div>
+               <div id="robowindow" class="mainscreen irbispanel">
+               </div>
+               <div id="rollerwindow" class="mainscreen irbispanel">
+               </div>
+               <div id="pantheonwindow" class="mainscreen irbispanel">
+               </div>
+               <div id="hoplitewindow" class="mainscreen irbispanel">
+               </div>
+               <div id="cardswindow" class="mainscreen irbispanel">
+               </div>
+               <div id="applewindow" class="mainscreen irbispanel">
+               </div>
+               <div id="mashupwindow" class="mainscreen irbispanel">
+               </div>
+               <div id="virgilwindow" class="mainscreen irbispanel">
+               </div>
+               <div id="recordwindow" class="mainscreen irbispanel">
+               </div>
+               <div id="subwaywindow" class="mainscreen irbispanel">
+               </div>
+               <div id="octopuswindow" class="mainscreen irbispanel">
+               </div>
+               <div id="umbrellawindow" class="mainscreen irbispanel">
+               </div>
+               <div id="indoeuropicawindow" class="mainscreen irbispanel">
+               </div>
+               <div id="warmingwindow" class="mainscreen irbispanel">
+               </div>
+               <div id="pastpresentwindow" class="mainscreen irbispanel">
+               </div>
+               <div id="isswindow" class="mainscreen irbispanel">
+               </div>
+               <div id="madlibwindow" class="mainscreen irbispanel">
+               </div>
+               <div id="testingsitewindow" class="mainscreen irbispanel">
+               </div>
+               <div style="display:none">
+                  <table id="tableToClone" class="ts">
+                     <tr>
+                        <th class="ts-yw4l" rowspan="3">
+                           <a id="galleryonelink" target="_blank" href=""><img id="galleryone" src="" class="previewing"></a>
+                           <a id="gallerytwolink" target="_blank" href=""><img id="gallerytwo" src="" class="previewing"></a>
+                           <a id="gallerythreelink" target="_blank" href=""><img id="gallerythree" src="" class="previewing"></a>
+                           <a id="galleryfourlink" target="_blank" href=""><img id="galleryfour" src="" class="previewing"></a>
+                           <a id="galleryfivelink" target="_blank" href=""><img id="galleryfive" src="" class="previewing"></a>
+                           <a id="gallerysixlink" target="_blank" href=""><img id="gallerysix" src="" class="previewing"></a>
+                           <a id="gallerysevenlink" target="_blank" href=""><img id="galleryseven" src="" class="previewing"></a>
+                           <a id="galleryeightlink" target="_blank" href=""><img id="galleryeight" src="" class="previewing"></a>
+                           <a id="galleryninelink" target="_blank" href=""><img id="gallerynine" src="" class="previewing"></a>
+                           <a id="gallerytenlink" target="_blank" href=""><img id="galleryten" src="" class="previewing"></a>
+                           <a id="galleryelevenlink" target="_blank" href=""><img id="galleryeleven" src="" class="previewing"></a>
+                           <a id="gallerytwelvelink" target="_blank" href=""><img id="gallerytwelve" src="" class="previewing"></a>
+                           <a id="gallerythirteenlink" target="_blank" href=""><img id="gallerythirteen" src="" class="previewing"></a>
+                           <a id="galleryfourteenlink" target="_blank" href=""><img id="galleryfourteen" src="" class="previewing"></a>
+                           <a id="galleryfifteenlink" target="_blank" href=""><img id="galleryfifteen" src="" class="previewing"></a>
+                           <a id="gallerysixteenlink" target="_blank" href=""><img id="gallerysixteen" src="" class="previewing"></a>
+                           <a id="galleryseventeenlink" target="_blank" href=""><img id="galleryseventeen" src="" class="previewing"></a>
+                           <a id="galleryeighteenlink" target="_blank" href=""><img id="galleryeighteen" src="" class="previewing"></a>
+                           <a id="gallerynineteenlink" target="_blank" href=""><img id="gallerynineteen" src="" class="previewing"></a>
+                           <a id="gallerytwentylink" target="_blank" href=""><img id="gallerytwenty" src="" class="previewing"></a>
+                           <a id="gallerytwentyonelink" target="_blank" href=""><img id="gallerytwentyone" src="" class="previewing"></a>
+                           <iframe id="videoframe" src="" class="previewing" style="width:600px;"></iframe>
+                        </th>
+                        <th class="ts-yw4l">
+                           <p id="captionone" class="comment"></p>
+                           <p id="captiontwo" style="font-weight:normal;" class="comment"></p>
+                           <p id="captionthree" class="iconic"></p>
+                        </th>
+                     </tr>
+                     <tr>
+                        <td class="ts-yw4l"></td>
+                     </tr>
+                     <tr>
+                        <td class="ts-yw4l"></td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
 
-	<link rel="stylesheet" type="text/css"  href="indexmain.css" />
-	<link href='https://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
-	<script src="jquery-2.1.4.js"></script>
-	<script src="index.js"></script>
-	<script src="gallery.js"></script>
-	<script src="jquery.color-2.1.2.js"></script>
-	<script src="jquery-ui.min.js"></script>
-</head>
+            
+            <div class="bottomscreen"></div>
 
 
-<body>
-<div id="#protecting" class="protectiveshield"></div>
-	<div class="mainframesl"></div>
+         </div>
 
-	<div class="mainframe">
 
-<div id="#logopanel" class="logopanelclass">
-	<div id="#logo" class="logoclass"></div>
-	<div class="blinklight"></div>
-</div>
+      </div>
 
 
 
-
-		<div class="sidepanel"> 
-
-			<div id="topstickpart" class="topstick"></div>    
-			<div id="bottomstickpart" class="bottomstick"></div>
-			<div id="biobutton" class="bioplank"></div>
-			<div id="portfoliobutton" class="portfolioplank"></div>
-			<div id="resumebutton" class="resumeplank"></div>
-			<div id="contactbutton" class="contactplank"></div>
-
-		</div>
-
-		<div id="toppanelslide" class="toppanel">
-			<div id="dbutton" class="dplank"></div>
-			<div id="designsbutton" class="designsplank"></div>
-			<div id="videobutton" class="videoplank"></div>
-			<div id="webbutton"   class="webplank"></div>
-		</div>
-
-
-		<div id="screeners" class="mainpanel">
-
-			<div id="topanchor" class="topscreen"></div>
-
-			<div class="screencontainer">
-			<a href="#topanchor"><div class="backtotopplank"></div></a>
-				<div id="dworkswindow" class="mainscreen  dworks">
-					<div class="worksrules">
-						<table class="tg">
-							<tr>
-								<th id="irbis" class="tg-yw4l" style="background:url(img/thumbs/3d_1.jpg) no-repeat;"><p class="captiontext">Hunting Irbis</p><img src="img/thumbs/3d_1_1.jpg" class="thumbimg"></th>
-								<th id="opportunists" class="tg-yw4l" style="background:url(img/thumbs/3d_2.jpg) no-repeat;"><p class="captiontext">Opportunists</p><img src="img/thumbs/3d_2_1.jpg" class="thumbimg"></th>
-								<th id="promise" class="tg-yw4l" style="background:url(img/thumbs/3d_3.jpg) no-repeat;"><p class="captiontext">Yet She Promised</p><img src="img/thumbs/3d_3_1.jpg" class="thumbimg"></th>
-								<th id="cyborg" class="tg-yw4l" style="background:url(img/thumbs/3d_4.jpg) no-repeat;"><p class="captiontext">Cyborg Head</p><img src="img/thumbs/3d_4_1.jpg" class="thumbimg"></th>
-							</tr>
-							<tr>
-								<th class="tg-yw4l"></th>
-								<th id="robo" class="tg-yw4l" style="background:url(img/thumbs/3d_5.jpg) no-repeat;"><p class="captiontext">Robo Runner</p><img src="img/thumbs/3d_5_1.jpg" class="thumbimg"></th>
-								<th id="roller" class="tg-yw4l" style="background:url(img/thumbs/3d_6.jpg) no-repeat;"><p class="captiontext">Roadroller</p><img src="img/thumbs/3d_6_1.jpg" class="thumbimg"></th>
-								<th id="pantheon" class="tg-yw4l" style="background:url(img/thumbs/3d_7.jpg) no-repeat;"><p class="captiontext">Pantheon</p><img src="img/thumbs/3d_7_1.jpg" class="thumbimg"></th>
-
-							</tr>
-						</table>
-					</div>
-				</div>
-
-				<div id="designswindow" class="mainscreen  dworks">
-					<div class="worksrules">
-						<table class="tg">
-							<tr>
-								<th id="hoplite" class="tg-yw4l" style="background:url(img/thumbs/4_1.jpg) no-repeat;"><p class="captiontext">HOPLITE Daily Bar Branding and Logo</p><img src="img/thumbs/4_1_1.jpg" class="thumbimg"></th>
-								<th id="cards" class="tg-yw4l" style="background:url(img/thumbs/4_2.jpg) no-repeat;"><p class="captiontext">Deck of Cards Design</p><img src="img/thumbs/4_2_1.jpg" class="thumbimg"></th>
-								<th id="apple" class="tg-yw4l" style="background:url(img/thumbs/4_3.jpg) no-repeat;"><p class="captiontext">Apple Ipad Issue Tribute Project</p><img src="img/thumbs/4_3_1.jpg" class="thumbimg"></th>
-								<th id="mashup" class="tg-yw4l" style="background:url(img/thumbs/4_4.jpg) no-repeat;"><p class="captiontext">Mash Up Book</p><img src="img/thumbs/4_4_1.jpg" class="thumbimg"></th>
-							</tr>
-							<tr>
-								<th class="tg-yw4l"></th>
-								<th id="virgil" class="tg-yw4l" style="background:url(img/thumbs/4_6.jpg) no-repeat;"><p class="captiontext">Virgil's BBQ Re-Branding</p><img src="img/thumbs/4_6_1.jpg" class="thumbimg"></th>
-								<th id="record" class="tg-yw4l" style="background:url(img/thumbs/4_7.jpg) no-repeat;"><p class="captiontext">Record Company Logo</p><img src="img/thumbs/4_7_1.jpg" class="thumbimg"></th>
-								<th id="subway" class="tg-yw4l" style="background:url(img/thumbs/4_5.jpg) no-repeat;"><p class="captiontext">NYC Subway Poster Proposal</p><img src="img/thumbs/4_5_1.jpg" class="thumbimg"></th>
-
-							</tr>
-						</table>
-					</div>
-				</div>
-
-				<div id="videowindow" class="mainscreen  dworks">
-					<div class="worksrulesvideo">
-						<table class="tg">
-
-							<th id="octopus" class="tg-yw4l" style="background:url(img/thumbs/5_1.jpg) no-repeat;"><p class="captiontext">The Octopus Animation</p><img src="img/thumbs/5_1_1.jpg" class="thumbimg"></th>
-							<th id="umbrella" class="tg-yw4l" style="background:url(img/thumbs/5_2.jpg) no-repeat;"><p class="captiontext">Umbrella Project Animation</p><img src="img/thumbs/5_2_1.jpg" class="thumbimg"></th>
-
-
-						</table>
-					</div>
-				</div>
-
-				<div id="webwindow" class="mainscreen  dworks">
-					<div class="worksrules">
-						<table class="tg">
-							<tr>
-								<th id="indoeuropica" class="tg-yw4l" style="background:url(img/thumbs/6_1.jpg) no-repeat;"><p class="captiontext">Indo-Europica Information Portal</p><img src="img/thumbs/6_1_1.jpg" class="thumbimg"></th>
-								<th id="warming" class="tg-yw4l" style="background:url(img/thumbs/6_2.jpg) no-repeat;"><p class="captiontext">Global Warming Awareness Project</p><img src="img/thumbs/6_2_1.jpg" class="thumbimg"></th>
-								<th id="pastpresent" class="tg-yw4l" style="background:url(img/thumbs/6_3.jpg) no-repeat;"><p class="captiontext">Past/Present Perspective </p><img src="img/thumbs/6_3_1.jpg" class="thumbimg"></th>
-								<th id="iss" class="tg-yw4l" style="background:url(img/thumbs/6_4.jpg) no-repeat;"><p class="captiontext">International Space Station Explorer</p><img src="img/thumbs/6_4_1.jpg" class="thumbimg"></th>
-							</tr>
-							<tr>
-								<th class="tg-yw4l"></th>
-								<th class="tg-yw4l"></th>
-								<th id="madlib" class="tg-yw4l" style="background:url(img/thumbs/6_5.jpg) no-repeat;"><p class="captiontext">Madlib in Nature</p><img src="img/thumbs/6_5_1.jpg" class="thumbimg"></th>
-								<th id="testingsite" class="tg-yw4l" style="background:url(img/thumbs/6_6.jpg) no-repeat;"><p class="captiontext">JavaScript Test Site</p><img src="img/thumbs/6_6_1.jpg" class="thumbimg"></th>
-							</tr>
-						</table>
-					</div>
-				</div>
-
-
-				<div id="biowindow" class="mainscreen bio">
-					<div class="biorules">
-						<table class="tg">
-							<tr>       
-								<p> <img src="img/mypic.jpg" height="105px" width="100px" align="left" style="padding-right:10px; padding-bottom:10px;">I'm Murad Nabiev a digital designer and 3D modeling generalist. I'm currently an Electronic Design and Multimedia senior at City College of New York and I plan to graduate next spring. My designer path began several years ago and quickly became my major field of interest and my main goal in life. I concentrate on 3D graphics and animation and I extensively use it in my work. I worked as a Christmas decorator in the past and a set of old skills combined with new ones allows me to succefully finish projects while maintaining their artistic uniqueness. </p>
-								<p>I admire various digital artists and 3D modelers such as Rafael Grasetti, Marek Denko and Roman Senko, while in graphic design I was influenced by Massimo Vignelli style. I'm constantly exploring new talents in the field and my current experience enrichment wouldn't be possible without it. I dedicate my free time to personal projects and my hobbies such as translation, playing piano, making music and playing videogames. </p>
-							</tr>
-						</table>   
-					</div> 
-				</div>
-
-
-
-				<div id="resumewindow" class="mainscreen  resume">
-					<div class="resumerules">
-						<table class="tg">
-							<tr>
-								<ul style="list-style-type: square;">
-									<li><span style="color:white; background:black;"> EDUCATION            </span>
-										<br><br>
-										<ul>
-											<li><i>2013-current</i>
-												<br>City College of New York
-												<br>New York, NY
-												<br><i>major</i>: Bachelor of Fine Arts - Electronic Design and Multimedia
-											</li> 
-											<br>
-											<li><i>2006 - 2010</i>
-												<br>Institute of International Relations
-												<br>Yekaterinburg, Russia
-												<br><i>major</i>: linguistics/translation/interpreting
-											</li>
-											<br>
-											<li><i>06/2005-07/2005</i> 
-												<br>Ural State University
-												<br>Yekaterinburg, Russia
-												<br>PC assembly and tuning training courses</li>
-											</ul>
-										</li>
-										<br>
-										<li><span style="color:white; background:black;"> WORK EXPERIENCE            </span>
-											<br><br>
-											<ul>
-												<li><i>09/2011 - 01/2012 , 01/2015</i>
-													<br>
-													American Christmas Inc.
-													<br>
-													Decorator
-													<br>
-													Provided decorating services to various vendors for the holiday season including Madison Square Garden, Radio City Music Hall, Marriott Marquis Hotel, Disney Store, Bergdorf Goodman etc.
-												</li>
-											</ul>
-										</li>
-										<br>
-										<li>
-											<span style="color:white; background:black;"> SKILLS            </span>
-											<br><br>
-											<ul>
-
-												<li><i>Languages known</i>: English (fluent),  Russian (fluent), German (intermediate)</li>
-												<li><p><i>Software knowledge</i>: Adobe Photoshop, Adobe Illustrator, Adobe InDesign, Adobe Premiere, Adobe After Effects, Cinema 4D, 3Ds Max, ZBrush, Substance Designer, MARI, Topogun, UVLayout, E-on Vue, SpeedTree, HTML/CSS, MS Office, Windows, MacOS.</p></li>
-
-											</ul>
-										</li>
-										<br>
-
-										<li><span style="color:white; background:black;"> ACCOMPLISHMENTS            </span>
-											<br><br>
-											<ul>
-
-												<li>Illustrations for a book <i>Tabletop Game Design for Video Game Designers</i> by Ethan Ham</li>
-												<li>Top 20 participant of 2014 Human Rights Poster competition, displayed at CCNY's Center for Worked Education at 25 Broadway in downtown Manhattan</li>
-												<li>2014 Spring Term Dean's List, current average GPA  3.948</li>
-											</li>
-										</ul>
-									</li>
-
-									<br>
-									<li><span style="color:white; background:black;"> INTERESTS            </span>
-										<br><br>
-										<ul>
-											<li>
-												3D Modelling, 3D Animation, Digital Sculpting, Sound Editing/Composing, Playing Piano, Translating Texts/Lyrics, Videogames, Digital Illustration/Painting.
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</tr>
-						</table>
-					</div>
-
-<a href="pdf/resume.pdf" target="_blank" title="Download PDF version"><div class="pdf"></div></a>
-
-				</div>
-
-
-
-				<div id="contactwindow" class="mainscreen  contact">
-					<div class="contactrules">
-
-						<p><a target="_blank" href="mailto:mnabievart@gmail.com?subject=Hello Murad"><img class="smallicon" src="logos/email.png" width="15px" height="15px"><span class="contactext">E-Mail: mnabievart@gmail.com</span></a></p>
-						<p><a target="_blank" href="http://behance.net/stmalk"><img class="smallicon" src="logos/behance.png" width="15px" height="15px"><span class="contactext">BeHance: behance.net/stmalk</span></a></p>
-						<p><a target="_blank" href="http://artstation.com/artist/mnabiev"><img class="smallicon" src="logos/artstation.png" width="15px" height="15px"><span class="contactext">ArtStation: artstation.com/artist/mnabiev</span></a></p>
-						<p><span class="contactext" style="margin-left:210px;">Brooklyn, NY</span></p>
-
-					</div>
-
-				</div>
-
-
-
-				<div id="irbiswindow" class="mainscreen irbispanel">
-				</div>
-				<div id="opportunistswindow" class="mainscreen irbispanel">
-				</div>
-				<div id="promisewindow" class="mainscreen irbispanel">
-				</div>
-				<div id="cyborgwindow" class="mainscreen irbispanel">
-				</div>
-				<div id="robowindow" class="mainscreen irbispanel">
-				</div>
-				<div id="rollerwindow" class="mainscreen irbispanel">
-				</div>
-				<div id="pantheonwindow" class="mainscreen irbispanel">
-				</div>
-
-
-				<div id="hoplitewindow" class="mainscreen irbispanel">
-				</div>
-				<div id="cardswindow" class="mainscreen irbispanel">
-				</div>
-				<div id="applewindow" class="mainscreen irbispanel">
-				</div>
-				<div id="mashupwindow" class="mainscreen irbispanel">
-				</div>
-				<div id="virgilwindow" class="mainscreen irbispanel">
-				</div>
-				<div id="recordwindow" class="mainscreen irbispanel">
-				</div>
-				<div id="subwaywindow" class="mainscreen irbispanel">
-				</div>
-
-				<div id="octopuswindow" class="mainscreen irbispanel">
-				</div>
-				<div id="umbrellawindow" class="mainscreen irbispanel">
-				</div>
-
-
-				<div id="indoeuropicawindow" class="mainscreen irbispanel">
-				</div>
-				<div id="warmingwindow" class="mainscreen irbispanel">
-				</div>
-				<div id="pastpresentwindow" class="mainscreen irbispanel">
-				</div>
-				<div id="isswindow" class="mainscreen irbispanel">
-				</div>
-				<div id="madlibwindow" class="mainscreen irbispanel">
-				</div>
-				<div id="testingsitewindow" class="mainscreen irbispanel">
-				</div>
-
-
-				<div style="display:none">
-					<table id="tableToClone" class="ts">
-						<tr>
-							<th class="ts-yw4l" rowspan="3">
-								<a id="galleryonelink" target="_blank" href=""><img id="galleryone" src="" class="previewing"></a>
-								<a id="gallerytwolink" target="_blank" href=""><img id="gallerytwo" src="" class="previewing"></a>
-								<a id="gallerythreelink" target="_blank" href=""><img id="gallerythree" src="" class="previewing"></a>
-								<a id="galleryfourlink" target="_blank" href=""><img id="galleryfour" src="" class="previewing"></a>
-								<a id="galleryfivelink" target="_blank" href=""><img id="galleryfive" src="" class="previewing"></a>
-								<a id="gallerysixlink" target="_blank" href=""><img id="gallerysix" src="" class="previewing"></a>
-								<a id="gallerysevenlink" target="_blank" href=""><img id="galleryseven" src="" class="previewing"></a>
-								<a id="galleryeightlink" target="_blank" href=""><img id="galleryeight" src="" class="previewing"></a>
-
-								<a id="galleryninelink" target="_blank" href=""><img id="gallerynine" src="" class="previewing"></a>
-								<a id="gallerytenlink" target="_blank" href=""><img id="galleryten" src="" class="previewing"></a>
-								<a id="galleryelevenlink" target="_blank" href=""><img id="galleryeleven" src="" class="previewing"></a>
-								<a id="gallerytwelvelink" target="_blank" href=""><img id="gallerytwelve" src="" class="previewing"></a>
-
-								<a id="gallerythirteenlink" target="_blank" href=""><img id="gallerythirteen" src="" class="previewing"></a>
-								<a id="galleryfourteenlink" target="_blank" href=""><img id="galleryfourteen" src="" class="previewing"></a>
-								<a id="galleryfifteenlink" target="_blank" href=""><img id="galleryfifteen" src="" class="previewing"></a>
-								<a id="gallerysixteenlink" target="_blank" href=""><img id="gallerysixteen" src="" class="previewing"></a>
-
-								<a id="galleryseventeenlink" target="_blank" href=""><img id="galleryseventeen" src="" class="previewing"></a>
-								<a id="galleryeighteenlink" target="_blank" href=""><img id="galleryeighteen" src="" class="previewing"></a>
-								<a id="gallerynineteenlink" target="_blank" href=""><img id="gallerynineteen" src="" class="previewing"></a>
-								<a id="gallerytwentylink" target="_blank" href=""><img id="gallerytwenty" src="" class="previewing"></a>
-								<a id="gallerytwentyonelink" target="_blank" href=""><img id="gallerytwentyone" src="" class="previewing"></a>
-								<iframe id="videoframe" src="" class="previewing"></iframe>
-								
-							</th>
-							<th class="ts-yw4l">
-								<p id="captionone" class="comment"></p>
-								<p id="captiontwo" style="font-weight:normal;" class="comment"></p>
-								<p id="captionthree" class="iconic"></p>
-							</th>
-						</tr>
-						<tr>
-							<td class="ts-yw4l"></td>
-						</tr>
-						<tr>
-							<td class="ts-yw4l"></td>
-						</tr>
-					</table>
-				</div>
-
-
-			</div>
-			<div class="bottomscreen"></div>
-		</div>
-
-
-
-	</div>
-
-
-
-</body>
+   </body>
 
 
 </html>

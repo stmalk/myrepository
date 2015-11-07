@@ -1,0 +1,873 @@
+ {
+
+ 	"projects" : [
+
+ 	{
+ 		"componentId":"0",
+ 		
+ 		"galleryone":"img/previews/3_1_1.jpg", "galleryonelink":"img/original/3_1_1.jpg", "galleryonedisplay":"showit",
+ 		"gallerytwo":"img/previews/3_1_2.jpg", "gallerytwolink":"img/original/3_1_2.jpg", "gallerytwodisplay":"showit",
+ 		"gallerythree":"img/previews/3_1_3.jpg", "gallerythreelink":"img/original/3_1_3.jpg", "gallerythreedisplay":"showit",
+ 		"galleryfour":"img/previews/3_1_4.jpg", "galleryfourlink":"img/original/3_1_4.jpg", "galleryfourdisplay":"showit",
+ 		"galleryfive":"img/previews/3_1_5.jpg", "galleryfivelink":"img/original/3_1_5.jpg", "galleryfivedisplay":"showit",
+ 		"gallerysix":"", "gallerysixlink":"", "gallerysixdisplay":"hideit",
+ 		"galleryseven":"", "gallerysevenlink":"", "gallerysevendisplay":"hideit",
+ 		"galleryeight":"", "galleryeightlink":"", "galleryeightdisplay":"hideit",
+ 		"gallerynine":"", "galleryninelink":"", "galleryninedisplay":"hideit",
+ 		"galleryten":"", "gallerytenlink":"", "gallerytendisplay":"hideit",
+ 		"galleryeleven":"", "galleryelevenlink":"", "galleryelevendisplay":"hideit",
+ 		"gallerytwelve":"", "gallerytwelvelink":"", "gallerytwelvedisplay":"hideit",
+ 		"gallerythirteen":"", "gallerythirteenlink":"", "gallerythirteendisplay":"hideit",
+ 		"galleryfourteen":"", "galleryfourteenlink":"", "galleryfourteendisplay":"hideit",
+ 		"galleryfifteen":"", "galleryfifteenlink":"", "galleryfifteendisplay":"hideit",
+ 		"gallerysixteen":"", "gallerysixteenlink":"", "gallerysixteendisplay":"hideit",
+ 		"galleryseventeen":"", "galleryseventeenlink":"", "galleryseventeendisplay":"hideit",
+ 		"galleryeighteen":"", "galleryeighteenlink":"", "galleryeighteendisplay":"hideit",
+ 		"gallerynineteen":"", "gallerynineteenlink":"", "gallerynineteendisplay":"hideit",
+ 		"gallerytwenty":"", "gallerytwentylink":"", "gallerytwentydisplay":"hideit",
+ 		"gallerytwentyone":"", "gallerytwentyonelink":"", "gallerytwentyonedisplay":"hideit",
+ 		
+ 		"videoframe":"", "videoframedisplay":"hideit", "videoframeheight":"",
+ 		"captionone":"HUNTING IRBIS",
+ 		"captiontwo":"Rare and gorgeous \"irbis\" snow leopards observe the surroundings ready to hunt. Scuplted with Zbrush, retopoed with Topogun, textured with MARI, scene assembled in 3dsMax using standard Hair&Fur plugin and rendered with Vray. Post-processed in Adobe Photoshop",
+ 		
+ 		"captionthree":
+
+ 		"<img class=\"smallicon\" src=\"logos/3dmax.png\" height=\"20px\" width=\"20px\" title=\"3D Stuio Max\"><img class=\"smallicon\" src=\"logos/zbrush.png\" height=\"20px\" width=\"20px\" title=\"ZBrush\"><img class=\"smallicon\" src=\"logos/topogun.png\" height=\"20px\" width=\"20px\" title=\"Topogun\"><img class=\"smallicon\" src=\"logos/vray.png\" height=\"20px\" width=\"20px\" title=\"V-Ray\"><img class=\"smallicon\" src=\"logos/mari.png\" height=\"20px\" width=\"20px\" title=\"MARI Foundry\"><img class=\"smallicon\" src=\"logos/photoshop.png\" height=\"20px\" width=\"20px\" title=\"Adobe Photoshop\">",
+
+ 		"frameheight":"1966px"
+
+
+ 		},
+
+ 		{
+
+		"componentId":"1",
+
+		"galleryone":"img/previews/4_1_1.jpg", "galleryonelink":"img/original/4_1_1.jpg", "galleryonedisplay":"showit",
+		"gallerytwo":"img/previews/4_1_2.jpg", "gallerytwolink":"img/original/4_1_2.jpg", "gallerytwodisplay":"showit",
+		"gallerythree":"img/previews/4_1_3.jpg", "gallerythreelink":"img/original/4_1_3.jpg", "gallerythreedisplay":"showit",
+		"galleryfour":"img/previews/4_1_4.jpg", "galleryfourlink":"img/original/4_1_4.jpg", "galleryfourdisplay":"showit",
+		"galleryfive":"img/previews/4_1_5.jpg", "galleryfivelink":"img/original/4_1_5.jpg", "galleryfivedisplay":"showit",
+		"gallerysix":"img/previews/4_1_6.jpg", "gallerysixlink":"img/original/4_1_6.jpg", "gallerysixdisplay":"showit",
+		"galleryseven":"img/previews/4_1_7.jpg", "gallerysevenlink":"img/original/4_1_7.jpg", "gallerysevendisplay":"showit",
+		"galleryeight":"img/previews/4_1_8.jpg", "galleryeightlink":"img/original/4_1_8.jpg", "galleryeightdisplay":"showit",
+		"gallerynine":"", "galleryninelink":"", "galleryninedisplay":"hideit",
+		"galleryten":"", "gallerytenlink":"", "gallerytendisplay":"hideit",
+		"galleryeleven":"", "galleryelevenlink":"", "galleryelevendisplay":"hideit",
+		"gallerytwelve":"", "gallerytwelvelink":"", "gallerytwelvedisplay":"hideit",
+		"gallerythirteen":"", "gallerythirteenlink":"", "gallerythirteendisplay":"hideit",
+		"galleryfourteen":"", "galleryfourteenlink":"", "galleryfourteendisplay":"hideit",
+		"galleryfifteen":"", "galleryfifteenlink":"", "galleryfifteendisplay":"hideit",
+		"gallerysixteen":"", "gallerysixteenlink":"", "gallerysixteendisplay":"hideit",
+		"galleryseventeen":"", "galleryseventeenlink":"", "galleryseventeendisplay":"hideit",
+		"galleryeighteen":"", "galleryeighteenlink":"", "galleryeighteendisplay":"hideit",
+		"gallerynineteen":"", "gallerynineteenlink":"", "gallerynineteendisplay":"hideit",
+		"gallerytwenty":"", "gallerytwentylink":"", "gallerytwentydisplay":"hideit",
+		"gallerytwentyone":"", "gallerytwentyonelink":"", "gallerytwentyonedisplay":"hideit",
+
+		"videoframe":"", "videoframedisplay":"hideit", "videoframeheight":"",
+		"captionone":"OPPORTUNISTS",
+		"captiontwo":"Each of them is on their own in a sea of unknown. Initial idea was to model Ceratophrys frog to study its patterns and forms. Sculpted in ZBrush, textured in MARI it was rigged later in 3DS Max and used for a more artistic scene.",
+
+		"captionthree":
+
+		"<img class=\"smallicon\" src=\"logos/3dmax.png\" height=\"20px\" width=\"20px\" title=\"3D Stuio Max\"><img class=\"smallicon\" src=\"logos/zbrush.png\" height=\"20px\" width=\"20px\" title=\"ZBrush\"><img class=\"smallicon\" src=\"logos/topogun.png\" height=\"20px\" width=\"20px\" title=\"Topogun\"><img class=\"smallicon\" src=\"logos/vray.png\" height=\"20px\" width=\"20px\" title=\"V-Ray\"><img class=\"smallicon\" src=\"logos/mari.png\" height=\"20px\" width=\"20px\" title=\"MARI Foundry\"><img class=\"smallicon\" src=\"logos/photoshop.png\" height=\"20px\" width=\"20px\" title=\"Adobe Photoshop\">",
+
+		"frameheight":"3034px"
+
+
+ 		},
+
+ 		{
+
+		"componentId":"2",
+
+		"galleryone":"img/previews/5_1_1.jpg", "galleryonelink":"img/original/5_1_1.jpg", "galleryonedisplay":"showit",
+		"gallerytwo":"img/previews/5_1_2.jpg", "gallerytwolink":"img/original/5_1_2.jpg", "gallerytwodisplay":"showit",
+		"gallerythree":"img/previews/5_1_3.jpg", "gallerythreelink":"img/original/5_1_3.jpg", "gallerythreedisplay":"showit",
+		"galleryfour":"img/previews/5_1_4.jpg", "galleryfourlink":"img/original/5_1_4.jpg", "galleryfourdisplay":"showit",
+		"galleryfive":"img/previews/5_1_5.jpg", "galleryfivelink":"img/original/5_1_5.jpg", "galleryfivedisplay":"showit",
+		"gallerysix":"", "gallerysixlink":"", "gallerysixdisplay":"hideit",
+		"galleryseven":"", "gallerysevenlink":"", "gallerysevendisplay":"hideit",
+		"galleryeight":"", "galleryeightlink":"", "galleryeightdisplay":"hideit",
+		"gallerynine":"", "galleryninelink":"", "galleryninedisplay":"hideit",
+		"galleryten":"", "gallerytenlink":"", "gallerytendisplay":"hideit",
+		"galleryeleven":"", "galleryelevenlink":"", "galleryelevendisplay":"hideit",
+		"gallerytwelve":"", "gallerytwelvelink":"", "gallerytwelvedisplay":"hideit",
+		"gallerythirteen":"", "gallerythirteenlink":"", "gallerythirteendisplay":"hideit",
+		"galleryfourteen":"", "galleryfourteenlink":"", "galleryfourteendisplay":"hideit",
+		"galleryfifteen":"", "galleryfifteenlink":"", "galleryfifteendisplay":"hideit",
+		"gallerysixteen":"", "gallerysixteenlink":"", "gallerysixteendisplay":"hideit",
+		"galleryseventeen":"", "galleryseventeenlink":"", "galleryseventeendisplay":"hideit",
+		"galleryeighteen":"", "galleryeighteenlink":"", "galleryeighteendisplay":"hideit",
+		"gallerynineteen":"", "gallerynineteenlink":"", "gallerynineteendisplay":"hideit",
+		"gallerytwenty":"", "gallerytwentylink":"", "gallerytwentydisplay":"hideit",
+		"gallerytwentyone":"", "gallerytwentyonelink":"", "gallerytwentyonedisplay":"hideit",
+
+		"videoframe":"", "videoframedisplay":"hideit", "videoframeheight":"",
+		"captionone":"YET SHE PROMISED",
+		"captiontwo":"Personal work showing thoughts about relationship expectations and outcomes. Hands were based on my own hand and modelled in Cinema4D. Liquid particles were implemented using XParticles plugin.",
+
+		"captionthree":
+
+		"<img class=\"smallicon\" src=\"logos/cinema4d.png\" height=\"20px\" width=\"20px\" title=\"Cinema4D\"><img class=\"smallicon\" src=\"logos/photoshop.png\" height=\"20px\" width=\"20px\" title=\"Adobe Photoshop\">",
+
+		"frameheight":"2030px"
+
+
+ 		},
+
+ 		{
+		"componentId":"3",
+
+
+		"galleryone":"img/previews/6_1_1.jpg", "galleryonelink":"img/original/6_1_1.jpg", "galleryonedisplay":"showit",
+		"gallerytwo":"img/previews/6_1_2.jpg", "gallerytwolink":"img/original/6_1_2.jpg", "gallerytwodisplay":"showit",
+		"gallerythree":"img/previews/6_1_3.jpg", "gallerythreelink":"img/original/6_1_3.jpg", "gallerythreedisplay":"showit",
+		"galleryfour":"img/previews/6_1_4.jpg", "galleryfourlink":"img/original/6_1_4.jpg", "galleryfourdisplay":"showit",
+		"galleryfive":"img/previews/6_1_5.jpg", "galleryfivelink":"img/original/6_1_5.jpg", "galleryfivedisplay":"showit",
+		"gallerysix":"img/previews/6_1_6.jpg", "gallerysixlink":"img/original/6_1_6.jpg", "gallerysixdisplay":"showit",
+		"galleryseven":"", "gallerysevenlink":"", "gallerysevendisplay":"hideit",
+		"galleryeight":"", "galleryeightlink":"", "galleryeightdisplay":"hideit",
+		"gallerynine":"", "galleryninelink":"", "galleryninedisplay":"hideit",
+		"galleryten":"", "gallerytenlink":"", "gallerytendisplay":"hideit",
+		"galleryeleven":"", "galleryelevenlink":"", "galleryelevendisplay":"hideit",
+		"gallerytwelve":"", "gallerytwelvelink":"", "gallerytwelvedisplay":"hideit",
+		"gallerythirteen":"", "gallerythirteenlink":"", "gallerythirteendisplay":"hideit",
+		"galleryfourteen":"", "galleryfourteenlink":"", "galleryfourteendisplay":"hideit",
+		"galleryfifteen":"", "galleryfifteenlink":"", "galleryfifteendisplay":"hideit",
+		"gallerysixteen":"", "gallerysixteenlink":"", "gallerysixteendisplay":"hideit",
+		"galleryseventeen":"", "galleryseventeenlink":"", "galleryseventeendisplay":"hideit",
+		"galleryeighteen":"", "galleryeighteenlink":"", "galleryeighteendisplay":"hideit",
+		"gallerynineteen":"", "gallerynineteenlink":"", "gallerynineteendisplay":"hideit",
+		"gallerytwenty":"", "gallerytwentylink":"", "gallerytwentydisplay":"hideit",
+		"gallerytwentyone":"", "gallerytwentyonelink":"", "gallerytwentyonedisplay":"hideit",
+
+		"videoframe":"", "videoframedisplay":"hideit", "videoframeheight":"",
+		"captionone":"CYBORG HEAD",
+		"captiontwo":"A rusty creation from the post-apocalyptic world inspired by the movie \"Judge Dredd\". Hard surface modelled in 3DS Max, textured in Substance Designer and rendered with Vray as a high-poly mesh and with Marmoset Toolbag as a lowpoly game-ready version.",
+
+		"captionthree":
+
+		"<img class=\"smallicon\" src=\"logos/3dmax.png\" height=\"20px\" width=\"20px\" title=\"3D Stuio Max\"><img class=\"smallicon\" src=\"logos/substancedesigner.png\" height=\"20px\" width=\"20px\" title=\"Substance Designer\"><img class=\"smallicon\" src=\"logos/topogun.png\" height=\"20px\" width=\"20px\" title=\"Topogun\"><img class=\"smallicon\" src=\"logos/vray.png\" height=\"20px\" width=\"20px\" title=\"V-Ray\"><img class=\"smallicon\" src=\"logos/marmoset.png\" height=\"20px\" width=\"20px\" title=\"Marmoset Toolbag\"><img class=\"smallicon\" src=\"logos/photoshop.png\" height=\"20px\" width=\"20px\" title=\"Adobe Photoshop\">",
+
+		"frameheight":"3485px"
+
+
+ 		},
+
+ 		{
+
+		"componentId":"4",
+
+		"galleryone":"img/previews/7_1_1.jpg", "galleryonelink":"img/original/7_1_1.jpg", "galleryonedisplay":"showit",
+		"gallerytwo":"img/previews/7_1_2.jpg", "gallerytwolink":"img/original/7_1_2.jpg", "gallerytwodisplay":"showit",
+		"gallerythree":"img/previews/7_1_3.jpg", "gallerythreelink":"img/original/7_1_3.jpg", "gallerythreedisplay":"showit",
+		"galleryfour":"img/previews/7_1_4.jpg", "galleryfourlink":"img/original/7_1_4.jpg", "galleryfourdisplay":"showit",
+		"galleryfive":"img/previews/7_1_5.jpg", "galleryfivelink":"img/original/7_1_5.jpg", "galleryfivedisplay":"showit",
+		"gallerysix":"img/previews/7_1_6.jpg", "gallerysixlink":"img/original/7_1_6.jpg", "gallerysixdisplay":"showit",
+		"galleryseven":"img/previews/7_1_7.jpg", "gallerysevenlink":"img/original/7_1_7.jpg", "gallerysevendisplay":"showit",
+		"galleryeight":"", "galleryeightlink":"", "galleryeightdisplay":"hideit",
+		"gallerynine":"", "galleryninelink":"", "galleryninedisplay":"hideit",
+		"galleryten":"", "gallerytenlink":"", "gallerytendisplay":"hideit",
+		"galleryeleven":"", "galleryelevenlink":"", "galleryelevendisplay":"hideit",
+		"gallerytwelve":"", "gallerytwelvelink":"", "gallerytwelvedisplay":"hideit",
+		"gallerythirteen":"", "gallerythirteenlink":"", "gallerythirteendisplay":"hideit",
+		"galleryfourteen":"", "galleryfourteenlink":"", "galleryfourteendisplay":"hideit",
+		"galleryfifteen":"", "galleryfifteenlink":"", "galleryfifteendisplay":"hideit",
+		"gallerysixteen":"", "gallerysixteenlink":"", "gallerysixteendisplay":"hideit",
+		"galleryseventeen":"", "galleryseventeenlink":"", "galleryseventeendisplay":"hideit",
+		"galleryeighteen":"", "galleryeighteenlink":"", "galleryeighteendisplay":"hideit",
+		"gallerynineteen":"", "gallerynineteenlink":"", "gallerynineteendisplay":"hideit",
+		"gallerytwenty":"", "gallerytwentylink":"", "gallerytwentydisplay":"hideit",
+		"gallerytwentyone":"", "gallerytwentyonelink":"", "gallerytwentyonedisplay":"hideit",
+
+		"videoframe":"https://www.youtube.com/embed/qhESQgW5LbE", "videoframedisplay":"showit", "videoframeheight":"315px",
+		"captionone":"ROBO RUNNER",
+		"captiontwo":"Animation ready compact quadruped inspired by Boston Dynamic's Dog. Modelled in 3Ds Max, textured in Substance Painted and rendered with V-ray and Marmoset Toolbag. Animated version was done in Cinema4D and later composed in Adobe AfterEffects.",
+
+		"captionthree":
+
+		"<img class=\"smallicon\" src=\"logos/3dmax.png\" height=\"20px\" width=\"20px\" title=\"3D Stuio Max\"><img class=\"smallicon\" src=\"logos/substancedesigner.png\" height=\"20px\" width=\"20px\" title=\"Substance Designer\"><img class=\"smallicon\" src=\"logos/vray.png\" height=\"20px\" width=\"20px\" title=\"V-Ray\"><img class=\"smallicon\" src=\"logos/marmoset.png\" height=\"20px\" width=\"20px\" title=\"Marmoset Toolbag\"><img class=\"smallicon\" src=\"logos/cinema4d.png\" height=\"20px\" width=\"20px\" title=\"Cinema4D\"><img class=\"smallicon\" src=\"logos/aftereffects.png\" height=\"20px\" width=\"20px\" title=\"Adobe After Effects\"><img class=\"smallicon\" src=\"logos/photoshop.png\" height=\"20px\" width=\"20px\" title=\"Adobe Photoshop\">",
+
+		"frameheight":"4764px"
+
+
+ 		},
+
+
+
+
+ 		{
+
+		"componentId":"5",
+
+		"galleryone":"img/previews/8_1_1.jpg", "galleryonelink":"img/original/8_1_1.jpg", "galleryonedisplay":"showit",
+		"gallerytwo":"img/previews/8_1_2.jpg", "gallerytwolink":"img/original/8_1_2.jpg", "gallerytwodisplay":"showit",
+		"gallerythree":"img/previews/8_1_3.jpg", "gallerythreelink":"img/original/8_1_3.jpg", "gallerythreedisplay":"showit",
+		"galleryfour":"img/previews/8_1_4.jpg", "galleryfourlink":"img/original/8_1_4.jpg", "galleryfourdisplay":"showit",
+		"galleryfive":"", "galleryfivelink":"", "galleryfivedisplay":"hideit",
+		"gallerysix":"", "gallerysixlink":"", "gallerysixdisplay":"hideit",
+		"galleryseven":"", "gallerysevenlink":"", "gallerysevendisplay":"hideit",
+		"galleryeight":"", "galleryeightlink":"", "galleryeightdisplay":"hideit",
+		"gallerynine":"", "galleryninelink":"", "galleryninedisplay":"hideit",
+		"galleryten":"", "gallerytenlink":"", "gallerytendisplay":"hideit",
+		"galleryeleven":"", "galleryelevenlink":"", "galleryelevendisplay":"hideit",
+		"gallerytwelve":"", "gallerytwelvelink":"", "gallerytwelvedisplay":"hideit",
+		"gallerythirteen":"", "gallerythirteenlink":"", "gallerythirteendisplay":"hideit",
+		"galleryfourteen":"", "galleryfourteenlink":"", "galleryfourteendisplay":"hideit",
+		"galleryfifteen":"", "galleryfifteenlink":"", "galleryfifteendisplay":"hideit",
+		"gallerysixteen":"", "gallerysixteenlink":"", "gallerysixteendisplay":"hideit",
+		"galleryseventeen":"", "galleryseventeenlink":"", "galleryseventeendisplay":"hideit",
+		"galleryeighteen":"", "galleryeighteenlink":"", "galleryeighteendisplay":"hideit",
+		"gallerynineteen":"", "gallerynineteenlink":"", "gallerynineteendisplay":"hideit",
+		"gallerytwenty":"", "gallerytwentylink":"", "gallerytwentydisplay":"hideit",
+		"gallerytwentyone":"", "gallerytwentyonelink":"", "gallerytwentyonedisplay":"hideit",
+
+		"videoframe":"https://www.youtube.com/embed/ozifjqNQi60", "videoframedisplay":"showit", "videoframeheight":"315px",
+		"captionone":"ROAD ROLLER",
+		"captiontwo":"Game-ready piece of heave roadwork machinery with procedural textures and animated short. Modelled in 3Ds Max, textured with Substance Painter and then rendered in V-Ray and animated in Cinema4D.",
+
+		"captionthree":
+
+		"<img class=\"smallicon\" src=\"logos/3dmax.png\" height=\"20px\" width=\"20px\" title=\"3D Stuio Max\"><img class=\"smallicon\" src=\"logos/substancedesigner.png\" height=\"20px\" width=\"20px\" title=\"Substance Designer\"><img class=\"smallicon\" src=\"logos/vray.png\" height=\"20px\" width=\"20px\" title=\"V-Ray\"><img class=\"smallicon\" src=\"logos/cinema4d.png\" height=\"20px\" width=\"20px\" title=\"Cinema4D\"><img class=\"smallicon\" src=\"logos/aftereffects.png\" height=\"20px\" width=\"20px\" title=\"Adobe After Effects\"><img class=\"smallicon\" src=\"logos/photoshop.png\" height=\"20px\" width=\"20px\" title=\"Adobe Photoshop\">",
+
+		"frameheight":"2050px"
+
+
+ 		},
+
+
+ 		{
+
+		"componentId":"6",
+
+		"galleryone":"img/previews/9_1_1.jpg", "galleryonelink":"img/original/9_1_1.jpg", "galleryonedisplay":"showit",
+		"gallerytwo":"img/previews/9_1_2.jpg", "gallerytwolink":"img/original/9_1_2.jpg", "gallerytwodisplay":"showit",
+		"gallerythree":"img/previews/9_1_3.jpg", "gallerythreelink":"img/original/9_1_3.jpg", "gallerythreedisplay":"showit",
+		"galleryfour":"", "galleryfourlink":"", "galleryfourdisplay":"hideit",
+		"galleryfive":"", "galleryfivelink":"", "galleryfivedisplay":"hideit",
+		"gallerysix":"", "gallerysixlink":"", "gallerysixdisplay":"hideit",
+		"galleryseven":"", "gallerysevenlink":"", "gallerysevendisplay":"hideit",
+		"galleryeight":"", "galleryeightlink":"", "galleryeightdisplay":"hideit",
+		"gallerynine":"", "galleryninelink":"", "galleryninedisplay":"hideit",
+		"galleryten":"", "gallerytenlink":"", "gallerytendisplay":"hideit",
+		"galleryeleven":"", "galleryelevenlink":"", "galleryelevendisplay":"hideit",
+		"gallerytwelve":"", "gallerytwelvelink":"", "gallerytwelvedisplay":"hideit",
+		"gallerythirteen":"", "gallerythirteenlink":"", "gallerythirteendisplay":"hideit",
+		"galleryfourteen":"", "galleryfourteenlink":"", "galleryfourteendisplay":"hideit",
+		"galleryfifteen":"", "galleryfifteenlink":"", "galleryfifteendisplay":"hideit",
+		"gallerysixteen":"", "gallerysixteenlink":"", "gallerysixteendisplay":"hideit",
+		"galleryseventeen":"", "galleryseventeenlink":"", "galleryseventeendisplay":"hideit",
+		"galleryeighteen":"", "galleryeighteenlink":"", "galleryeighteendisplay":"hideit",
+		"gallerynineteen":"", "gallerynineteenlink":"", "gallerynineteendisplay":"hideit",
+		"gallerytwenty":"", "gallerytwentylink":"", "gallerytwentydisplay":"hideit",
+		"gallerytwentyone":"", "gallerytwentyonelink":"", "gallerytwentyonedisplay":"hideit",
+
+		"videoframe":"", "videoframedisplay":"hideit", "videoframeheight":"",
+		"captionone":"PANTHEON",
+		"captiontwo":"Architectural piece of Roman Pantheon. Modelled and textured with Cinema4D.",
+
+		"captionthree":
+
+		"<img class=\"smallicon\" src=\"logos/cinema4d.png\" height=\"20px\" width=\"20px\" title=\"Cinema4D\"><img class=\"smallicon\" src=\"logos/photoshop.png\" height=\"20px\" width=\"20px\" title=\"Adobe Photoshop\">",
+
+		"frameheight":"1460px"
+
+
+ 		},      
+
+
+
+ 		{
+
+		"componentId":"7",
+
+		"galleryone":"img/previews/10_1_5.jpg", "galleryonelink":"img/original/10_1_5.jpg", "galleryonedisplay":"showit",
+		"gallerytwo":"img/previews/10_1_2.jpg", "gallerytwolink":"img/original/10_1_2.jpg", "gallerytwodisplay":"showit",
+		"gallerythree":"img/previews/10_1_8.jpg", "gallerythreelink":"img/original/10_1_8.jpg", "gallerythreedisplay":"showit",
+		"galleryfour":"img/previews/10_1_9.jpg", "galleryfourlink":"img/original/10_1_9.jpg", "galleryfourdisplay":"showit",
+		"galleryfive":"img/previews/10_1_10.jpg", "galleryfivelink":"img/original/10_1_10.jpg", "galleryfivedisplay":"showit",
+		"gallerysix":"img/previews/10_1_11.jpg", "gallerysixlink":"img/original/10_1_11.jpg", "gallerysixdisplay":"showit",
+		"galleryseven":"img/previews/10_1_7.jpg", "gallerysevenlink":"img/original/10_1_7.jpg", "gallerysevendisplay":"showit",
+		"galleryeight":"img/previews/10_1_6.jpg", "galleryeightlink":"img/original/10_1_6.jpg", "galleryeightdisplay":"showit",
+		"gallerynine":"img/previews/10_1_3.jpg", "galleryninelink":"img/original/10_1_3.jpg", "galleryninedisplay":"showit",
+		"galleryten":"img/previews/10_1_4.jpg", "gallerytenlink":"img/original/10_1_4.jpg", "gallerytendisplay":"showit",
+		"galleryeleven":"img/previews/10_1_1.jpg", "galleryelevenlink":"img/original/10_1_1.jpg", "galleryelevendisplay":"showit",
+		"gallerytwelve":"", "gallerytwelvelink":"", "gallerytwelvedisplay":"hideit",
+		"gallerythirteen":"", "gallerythirteenlink":"", "gallerythirteendisplay":"hideit",
+		"galleryfourteen":"", "galleryfourteenlink":"", "galleryfourteendisplay":"hideit",
+		"galleryfifteen":"", "galleryfifteenlink":"", "galleryfifteendisplay":"hideit",
+		"gallerysixteen":"", "gallerysixteenlink":"", "gallerysixteendisplay":"hideit",
+		"galleryseventeen":"", "galleryseventeenlink":"", "galleryseventeendisplay":"hideit",
+		"galleryeighteen":"", "galleryeighteenlink":"", "galleryeighteendisplay":"hideit",
+		"gallerynineteen":"", "gallerynineteenlink":"", "gallerynineteendisplay":"hideit",
+		"gallerytwenty":"", "gallerytwentylink":"", "gallerytwentydisplay":"hideit",
+		"gallerytwentyone":"", "gallerytwentyonelink":"", "gallerytwentyonedisplay":"hideit",
+
+		"videoframe":"", "videoframedisplay":"hideit", "videoframeheight":"",
+		"captionone":"HOPLITE BAR BRANDING GUIDE",
+		"captiontwo":"Full branding package of Hoplite nutrition bar which includes logo, branding guide, package design and social media design. 3d rendered in Cinema4D, physical mock-ups assembled and photographed as a sample of product. Patterns done with Adobe Illustrator.",
+
+		"captionthree":
+
+		"<img class=\"smallicon\" src=\"logos/3dmax.png\" height=\"20px\" width=\"20px\" title=\"3D Studio Max\"><img class=\"smallicon\" src=\"logos/illustrator.png\" height=\"20px\" width=\"20px\" title=\"Adobde Illustrator\"><img class=\"smallicon\" src=\"logos/indesign.png\" height=\"20px\" width=\"20px\" title=\"Adobe Indesign\"><img class=\"smallicon\" src=\"logos/photoshop.png\" height=\"20px\" width=\"20px\" title=\"Adobe Photoshop\">",
+
+		"frameheight":"5675px"
+
+
+ 		},
+
+ 		{
+
+		"componentId":"8",
+
+		"galleryone":"img/previews/11_1_1.jpg", "galleryonelink":"img/original/11_1_1.jpg", "galleryonedisplay":"showit",
+		"gallerytwo":"img/previews/11_1_2.jpg", "gallerytwolink":"img/original/11_1_2.jpg", "gallerytwodisplay":"showit",
+		"gallerythree":"img/previews/11_1_3.jpg", "gallerythreelink":"img/original/11_1_3.jpg", "gallerythreedisplay":"showit",
+		"galleryfour":"img/previews/11_1_4.jpg", "galleryfourlink":"img/original/11_1_4.jpg", "galleryfourdisplay":"showit",
+		"galleryfive":"img/previews/11_1_5.jpg", "galleryfivelink":"img/original/11_1_5.jpg", "galleryfivedisplay":"showit",
+		"gallerysix":"img/previews/11_1_6.jpg", "gallerysixlink":"img/original/11_1_6.jpg", "gallerysixdisplay":"showit",
+		"galleryseven":"img/previews/11_1_7.jpg", "gallerysevenlink":"img/original/11_1_7.jpg", "gallerysevendisplay":"showit",
+		"galleryeight":"img/previews/11_1_8.jpg", "galleryeightlink":"img/original/11_1_8.jpg", "galleryeightdisplay":"showit",
+		"gallerynine":"img/previews/11_1_9.jpg", "galleryninelink":"img/original/11_1_9.jpg", "galleryninedisplay":"showit",
+		"galleryten":"img/previews/11_1_10.jpg", "gallerytenlink":"img/original/11_1_10.jpg", "gallerytendisplay":"showit",
+		"galleryeleven":"img/previews/11_1_11.jpg", "galleryelevenlink":"img/original/11_1_11.jpg", "galleryelevendisplay":"showit",
+		"gallerytwelve":"img/previews/11_1_12.jpg", "gallerytwelvelink":"img/original/11_1_12.jpg", "gallerytwelvedisplay":"showit",
+		"gallerythirteen":"", "gallerythirteenlink":"", "gallerythirteendisplay":"hideit",
+		"galleryfourteen":"", "galleryfourteenlink":"", "galleryfourteendisplay":"hideit",
+		"galleryfifteen":"", "galleryfifteenlink":"", "galleryfifteendisplay":"hideit",
+		"gallerysixteen":"", "gallerysixteenlink":"", "gallerysixteendisplay":"hideit",
+		"galleryseventeen":"", "galleryseventeenlink":"", "galleryseventeendisplay":"hideit",
+		"galleryeighteen":"", "galleryeighteenlink":"", "galleryeighteendisplay":"hideit",
+		"gallerynineteen":"", "gallerynineteenlink":"", "gallerynineteendisplay":"hideit",
+		"gallerytwenty":"", "gallerytwentylink":"", "gallerytwentydisplay":"hideit",
+		"gallerytwentyone":"", "gallerytwentyonelink":"", "gallerytwentyonedisplay":"hideit",
+
+		"videoframe":"", "videoframedisplay":"hideit", "videoframeheight":"",
+		"captionone":"DECK OF CARDS DESIGNS",
+		"captiontwo":"Suit of diamonds deck of card design as well as package design for the deck of cards. Robots where modelled and posed in Cinema4D. Physical mockup was made and photographed.",
+
+		"captionthree":
+
+		"<img class=\"smallicon\" src=\"logos/cinema4d.png\" height=\"20px\" width=\"20px\" title=\"Cinema4D\"><img class=\"smallicon\" src=\"logos/illustrator.png\" height=\"20px\" width=\"20px\" title=\"Adobde Illustrator\"><img class=\"smallicon\" src=\"logos/photoshop.png\" height=\"20px\" width=\"20px\" title=\"Adobe Photoshop\"><img class=\"smallicon\" src=\"logos/indesign.png\" height=\"20px\" width=\"20px\" title=\"Adobe Indesign\">",
+
+		"frameheight":"4817px"
+
+
+ 		},          
+
+ 		{
+
+		"componentId":"9",
+
+		"galleryone":"img/previews/12_1_1.jpg", "galleryonelink":"img/original/12_1_1.jpg", "galleryonedisplay":"showit",
+		"gallerytwo":"img/previews/12_1_2.jpg", "gallerytwolink":"img/original/12_1_2.jpg", "gallerytwodisplay":"showit",
+		"gallerythree":"img/previews/12_1_3.jpg", "gallerythreelink":"img/original/12_1_3.jpg", "gallerythreedisplay":"showit",
+		"galleryfour":"img/previews/12_1_4.gif", "galleryfourlink":"img/original/12_1_4.gif", "galleryfourdisplay":"showit",
+		"galleryfive":"img/previews/12_1_6.gif", "galleryfivelink":"img/original/12_1_6.gif", "galleryfivedisplay":"showit",
+		"gallerysix":"img/previews/12_1_8.jpg", "gallerysixlink":"img/original/12_1_8.jpg", "gallerysixdisplay":"showit",
+		"galleryseven":"img/previews/12_1_9.jpg", "gallerysevenlink":"img/original/12_1_9.jpg", "gallerysevendisplay":"showit",
+		"galleryeight":"img/previews/12_1_10.jpg", "galleryeightlink":"img/original/12_1_10.jpg", "galleryeightdisplay":"showit",
+		"gallerynine":"img/previews/12_1_11.gif", "galleryninelink":"img/original/12_1_11.gif", "galleryninedisplay":"showit",
+		"galleryten":"img/previews/12_1_14.gif", "gallerytenlink":"img/original/12_1_14.gif", "gallerytendisplay":"showit",
+		"galleryeleven":"", "galleryelevenlink":"", "galleryelevendisplay":"hideit",
+		"gallerytwelve":"", "gallerytwelvelink":"", "gallerytwelvedisplay":"hideit",
+		"gallerythirteen":"", "gallerythirteenlink":"", "gallerythirteendisplay":"hideit",
+		"galleryfourteen":"", "galleryfourteenlink":"", "galleryfourteendisplay":"hideit",
+		"galleryfifteen":"", "galleryfifteenlink":"", "galleryfifteendisplay":"hideit",
+		"gallerysixteen":"", "gallerysixteenlink":"", "gallerysixteendisplay":"hideit",
+		"galleryseventeen":"", "galleryseventeenlink":"", "galleryseventeendisplay":"hideit",
+		"galleryeighteen":"", "galleryeighteenlink":"", "galleryeighteendisplay":"hideit",
+		"gallerynineteen":"", "gallerynineteenlink":"", "gallerynineteendisplay":"hideit",
+		"gallerytwenty":"", "gallerytwentylink":"", "gallerytwentydisplay":"hideit",
+		"gallerytwentyone":"", "gallerytwentyonelink":"", "gallerytwentyonedisplay":"hideit",
+
+		"videoframe":"", "videoframedisplay":"hideit", "videoframeheight":"",
+		"captionone":"APPLE TRIBUTE E-MAGAZINE",
+		"captiontwo":"Tribute to Apple prducts and designs put into a digital magazine layout format. All imagery was either 3d modelled and rendered with Cinema4D or drawn in Adobe Illustrator. Final layout is assembled in Adobe Indesign.",
+
+		"captionthree":
+
+		"<img class=\"smallicon\" src=\"logos/cinema4d.png\" height=\"20px\" width=\"20px\" title=\"Cinema4D\"><img class=\"smallicon\" src=\"logos/illustrator.png\" height=\"20px\" width=\"20px\" title=\"Adobde Illustrator\"><img class=\"smallicon\" src=\"logos/indesign.png\" height=\"20px\" width=\"20px\" title=\"Adobe Indesign\"><img class=\"smallicon\" src=\"logos/photoshop.png\" height=\"20px\" width=\"20px\" title=\"Adobe Photoshop\">",
+
+		"frameheight":"6357px"
+
+
+ 		},          
+
+
+
+ 		{
+
+		"componentId":"10",
+
+		"galleryone":"img/previews/13_1_20.jpg", "galleryonelink":"img/original/13_1_20.jpg", "galleryonedisplay":"showit",
+		"gallerytwo":"img/previews/13_1_1.jpg", "gallerytwolink":"img/original/13_1_1.jpg", "gallerytwodisplay":"showit",
+		"gallerythree":"img/previews/13_1_2.jpg", "gallerythreelink":"img/original/13_1_2.jpg", "gallerythreedisplay":"showit",
+		"galleryfour":"img/previews/13_1_3.jpg", "galleryfourlink":"img/original/13_1_3.jpg", "galleryfourdisplay":"showit",
+		"galleryfive":"img/previews/13_1_4.jpg", "galleryfivelink":"img/original/13_1_4.jpg", "galleryfivedisplay":"showit",
+		"gallerysix":"img/previews/13_1_5.jpg", "gallerysixlink":"img/original/13_1_5.jpg", "gallerysixdisplay":"showit",
+		"galleryseven":"img/previews/13_1_6.jpg", "gallerysevenlink":"img/original/13_1_6.jpg", "gallerysevendisplay":"showit",
+		"galleryeight":"img/previews/13_1_7.jpg", "galleryeightlink":"img/original/13_1_7.jpg", "galleryeightdisplay":"showit",
+		"gallerynine":"img/previews/13_1_8.jpg", "galleryninelink":"img/original/13_1_8.jpg", "galleryninedisplay":"showit",
+		"galleryten":"img/previews/13_1_9.jpg", "gallerytenlink":"img/original/13_1_9.jpg", "gallerytendisplay":"showit",
+		"galleryeleven":"img/previews/13_1_10.jpg", "galleryelevenlink":"img/previews/13_1_10.jpg", "galleryelevendisplay":"showit",
+		"gallerytwelve":"img/previews/13_1_11.jpg", "gallerytwelvelink":"img/previews/13_1_11.jpg", "gallerytwelvedisplay":"showit",
+		"gallerythirteen":"img/previews/13_1_12.jpg", "gallerythirteenlink":"img/previews/13_1_12.jpg", "gallerythirteendisplay":"showit",
+		"galleryfourteen":"img/previews/13_1_13.jpg", "galleryfourteenlink":"img/previews/13_1_13.jpg", "galleryfourteendisplay":"showit",
+		"galleryfifteen":"img/previews/13_1_14.jpg", "galleryfifteenlink":"img/previews/13_1_14.jpg", "galleryfifteendisplay":"showit",
+		"gallerysixteen":"img/previews/13_1_15.jpg", "gallerysixteenlink":"img/previews/13_1_15.jpg", "gallerysixteendisplay":"showit",
+		"galleryseventeen":"img/previews/13_1_16.jpg", "galleryseventeenlink":"img/previews/13_1_16.jpg", "galleryseventeendisplay":"showit",
+		"galleryeighteen":"img/previews/13_1_17.jpg", "galleryeighteenlink":"img/previews/13_1_17.jpg", "galleryeighteendisplay":"showit",
+		"gallerynineteen":"img/previews/13_1_18.jpg", "gallerynineteenlink":"img/previews/13_1_18.jpg", "gallerynineteendisplay":"showit",
+		"gallerytwenty":"img/previews/13_1_19.jpg", "gallerytwentylink":"img/previews/13_1_19.jpg", "gallerytwentydisplay":"showit",
+		"gallerytwentyone":"img/previews/13_1_21.jpg", "gallerytwentyonelink":"img/previews/13_1_21.jpg", "gallerytwentyonedisplay":"showit",
+
+		"videoframe":"", "videoframedisplay":"hideit", "videoframeheight":"",
+		"captionone":"MASH-UP BOOK",
+		"captiontwo":"A collection of small vector based and 3D based posters gathered and layed out in one brochure. All 3d models are done in Cinema4D. Vector graphics created in Illustrator. This book is supposed to show a combination of typography, illustration and 3d modelling in one project.",
+
+		"captionthree":
+
+		"<img class=\"smallicon\" src=\"logos/cinema4d.png\" height=\"20px\" width=\"20px\" title=\"Cinema4D\"><img class=\"smallicon\" src=\"logos/illustrator.png\" height=\"20px\" width=\"20px\" title=\"Adobde Illustrator\"><img class=\"smallicon\" src=\"logos/indesign.png\" height=\"20px\" width=\"20px\" title=\"Adobe Indesign\"><img class=\"smallicon\" src=\"logos/photoshop.png\" height=\"20px\" width=\"20px\" title=\"Adobe Photoshop\">",
+
+		"frameheight":"9572px"
+
+
+ 		},
+
+
+
+ 		{
+
+		"componentId":"11",
+
+		"galleryone":"img/previews/14_1_1.jpg", "galleryonelink":"img/original/14_1_1.jpg", "galleryonedisplay":"showit",
+		"gallerytwo":"img/previews/14_1_2.jpg", "gallerytwolink":"img/original/14_1_2.jpg", "gallerytwodisplay":"showit",
+		"gallerythree":"img/previews/14_1_3.jpg", "gallerythreelink":"img/original/14_1_3.jpg", "gallerythreedisplay":"showit",
+		"galleryfour":"img/previews/14_1_4.jpg", "galleryfourlink":"img/original/14_1_4.jpg", "galleryfourdisplay":"showit",
+		"galleryfive":"img/previews/14_1_5.jpg", "galleryfivelink":"img/original/14_1_5.jpg", "galleryfivedisplay":"showit",
+		"gallerysix":"img/previews/14_1_6.jpg", "gallerysixlink":"img/original/14_1_6.jpg", "gallerysixdisplay":"showit",
+		"galleryseven":"img/previews/14_1_7.jpg", "gallerysevenlink":"img/original/14_1_7.jpg", "gallerysevendisplay":"showit",
+		"galleryeight":"", "galleryeightlink":"", "galleryeightdisplay":"hideit",
+		"gallerynine":"", "galleryninelink":"", "galleryninedisplay":"hideit",
+		"galleryten":"", "gallerytenlink":"", "gallerytendisplay":"hideit",
+		"galleryeleven":"", "galleryelevenlink":"", "galleryelevendisplay":"hideit",
+		"gallerytwelve":"", "gallerytwelvelink":"", "gallerytwelvedisplay":"hideit",
+		"gallerythirteen":"", "gallerythirteenlink":"", "gallerythirteendisplay":"hideit",
+		"galleryfourteen":"", "galleryfourteenlink":"", "galleryfourteendisplay":"hideit",
+		"galleryfifteen":"", "galleryfifteenlink":"", "galleryfifteendisplay":"hideit",
+		"gallerysixteen":"", "gallerysixteenlink":"", "gallerysixteendisplay":"hideit",
+		"galleryseventeen":"", "galleryseventeenlink":"", "galleryseventeendisplay":"hideit",
+		"galleryeighteen":"", "galleryeighteenlink":"", "galleryeighteendisplay":"hideit",
+		"gallerynineteen":"", "gallerynineteenlink":"", "gallerynineteendisplay":"hideit",
+		"gallerytwenty":"", "gallerytwentylink":"", "gallerytwentydisplay":"hideit",
+		"gallerytwentyone":"", "gallerytwentyonelink":"", "gallerytwentyonedisplay":"hideit",
+
+		"videoframe":"", "videoframedisplay":"hideit", "videoframeheight":"",
+		"captionone":"VIRGIL'S BBQ REBRANDING",
+		"captiontwo":"Redesigned branding for NYC's Virgil's Barbeque. Reworked logo, menus, business cards and BBQ sauce package. Mock-up are made physically as well as rendered in Cinema4D",
+
+		"captionthree":
+
+		"<img class=\"smallicon\" src=\"logos/cinema4d.png\" height=\"20px\" width=\"20px\" title=\"Cinema4D\"><img class=\"smallicon\" src=\"logos/illustrator.png\" height=\"20px\" width=\"20px\" title=\"Adobde Illustrator\"><img class=\"smallicon\" src=\"logos/indesign.png\" height=\"20px\" width=\"20px\" title=\"Adobe Indesign\"><img class=\"smallicon\" src=\"logos/photoshop.png\" height=\"20px\" width=\"20px\" title=\"Adobe Photoshop\">",
+
+		"frameheight":"3405px"
+
+
+ 		},
+
+
+ 		{
+
+		"componentId":"12",
+
+		"galleryone":"img/previews/15_1_1.jpg", "galleryonelink":"img/original/15_1_1.jpg", "galleryonedisplay":"showit",
+		"gallerytwo":"img/previews/15_1_2.jpg", "gallerytwolink":"img/original/15_1_2.jpg", "gallerytwodisplay":"showit",
+		"gallerythree":"img/previews/15_1_3.jpg", "gallerythreelink":"img/original/15_1_3.jpg", "gallerythreedisplay":"showit",
+		"galleryfour":"img/previews/15_1_4.jpg", "galleryfourlink":"img/original/15_1_4.jpg", "galleryfourdisplay":"showit",
+		"galleryfive":"img/previews/15_1_5.jpg", "galleryfivelink":"img/original/15_1_5.jpg", "galleryfivedisplay":"showit",
+		"gallerysix":"img/previews/15_1_6.jpg", "gallerysixlink":"img/original/15_1_6.jpg", "gallerysixdisplay":"showit",
+		"galleryseven":"", "gallerysevenlink":"", "gallerysevendisplay":"hideit",
+		"galleryeight":"", "galleryeightlink":"", "galleryeightdisplay":"hideit",
+		"gallerynine":"", "galleryninelink":"", "galleryninedisplay":"hideit",
+		"galleryten":"", "gallerytenlink":"", "gallerytendisplay":"hideit",
+		"galleryeleven":"", "galleryelevenlink":"", "galleryelevendisplay":"hideit",
+		"gallerytwelve":"", "gallerytwelvelink":"", "gallerytwelvedisplay":"hideit",
+		"gallerythirteen":"", "gallerythirteenlink":"", "gallerythirteendisplay":"hideit",
+		"galleryfourteen":"", "galleryfourteenlink":"", "galleryfourteendisplay":"hideit",
+		"galleryfifteen":"", "galleryfifteenlink":"", "galleryfifteendisplay":"hideit",
+		"gallerysixteen":"", "gallerysixteenlink":"", "gallerysixteendisplay":"hideit",
+		"galleryseventeen":"", "galleryseventeenlink":"", "galleryseventeendisplay":"hideit",
+		"galleryeighteen":"", "galleryeighteenlink":"", "galleryeighteendisplay":"hideit",
+		"gallerynineteen":"", "gallerynineteenlink":"", "gallerynineteendisplay":"hideit",
+		"gallerytwenty":"", "gallerytwentylink":"", "gallerytwentydisplay":"hideit",
+		"gallerytwentyone":"", "gallerytwentyonelink":"", "gallerytwentyonedisplay":"hideit",
+
+		"videoframe":"", "videoframedisplay":"hideit", "videoframeheight":"",
+		"captionone":"RECORD COMPANY LOGO",
+		"captiontwo":"Record company vector based logo designs proposal.",
+
+		"captionthree":
+
+		"<img class=\"smallicon\" src=\"logos/illustrator.png\" height=\"20px\" width=\"20px\" title=\"Adobde Illustrator\"><img class=\"smallicon\" src=\"logos/photoshop.png\" height=\"20px\" width=\"20px\" title=\"Adobe Photoshop\">",
+
+		"frameheight":"2460px"
+
+
+ 		},
+
+
+
+ 		{
+
+		"componentId":"13",
+
+		"galleryone":"img/previews/16_1_1.jpg", "galleryonelink":"img/original/16_1_1.jpg", "galleryonedisplay":"showit",
+		"gallerytwo":"img/previews/16_1_2.jpg", "gallerytwolink":"img/original/16_1_2.jpg", "gallerytwodisplay":"showit",
+		"gallerythree":"img/previews/16_1_3.jpg", "gallerythreelink":"img/original/16_1_3.jpg", "gallerythreedisplay":"showit",
+		"galleryfour":"img/previews/16_1_4.jpg", "galleryfourlink":"img/original/16_1_4.jpg", "galleryfourdisplay":"showit",
+		"galleryfive":"img/previews/16_1_5.jpg", "galleryfivelink":"img/original/16_1_5.jpg", "galleryfivedisplay":"showit",
+		"gallerysix":"", "gallerysixlink":"", "gallerysixdisplay":"hideit",
+		"galleryseven":"", "gallerysevenlink":"", "gallerysevendisplay":"hideit",
+		"galleryeight":"", "galleryeightlink":"", "galleryeightdisplay":"hideit",
+		"gallerynine":"", "galleryninelink":"", "galleryninedisplay":"hideit",
+		"galleryten":"", "gallerytenlink":"", "gallerytendisplay":"hideit",
+		"galleryeleven":"", "galleryelevenlink":"", "galleryelevendisplay":"hideit",
+		"gallerytwelve":"", "gallerytwelvelink":"", "gallerytwelvedisplay":"hideit",
+		"gallerythirteen":"", "gallerythirteenlink":"", "gallerythirteendisplay":"hideit",
+		"galleryfourteen":"", "galleryfourteenlink":"", "galleryfourteendisplay":"hideit",
+		"galleryfifteen":"", "galleryfifteenlink":"", "galleryfifteendisplay":"hideit",
+		"gallerysixteen":"", "gallerysixteenlink":"", "gallerysixteendisplay":"hideit",
+		"galleryseventeen":"", "galleryseventeenlink":"", "galleryseventeendisplay":"hideit",
+		"galleryeighteen":"", "galleryeighteenlink":"", "galleryeighteendisplay":"hideit",
+		"gallerynineteen":"", "gallerynineteenlink":"", "gallerynineteendisplay":"hideit",
+		"gallerytwenty":"", "gallerytwentylink":"", "gallerytwentydisplay":"hideit",
+		"gallerytwentyone":"", "gallerytwentyonelink":"", "gallerytwentyonedisplay":"hideit",
+
+		"videoframe":"", "videoframedisplay":"hideit", "videoframeheight":"",
+		"captionone":"NYC SUBWAY POSTER PROPOSAL",
+		"captiontwo":"NYC Subway Posters proposal designs with live mock-ups. Based on water-saving campaign by NYC's Department of Environmental Protection. Illustrations are vector based created in Adobe Illustrator.",
+
+		"captionthree":
+
+		"<img class=\"smallicon\" src=\"logos/illustrator.png\" height=\"20px\" width=\"20px\" title=\"Adobde Illustrator\"><img class=\"smallicon\" src=\"logos/photoshop.png\" height=\"20px\" width=\"20px\" title=\"Adobe Photoshop\">",
+
+		"frameheight":"2700px"
+
+
+ 		},
+
+ 		{
+
+		"componentId":"14",
+
+		"galleryone":"img/previews/17_1_1.jpg", "galleryonelink":"img/original/17_1_1.jpg", "galleryonedisplay":"showit",
+		"gallerytwo":"img/previews/17_1_2.jpg", "gallerytwolink":"img/original/17_1_2.jpg", "gallerytwodisplay":"showit",
+		"gallerythree":"img/previews/17_1_3.jpg", "gallerythreelink":"img/original/17_1_3.jpg", "gallerythreedisplay":"showit",
+		"galleryfour":"img/previews/17_1_4.jpg", "galleryfourlink":"img/original/17_1_4.jpg", "galleryfourdisplay":"showit",
+		"galleryfive":"img/previews/17_1_5.jpg", "galleryfivelink":"img/original/17_1_5.jpg", "galleryfivedisplay":"showit",
+		"gallerysix":"img/previews/17_1_6.jpg", "gallerysixlink":"img/original/17_1_6.jpg", "gallerysixdisplay":"showit",
+		"galleryseven":"img/previews/17_1_7.jpg", "gallerysevenlink":"img/original/17_1_7.jpg", "gallerysevendisplay":"showit",
+		"galleryeight":"img/previews/17_1_8.jpg", "galleryeightlink":"img/original/17_1_8.jpg", "galleryeightdisplay":"showit",
+		"gallerynine":"", "galleryninelink":"", "galleryninedisplay":"hideit",
+		"galleryten":"", "gallerytenlink":"", "gallerytendisplay":"hideit",
+		"galleryeleven":"", "galleryelevenlink":"", "galleryelevendisplay":"hideit",
+		"gallerytwelve":"", "gallerytwelvelink":"", "gallerytwelvedisplay":"hideit",
+		"gallerythirteen":"", "gallerythirteenlink":"", "gallerythirteendisplay":"hideit",
+		"galleryfourteen":"", "galleryfourteenlink":"", "galleryfourteendisplay":"hideit",
+		"galleryfifteen":"", "galleryfifteenlink":"", "galleryfifteendisplay":"hideit",
+		"gallerysixteen":"", "gallerysixteenlink":"", "gallerysixteendisplay":"hideit",
+		"galleryseventeen":"", "galleryseventeenlink":"", "galleryseventeendisplay":"hideit",
+		"galleryeighteen":"", "galleryeighteenlink":"", "galleryeighteendisplay":"hideit",
+		"gallerynineteen":"", "gallerynineteenlink":"", "gallerynineteendisplay":"hideit",
+		"gallerytwenty":"", "gallerytwentylink":"", "gallerytwentydisplay":"hideit",
+		"gallerytwentyone":"", "gallerytwentyonelink":"", "gallerytwentyonedisplay":"hideit",
+
+		"videoframe":"https://www.youtube.com/embed/wM--qNO1ii4", "videoframedisplay":"showit", "videoframeheight":"315px",
+		"captionone":"OCTOPUS ANIMATION",
+		"captiontwo":"A Cinema4D short animation showing a fragile life of a tiny octopus. Octopus model was sculpted and textured in ZBrush and then brought into Cinema4D for animation. Post-production done in Adobe After Effects and Adobe Premiere.",
+
+		"captionthree":
+
+		"<img class=\"smallicon\" src=\"logos/zbrush.png\" height=\"20px\" width=\"20px\" title=\"ZBrush\"><img class=\"smallicon\" src=\"logos/cinema4d.png\" height=\"20px\" width=\"20px\" title=\"Cinema4D\"><img class=\"smallicon\" src=\"logos/aftereffects.png\" height=\"20px\" width=\"20px\" title=\"Adobe AfterEffects\"><img class=\"smallicon\" src=\"logos/premiere.png\" height=\"20px\" width=\"20px\" title=\"Adobe Premiere\">",
+
+		"frameheight":"3531px"
+
+
+ 		},
+
+ 		{
+
+		"componentId":"15",
+
+		"galleryone":"img/previews/18_1_1.jpg", "galleryonelink":"img/original/18_1_1.jpg", "galleryonedisplay":"showit",
+		"gallerytwo":"img/previews/18_1_2.jpg", "gallerytwolink":"img/original/18_1_2.jpg", "gallerytwodisplay":"showit",
+		"gallerythree":"img/previews/18_1_4.jpg", "gallerythreelink":"img/original/18_1_4.jpg", "gallerythreedisplay":"showit",
+		"galleryfour":"img/previews/18_1_5.jpg", "galleryfourlink":"img/original/18_1_5.jpg", "galleryfourdisplay":"showit",
+		"galleryfive":"img/previews/18_1_6.jpg", "galleryfivelink":"img/original/18_1_6.jpg", "galleryfivedisplay":"showit",
+		"gallerysix":"img/previews/18_1_7.jpg", "gallerysixlink":"img/original/18_1_7.jpg", "gallerysixdisplay":"showit",
+		"galleryseven":"img/previews/18_1_8.jpg", "gallerysevenlink":"img/original/18_1_8.jpg", "gallerysevendisplay":"showit",
+		"galleryeight":"", "galleryeightlink":"", "galleryeightdisplay":"hideit",
+		"gallerynine":"", "galleryninelink":"", "galleryninedisplay":"hideit",
+		"galleryten":"", "gallerytenlink":"", "gallerytendisplay":"hideit",
+		"galleryeleven":"", "galleryelevenlink":"", "galleryelevendisplay":"hideit",
+		"gallerytwelve":"", "gallerytwelvelink":"", "gallerytwelvedisplay":"hideit",
+		"gallerythirteen":"", "gallerythirteenlink":"", "gallerythirteendisplay":"hideit",
+		"galleryfourteen":"", "galleryfourteenlink":"", "galleryfourteendisplay":"hideit",
+		"galleryfifteen":"", "galleryfifteenlink":"", "galleryfifteendisplay":"hideit",
+		"gallerysixteen":"", "gallerysixteenlink":"", "gallerysixteendisplay":"hideit",
+		"galleryseventeen":"", "galleryseventeenlink":"", "galleryseventeendisplay":"hideit",
+		"galleryeighteen":"", "galleryeighteenlink":"", "galleryeighteendisplay":"hideit",
+		"gallerynineteen":"", "gallerynineteenlink":"", "gallerynineteendisplay":"hideit",
+		"gallerytwenty":"", "gallerytwentylink":"", "gallerytwentydisplay":"hideit",
+		"gallerytwentyone":"", "gallerytwentyonelink":"", "gallerytwentyonedisplay":"hideit",
+
+		"videoframe":"https://www.youtube.com/embed/k7BCWxulqWs", "videoframedisplay":"showit", "videoframeheight":"315px",
+		"captionone":"UMBRELLA PROJECT ANIMATION",
+		"captiontwo":"A short 3D/Vector video composition about umbrellas and their role in our life. A project is a combination of various techinques aimed at a final video result. Umbrella was modelled in 3Ds Max and brought to Cinema4D and Marmoset Toolbag for animation. Vector based elements were done in Adobe Illustrator and video footage was produced by a regular mobile phone camera.",
+
+		"captionthree":
+
+		"<img class=\"smallicon\" src=\"logos/marmoset.png\" height=\"20px\" width=\"20px\" title=\"Marmoset Toolbag\"><img class=\"smallicon\" src=\"logos/cinema4d.png\" height=\"20px\" width=\"20px\" title=\"Cinema4D\"><img class=\"smallicon\" src=\"logos/3dmax.png\" height=\"20px\" width=\"20px\" title=\"3D Studio Max\"><img class=\"smallicon\" src=\"logos/aftereffects.png\" height=\"20px\" width=\"20px\" title=\"Adobe AfterEffects\"><img class=\"smallicon\" src=\"logos/illustrator.png\" height=\"20px\" width=\"20px\" title=\"Adobe Illustrator\"><img class=\"smallicon\" src=\"logos/premiere.png\" height=\"20px\" width=\"20px\" title=\"Adobe Premiere\">",
+
+		"frameheight":"3094px"
+
+
+ 		},
+
+ 		{
+
+		"componentId":"16",
+
+		"galleryone":"img/previews/19_1_1.jpg", "galleryonelink":"img/original/19_1_1.jpg", "galleryonedisplay":"showit",
+		"gallerytwo":"img/previews/19_1_2.jpg", "gallerytwolink":"img/original/19_1_2.jpg", "gallerytwodisplay":"showit",
+		"gallerythree":"img/check.svg", "gallerythreelink":"old/info_mn/", "gallerythreedisplay":"showit",
+		"galleryfour":"", "galleryfourlink":"", "galleryfourdisplay":"hideit",
+		"galleryfive":"", "galleryfivelink":"", "galleryfivedisplay":"hideit",
+		"gallerysix":"", "gallerysixlink":"", "gallerysixdisplay":"hideit",
+		"galleryseven":"", "gallerysevenlink":"", "gallerysevendisplay":"hideit",
+		"galleryeight":"", "galleryeightlink":"", "galleryeightdisplay":"hideit",
+		"gallerynine":"", "galleryninelink":"", "galleryninedisplay":"hideit",
+		"galleryten":"", "gallerytenlink":"", "gallerytendisplay":"hideit",
+		"galleryeleven":"", "galleryelevenlink":"", "galleryelevendisplay":"hideit",
+		"gallerytwelve":"", "gallerytwelvelink":"", "gallerytwelvedisplay":"hideit",
+		"gallerythirteen":"", "gallerythirteenlink":"", "gallerythirteendisplay":"hideit",
+		"galleryfourteen":"", "galleryfourteenlink":"", "galleryfourteendisplay":"hideit",
+		"galleryfifteen":"", "galleryfifteenlink":"", "galleryfifteendisplay":"hideit",
+		"gallerysixteen":"", "gallerysixteenlink":"", "gallerysixteendisplay":"hideit",
+		"galleryseventeen":"", "galleryseventeenlink":"", "galleryseventeendisplay":"hideit",
+		"galleryeighteen":"", "galleryeighteenlink":"", "galleryeighteendisplay":"hideit",
+		"gallerynineteen":"", "gallerynineteenlink":"", "gallerynineteendisplay":"hideit",
+		"gallerytwenty":"", "gallerytwentylink":"", "gallerytwentydisplay":"hideit",
+		"gallerytwentyone":"", "gallerytwentyonelink":"", "gallerytwentyonedisplay":"hideit",
+
+		"videoframe":"", "videoframedisplay":"hideit", "videoframeheight":"",
+		"captionone":"INDO-EUROPICA INFORMATION PORTAL",
+		"captiontwo":"A mock-up of informational website. Based of 960 grid system, website uses side Jquery plaugins for gallery. Text and image filler taken from Wikipedia",
+
+		"captionthree":
+
+		"<img class=\"smallicon\" src=\"logos/html.png\" height=\"20px\" width=\"20px\" title=\"HTML5\"><img class=\"smallicon\" src=\"logos/css.png\" height=\"20px\" width=\"20px\" title=\"CSS 3.0\"><img class=\"smallicon\" src=\"logos/jquery.png\" height=\"20px\" width=\"20px\" title=\"Jquery\"><img class=\"smallicon\" src=\"logos/photoshop.png\" height=\"20px\" width=\"20px\" title=\"Adobe Photoshop\">",
+
+		"frameheight":"864px"
+
+
+ 		},    
+ 		{
+
+		"componentId":"17",
+
+		"galleryone":"img/previews/20_1_1.jpg", "galleryonelink":"img/original/20_1_1.jpg", "galleryonedisplay":"showit",
+		"gallerytwo":"img/previews/20_1_2.jpg", "gallerytwolink":"img/original/20_1_2.jpg", "gallerytwodisplay":"showit",
+		"gallerythree":"img/previews/20_1_3.jpg", "gallerythreelink":"img/original/20_1_3.jpg", "gallerythreedisplay":"showit",
+		"galleryfour":"img/check.svg", "galleryfourlink":"old/final_mn/", "galleryfourdisplay":"showit",
+		"galleryfive":"", "galleryfivelink":"", "galleryfivedisplay":"hideit",
+		"gallerysix":"", "gallerysixlink":"", "gallerysixdisplay":"hideit",
+		"galleryseven":"", "gallerysevenlink":"", "gallerysevendisplay":"hideit",
+		"galleryeight":"", "galleryeightlink":"", "galleryeightdisplay":"hideit",
+		"gallerynine":"", "galleryninelink":"", "galleryninedisplay":"hideit",
+		"galleryten":"", "gallerytenlink":"", "gallerytendisplay":"hideit",
+		"galleryeleven":"", "galleryelevenlink":"", "galleryelevendisplay":"hideit",
+		"gallerytwelve":"", "gallerytwelvelink":"", "gallerytwelvedisplay":"hideit",
+		"gallerythirteen":"", "gallerythirteenlink":"", "gallerythirteendisplay":"hideit",
+		"galleryfourteen":"", "galleryfourteenlink":"", "galleryfourteendisplay":"hideit",
+		"galleryfifteen":"", "galleryfifteenlink":"", "galleryfifteendisplay":"hideit",
+		"gallerysixteen":"", "gallerysixteenlink":"", "gallerysixteendisplay":"hideit",
+		"galleryseventeen":"", "galleryseventeenlink":"", "galleryseventeendisplay":"hideit",
+		"galleryeighteen":"", "galleryeighteenlink":"", "galleryeighteendisplay":"hideit",
+		"gallerynineteen":"", "gallerynineteenlink":"", "gallerynineteendisplay":"hideit",
+		"gallerytwenty":"", "gallerytwentylink":"", "gallerytwentydisplay":"hideit",
+		"gallerytwentyone":"", "gallerytwentyonelink":"", "gallerytwentyonedisplay":"hideit",
+
+		"videoframe":"", "videoframedisplay":"hideit", "videoframeheight":"",
+		"captionone":"GLOBAL WARMING AWARNESS PROJECT",
+		"captiontwo":"An animated website about the issue of global warming oriented on general public/teenageers to raise awareness of the problem. Vector elements made in Adobe Illustrator, animated elements are made in Adobe After Effects. Basic layout done with HMTL/CSS and Jquery plugin.",
+
+		"captionthree":
+
+		"<img class=\"smallicon\" src=\"logos/html.png\" height=\"20px\" width=\"20px\" title=\"HTML5\"><img class=\"smallicon\" src=\"logos/css.png\" height=\"20px\" width=\"20px\" title=\"CSS 3.0\"><img class=\"smallicon\" src=\"logos/jquery.png\" height=\"20px\" width=\"20px\" title=\"Jquery\"><img class=\"smallicon\" src=\"logos/aftereffects.png\" height=\"20px\" width=\"20px\" title=\"Adobe AfterEffects\"><img class=\"smallicon\" src=\"logos/illustrator.png\" height=\"20px\" width=\"20px\" title=\"Adobe Illustrator\">",
+
+		"frameheight":"1382px"
+
+
+ 	},
+ 	{
+
+	"componentId":"18",
+
+	"galleryone":"img/previews/21_1_1.jpg", "galleryonelink":"img/original/21_1_1.jpg", "galleryonedisplay":"showit",
+	"gallerytwo":"img/previews/21_1_2.jpg", "gallerytwolink":"img/original/21_1_2.jpg", "gallerytwodisplay":"showit",
+	"gallerythree":"img/previews/21_1_3.jpg", "gallerythreelink":"img/original/21_1_3.jpg", "gallerythreedisplay":"showit",
+	"galleryfour":"img/previews/21_1_4.jpg", "galleryfourlink":"img/original/21_1_4.jpg", "galleryfourdisplay":"showit",
+	"galleryfive":"img/check.svg", "galleryfivelink":"old/perspective_mn/", "galleryfivedisplay":"showit",
+	"gallerysix":"", "gallerysixlink":"", "gallerysixdisplay":"hideit",
+	"galleryseven":"", "gallerysevenlink":"", "gallerysevendisplay":"hideit",
+	"galleryeight":"", "galleryeightlink":"", "galleryeightdisplay":"hideit",
+	"gallerynine":"", "galleryninelink":"", "galleryninedisplay":"hideit",
+	"galleryten":"", "gallerytenlink":"", "gallerytendisplay":"hideit",
+	"galleryeleven":"", "galleryelevenlink":"", "galleryelevendisplay":"hideit",
+	"gallerytwelve":"", "gallerytwelvelink":"", "gallerytwelvedisplay":"hideit",
+	"gallerythirteen":"", "gallerythirteenlink":"", "gallerythirteendisplay":"hideit",
+	"galleryfourteen":"", "galleryfourteenlink":"", "galleryfourteendisplay":"hideit",
+	"galleryfifteen":"", "galleryfifteenlink":"", "galleryfifteendisplay":"hideit",
+	"gallerysixteen":"", "gallerysixteenlink":"", "gallerysixteendisplay":"hideit",
+	"galleryseventeen":"", "galleryseventeenlink":"", "galleryseventeendisplay":"hideit",
+	"galleryeighteen":"", "galleryeighteenlink":"", "galleryeighteendisplay":"hideit",
+	"gallerynineteen":"", "gallerynineteenlink":"", "gallerynineteendisplay":"hideit",
+	"gallerytwenty":"", "gallerytwentylink":"", "gallerytwentydisplay":"hideit",
+	"gallerytwentyone":"", "gallerytwentyonelink":"", "gallerytwentyonedisplay":"hideit",
+
+	"videoframe":"", "videoframedisplay":"hideit", "videoframeheight":"",
+	"captionone":"PAST/PRESENT PERSPECTIVE",
+	"captiontwo":"A small web project to represent imaginary \"past\" in comparison to the \"present\". HTML code is the same for both pages, so all the difference is brought in by CSS style only. A poetry used is \"I Sit Beside the Fire and Think\" by J.R.R. Tolkien. Vector based page made in Illustrator, 3D rendered illustration made in E-On Vue",
+
+	"captionthree":
+
+	"<img class=\"smallicon\" src=\"logos/html.png\" height=\"20px\" width=\"20px\" title=\"HTML5\"><img class=\"smallicon\" src=\"logos/css.png\" height=\"20px\" width=\"20px\" title=\"CSS 3.0\"><img class=\"smallicon\" src=\"logos/jquery.png\" height=\"20px\" width=\"20px\" title=\"Jquery\"><img class=\"smallicon\" src=\"logos/illustrator.png\" height=\"20px\" width=\"20px\" title=\"Adobe Illustrator\"><img class=\"smallicon\" src=\"logos/vue.png\" height=\"20px\" width=\"20px\" title=\"E-On Vue\">",
+
+	"frameheight":"1855px"
+
+
+ 	},
+	{
+
+	"componentId":"19",
+
+	"galleryone":"img/previews/22_1_1.jpg", "galleryonelink":"img/original/22_1_1.jpg", "galleryonedisplay":"showit",
+	"gallerytwo":"img/previews/22_1_2.jpg", "gallerytwolink":"img/original/22_1_2.jpg", "gallerytwodisplay":"showit",
+	"gallerythree":"img/previews/22_1_3.jpg", "gallerythreelink":"img/original/22_1_3.jpg", "gallerythreedisplay":"showit",
+	"galleryfour":"img/previews/22_1_4.jpg", "galleryfourlink":"img/original/22_1_4.jpg", "galleryfourdisplay":"showit",
+	"galleryfive":"img/previews/22_1_5.jpg", "galleryfivelink":"img/original/22_1_5.jpg", "galleryfivedisplay":"showit",
+	"gallerysix":"img/check.svg", "gallerysixlink":"old/place_mn/", "gallerysixdisplay":"showit",
+	"galleryseven":"", "gallerysevenlink":"", "gallerysevendisplay":"hideit",
+	"galleryeight":"", "galleryeightlink":"", "galleryeightdisplay":"hideit",
+	"gallerynine":"", "galleryninelink":"", "galleryninedisplay":"hideit",
+	"galleryten":"", "gallerytenlink":"", "gallerytendisplay":"hideit",
+	"galleryeleven":"", "galleryelevenlink":"", "galleryelevendisplay":"hideit",
+	"gallerytwelve":"", "gallerytwelvelink":"", "gallerytwelvedisplay":"hideit",
+	"gallerythirteen":"", "gallerythirteenlink":"", "gallerythirteendisplay":"hideit",
+	"galleryfourteen":"", "galleryfourteenlink":"", "galleryfourteendisplay":"hideit",
+	"galleryfifteen":"", "galleryfifteenlink":"", "galleryfifteendisplay":"hideit",
+	"gallerysixteen":"", "gallerysixteenlink":"", "gallerysixteendisplay":"hideit",
+	"galleryseventeen":"", "galleryseventeenlink":"", "galleryseventeendisplay":"hideit",
+	"galleryeighteen":"", "galleryeighteenlink":"", "galleryeighteendisplay":"hideit",
+	"gallerynineteen":"", "gallerynineteenlink":"", "gallerynineteendisplay":"hideit",
+	"gallerytwenty":"", "gallerytwentylink":"", "gallerytwentydisplay":"hideit",
+	"gallerytwentyone":"", "gallerytwentyonelink":"", "gallerytwentyonedisplay":"hideit",
+
+	"videoframe":"", "videoframedisplay":"hideit", "videoframeheight":"",
+	"captionone":"INTERNATIONAL SPACE STATION EXPLORER",
+	"captiontwo":"A project based on HTML/CSS oriented at general public, allowing to explore the International Space Station in a virtual tour. Photographs from NASA/Wikipedia sources are used for the website",
+
+	"captionthree":
+
+	"<img class=\"smallicon\" src=\"logos/html.png\" height=\"20px\" width=\"20px\" title=\"HTML5\"><img class=\"smallicon\" src=\"logos/css.png\" height=\"20px\" width=\"20px\" title=\"CSS 3.0\"><img class=\"smallicon\" src=\"logos/illustrator.png\" height=\"20px\" width=\"20px\" title=\"Adobe Illustrator\">",
+
+	"frameheight":"2399px"
+
+
+ 	},
+ 	{
+
+	"componentId":"20",
+
+	"galleryone":"img/previews/23_1_1.jpg", "galleryonelink":"img/original/23_1_1.jpg", "galleryonedisplay":"showit",
+	"gallerytwo":"img/previews/23_1_2.jpg", "gallerytwolink":"img/original/23_1_2.jpg", "gallerytwodisplay":"showit",
+	"gallerythree":"img/previews/23_1_3.jpg", "gallerythreelink":"img/original/23_1_3.jpg", "gallerythreedisplay":"showit",
+	"galleryfour":"img/previews/23_1_4.jpg", "galleryfourlink":"img/original/23_1_4.jpg", "galleryfourdisplay":"showit",
+	"galleryfive":"img/check.svg", "galleryfivelink":"madlib/", "galleryfivedisplay":"showit",
+	"gallerysix":"", "gallerysixlink":"", "gallerysixdisplay":"hideit",
+	"galleryseven":"", "gallerysevenlink":"", "gallerysevendisplay":"hideit",
+	"galleryeight":"", "galleryeightlink":"", "galleryeightdisplay":"hideit",
+	"gallerynine":"", "galleryninelink":"", "galleryninedisplay":"hideit",
+	"galleryten":"", "gallerytenlink":"", "gallerytendisplay":"hideit",
+	"galleryeleven":"", "galleryelevenlink":"", "galleryelevendisplay":"hideit",
+	"gallerytwelve":"", "gallerytwelvelink":"", "gallerytwelvedisplay":"hideit",
+	"gallerythirteen":"", "gallerythirteenlink":"", "gallerythirteendisplay":"hideit",
+	"galleryfourteen":"", "galleryfourteenlink":"", "galleryfourteendisplay":"hideit",
+	"galleryfifteen":"", "galleryfifteenlink":"", "galleryfifteendisplay":"hideit",
+	"gallerysixteen":"", "gallerysixteenlink":"", "gallerysixteendisplay":"hideit",
+	"galleryseventeen":"", "galleryseventeenlink":"", "galleryseventeendisplay":"hideit",
+	"galleryeighteen":"", "galleryeighteenlink":"", "galleryeighteendisplay":"hideit",
+	"gallerynineteen":"", "gallerynineteenlink":"", "gallerynineteendisplay":"hideit",
+	"gallerytwenty":"", "gallerytwentylink":"", "gallerytwentydisplay":"hideit",
+	"gallerytwentyone":"", "gallerytwentyonelink":"", "gallerytwentyonedisplay":"hideit",
+
+	"videoframe":"", "videoframedisplay":"hideit", "videoframeheight":"",
+	"captionone":"MADLIB IN NATURE",
+	"captiontwo":"Madlib play-webpage based on JavaScript with a unique topic oriented layout that corresponds to texts of madlibs. All vector based illustrations are made in Adobe Illustrator",
+
+	"captionthree":
+
+	"<img class=\"smallicon\" src=\"logos/html.png\" height=\"20px\" width=\"20px\" title=\"HTML5\"><img class=\"smallicon\" src=\"logos/css.png\" height=\"20px\" width=\"20px\" title=\"CSS 3.0\"><img class=\"smallicon\" src=\"logos/javascript.png\" height=\"20px\" width=\"20px\" title=\"Java Script\"><img class=\"smallicon\" src=\"logos/illustrator.png\" height=\"20px\" width=\"20px\" title=\"Adobe Illustrator\">",
+
+	"frameheight":"1262px"
+
+
+ 	},
+ 	{
+
+	"componentId":"21",
+
+	"galleryone":"img/previews/23_1_1.jpg", "galleryonelink":"img/original/23_1_1.jpg", "galleryonedisplay":"showit",
+	"gallerytwo":"img/previews/23_1_2.jpg", "gallerytwolink":"img/original/23_1_2.jpg", "gallerytwodisplay":"showit",
+	"gallerythree":"img/check.svg", "gallerythreelink":"testing/", "gallerythreedisplay":"showit",
+	"galleryfour":"", "galleryfourlink":"", "galleryfourdisplay":"hideit",
+	"galleryfive":"", "galleryfivelink":"", "galleryfivedisplay":"hideit",
+	"gallerysix":"", "gallerysixlink":"", "gallerysixdisplay":"hideit",
+	"galleryseven":"", "gallerysevenlink":"", "gallerysevendisplay":"hideit",
+	"galleryeight":"", "galleryeightlink":"", "galleryeightdisplay":"hideit",
+	"gallerynine":"", "galleryninelink":"", "galleryninedisplay":"hideit",
+	"galleryten":"", "gallerytenlink":"", "gallerytendisplay":"hideit",
+	"galleryeleven":"", "galleryelevenlink":"", "galleryelevendisplay":"hideit",
+	"gallerytwelve":"", "gallerytwelvelink":"", "gallerytwelvedisplay":"hideit",
+	"gallerythirteen":"", "gallerythirteenlink":"", "gallerythirteendisplay":"hideit",
+	"galleryfourteen":"", "galleryfourteenlink":"", "galleryfourteendisplay":"hideit",
+	"galleryfifteen":"", "galleryfifteenlink":"", "galleryfifteendisplay":"hideit",
+	"gallerysixteen":"", "gallerysixteenlink":"", "gallerysixteendisplay":"hideit",
+	"galleryseventeen":"", "galleryseventeenlink":"", "galleryseventeendisplay":"hideit",
+	"galleryeighteen":"", "galleryeighteenlink":"", "galleryeighteendisplay":"hideit",
+	"gallerynineteen":"", "gallerynineteenlink":"", "gallerynineteendisplay":"hideit",
+	"gallerytwenty":"", "gallerytwentylink":"", "gallerytwentydisplay":"hideit",
+	"gallerytwentyone":"", "gallerytwentyonelink":"", "gallerytwentyonedisplay":"hideit",
+
+	"videoframe":"", "videoframedisplay":"hideit", "videoframeheight":"",
+	"captionone":"JAVASCRIPT TESTING SITE",
+	"captiontwo":"Jquery based magic box website which intorduces different scenes of a nuclear testing site that appear randomly after pressing a button.",
+
+	"captionthree":
+
+	"<img class=\"smallicon\" src=\"logos/html.png\" height=\"20px\" width=\"20px\" title=\"HTML5\"><img class=\"smallicon\" src=\"logos/css.png\" height=\"20px\" width=\"20px\" title=\"CSS 3.0\"><img class=\"smallicon\" src=\"logos/javascript.png\" height=\"20px\" width=\"20px\" title=\"Java Script\"><img class=\"smallicon\" src=\"logos/jquery.png\" height=\"20px\" width=\"20px\" title=\"JQuery\"><img class=\"smallicon\" src=\"logos/illustrator.png\" height=\"20px\" width=\"20px\" title=\"Adobe Illustrator\">",
+
+	"frameheight":"676px"
+
+
+ 	}             
+
+
+ 		]
+
+ 			}

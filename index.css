@@ -230,7 +230,7 @@ min-width:720px;
 .svgbottom {	
 	z-index:1;
 position:relative;
-top:7.6%;
+bottom:-10%;
 
 height:250px;
   width: 100%;
@@ -508,8 +508,8 @@ opacity:1;
 z-index:9;
 	font-size:4pt;
 	color:inherit;
-padding-top:13px;
-padding-left:7px;
+padding-top:12px;
+padding-left:10px;
 	font-family: "Arial Black", Gadget, sans-serif;
 	z-index:5;
 position:absolute;

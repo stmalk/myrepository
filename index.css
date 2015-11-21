@@ -184,7 +184,30 @@ color:rgba(255,255,255,255);
 transform: scale(6);
 }
 
+.cloud6{
+	text-align:center;
+		z-index:2;
+position:relative;
+ background-color:rgba(0,0,0,255);
+ border-radius: 50%;
+left:60%;
+	top:90px;
+	width: 40px;
+	height: 40px;
+	-ms-transform-origin: center ; 
+ -webkit-transform-origin:  center; 
+ transform-origin:  center; 
+color:rgba(0,0,0,0);
+transition: all .2s ease-in-out;
+}
 
+.cloud6:hover{
+-ms-transform-origin: center ; 
+ -webkit-transform-origin:  center; 
+ transform-origin:  center; 
+color:rgba(255,255,255,255);
+transform: scale(6);
+}
 
 .svgtop {	
 	z-index:1;
@@ -477,6 +500,51 @@ opacity:1;
 }
 
 
+.text6 {
+
+	  height: auto;
+    margin: 0 auto;
+    padding: 10px;
+z-index:9;
+	font-size:4pt;
+	color:inherit;
+padding-top:16px;
+padding-left:6px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	z-index:5;
+position:absolute;
+
+
+pointer-events: inherit;
+
+  background-color:rgba(0,0,0,0);
+
+
+}
+
+.text6:link{
+	font-size:4pt;
+	color:white;
+
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.text6:visited{
+	font-size:4pt;
+	color:white;
+
+	font-family: "Arial Black", Gadget, sans-serif;	
+}
+
+.text6:active {
+	font-size:4pt;
+	color:white;
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.text6:hover{
+opacity:1;
+}
 
 
 

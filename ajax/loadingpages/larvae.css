@@ -1,0 +1,131 @@
+    body,html{
+
+        width:100%;
+background-size:100% 100%;
+
+background: -moz-linear-gradient(top,  #1e5799 0%, #7db9e8 100%);
+background: -webkit-linear-gradient(top,  #1e5799 0%,#7db9e8 100%);
+background: linear-gradient(to bottom,  #1e5799 0%,#7db9e8 100%); 
+
+
+       margin: 0 0 ;
+    }
+
+.header{
+    background:white;
+
+    margin-top:3%;
+    width:100%;
+    height:50px;
+}
+
+
+.main{
+        overflow-x:hidden;
+    background:white;
+    margin-top:3%;
+    height:700px;
+    width:100%;
+    padding-top:0px;
+    padding-bottom:0px;
+    position:relative;
+    display: block;
+}
+
+.content{
+    position:absolute;
+    overflow-x:hidden;
+ height:700px;
+width:100%;
+text-align:center;
+margin:0 auto;
+background:white;    
+    display: block;
+    z-index:1;
+
+}
+
+
+.insides{
+    overflow-x:hidden;
+    overflow-y:hidden;
+ height:700px;
+    width:100%;
+text-align:center;
+    margin:0 auto;
+    background:white;    
+   
+        z-index:2;
+    position:absolute;
+
+}
+
+.button{
+    cursor:pointer;
+    vertical-align:middle;
+    padding-top:12px;
+    color:#655D7B;
+    font-family: 'Cabin', sans-serif;
+    font-size:1.4em;
+    font-weight:medium;
+    text-align:center;
+    float:left;
+    width:33.2%;
+    height:38px;
+    margin:auto auto;
+    background:white;    
+    border-width:1px;
+    border-right-style:solid;
+    border-color:lightblue;
+    -webkit-transition: color 0.2s ease-out;
+-moz-transition: color 0.2s ease-out;
+-ms-transition: color 0.2s ease-out;
+-o-transition: color 0.2s ease-out;
+transition: color 0.2s ease-out;
+
+}
+
+.button:link {
+   text-decoration: none;
+    color:#655D7B;
+}
+
+/* visited link */
+.button:visited {
+    color:#655D7B;
+}
+
+/* mouse over link */
+.button:hover {
+    color:#3690FF;
+}
+
+/* selected link */
+.button:active {
+    color:#655D7B;
+}
+
+
+
+.centralbuttons{
+   
+    width:40%;
+    height:50px;
+    margin:auto auto;
+    background:white;    
+    border-width:1px;
+    border-left-style:solid;
+    border-right-style:solid;
+    border-color:lightblue;
+}
+
+    .loaded1{  
+
+    }
+    .loaded2{  
+
+    }
+    .loaded3{
+
+    }
+   

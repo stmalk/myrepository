@@ -48,25 +48,46 @@ var titleName;
 $(document).ready(function() {
 
 
-$('#hurricanes').click(function (e){
+$('#hurricanes').click(function (){
 iconic='hurr.png';
+
+
+function getHurricanes(){
+
+   $.ajax({
+        url: "http://api.wunderground.com/api/c49df59c18cc3862/currenthurricane/view.json",
+        function(data){
+        $.each(data.features, function(key, val) {
+                var coord = val.Current;
+                location = {
+                    lat: coord.lat,
+                    lng: coord.lon
+                };
+                 titleName = val.stormInfo.stormName;
+            });
+         
+         
+        }
+    });
+
+
+}
+
     createMarker();
     initMap();
-    console.log(iconic);
-    console.log(titleName);
-            console.log(location);
+console.log(location);
+console.log(titleName);
+
 });
-$('#earthquakes').click(function (e){
+
+
+
+
+$('#earthquakes').click(function (){
 iconic='durr.png';
-    createMarker();
-    initMap();
-    console.log(iconic);
-    console.log(titleName);
-            console.log(location);
 
-});
 
-function getQuakes(e){
+function getQuakes(){
     $.ajax({
         url: "http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2014-01-01&endtime=2015-01-02",
         function(data){
@@ -79,11 +100,20 @@ function getQuakes(e){
                  titleName = val.properties.title;
             });
          
-            console.log(titleName);
-            console.log(location);
+         
         }
     });
 
 }   
+
+    createMarker();
+    initMap();
+console.log(location);
+console.log(titleName);
+});
+
+
+
+
 
 });

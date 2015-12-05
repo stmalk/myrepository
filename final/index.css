@@ -1,0 +1,202 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+
+    
+    background: rgb(169, 162, 216);
+
+    
+    background: -moz-radial-gradient(center, ellipse cover, rgba(169, 162, 216, 1) 0%, rgba(30, 16, 63, 1) 100%);
+
+    
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(169, 162, 216, 1) 0%, rgba(30, 16, 63, 1) 100%);
+
+    
+    background: radial-gradient(ellipse at center, rgba(169, 162, 216, 1) 0%, rgba(30, 16, 63, 1) 100%);
+
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a9a2d8', endColorstr='#1e103f', GradientType=1);
+
+    
+    background-position: 100% 100%;
+    background-attachment: fixed;
+}
+#map {
+    height: 100%;
+}
+.tophead {
+    height: 14rem;
+    background: white;
+}
+.footer {
+    height: 8rem;
+    background: white;
+    border-top-style: solid;
+    border-color: #dba7a7;
+    border-top-width: 1px;
+}
+.mapsection {
+    position: absolute;
+    width: 80%;
+    height: 60rem;
+    background: white;
+    padding: 0rem 0rem 0rem 0rem;
+}
+.sidebar {
+    position: relative;
+    width: 20%;
+    height: 60rem;
+    background: white;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-color: #dba7a7;
+    float: right;
+    padding: 0rem 0rem 0rem 0rem;
+}
+.linkhead {
+    background: white;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #dba7a7;
+    border-width: 1px;
+    padding: 0rem 0rem 0rem 0rem;
+}
+.linkdivider {
+    height: 4rem;
+    margin-top: 0.5rem;
+    width: 0.1rem;
+    background-color: #dba7a7;
+
+    display: inline-block;
+    margin-left: 0%;
+    float:right;
+}
+.choices {
+    cursor: pointer;
+    float: right;
+    line-height: 2;
+    border-width: 1px;
+    width: 33.244444%;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 1rem 0rem 1rem 0rem;
+    height: 3rem;
+    background-color: white;
+    text-align: center;
+    color: #dba7a7;
+    -webkit-transition: background-color 0.2s ease-out;
+    -moz-transition: background-color 0.2s ease-out;
+    -ms-transition: background-color 0.2s ease-out;
+    -o-transition: background-color 0.2s ease-out;
+    transition: background-color 0.2s ease-out;
+}
+
+
+.choices:link {
+    background-color: white;
+}
+
+
+.choices:visited {
+    background-color: white;
+}
+
+
+.choices:hover {
+    color: white;
+    transition: background-color 0.2s ease-out;
+    background-color: #dba7a7;
+}
+
+
+.choices:active {
+    background-color: white;
+}
+
+
+
+
+@media (max-width: 560px) {
+    .choices {
+        float: initial;
+        width: 100%;
+    }
+
+        .mapsection {
+            position: relative;
+            width: 100%;
+            height: 60rem;
+            background: white;
+            padding: 0rem 0rem 0rem 0rem;
+        }
+        .sidebar {
+            width: 100%;
+            height: 20rem;
+            background: white;
+            float: left;
+            padding: 0rem 0rem 0rem 0rem;
+            border-left-width: 0px;
+            border-left-style: none;
+            border-top-width: 1px;
+            border-top-style: solid;
+            border-color: #dba7a7;
+        }
+}
+
+
+@media (min-width: 561px) and (max-width: 959px) {
+    .choices {
+        float: initial;
+        width: 100%;
+    }
+
+.linkdivider {
+    height: 4rem;
+display:none;
+}
+
+
+        .mapsection {
+            position: relative;
+            width: 100%;
+            height: 60rem;
+            background: white;
+            padding: 0rem 0rem 0rem 0rem;
+        }
+        .sidebar {
+            width: 100%;
+            height: 20rem;
+            background: white;
+            float: left;
+            padding: 0rem 0rem 0rem 0rem;
+            border-left-width: 0px;
+            border-left-style: none;
+            border-top-width: 1px;
+            border-top-style: solid;
+            border-color: #dba7a7;
+        }
+
+}
+
+@media (min-width: 960px) and (max-width: 1000px) {
+    .choices {
+
+        width: 33.235%;
+    }
+    }
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+    .choices {
+
+        width: 33.2514%;
+    }
+    }
+
+@media (min-width: 1201px){
+    .choices {
+
+        width: 33.25777777%;
+    }
+    }
+

@@ -3,7 +3,7 @@
 
 function displayMarkers() {
 
-        var latlng = new google.maps.LatLng(location.lat, location.lng);
+        var latlng = new google.maps.LatLng(latitd,longtd);
         var name = titleName;
 
         createMarker(latlng, name);
@@ -42,7 +42,8 @@ function initMap() {
 
 }
 
-var location;
+var latitd;
+var longtd;
 var titleName;
 
 $(document).ready(function() {
@@ -59,25 +60,27 @@ function getHurricanes(){
         function(data){
         $.each(data.features, function(key, val) {
                 var coord = val.Current;
-                location = {
-                    lat: coord.lat,
-                    lng: coord.lon
+                locationD = {
+                    latd: coord.lat,
+                    lngd: coord.lon
                 };
-                 titleName = val.stormInfo.stormName;
+
+                latitd = locationD.latd;
+                longtd= locationD.lngd;
+                 titleName = val.stormInfo.stormName;                          
             });
-         
-         
         }
+ 
     });
 
 
 }
 
-    createMarker();
-    initMap();
-console.log(location);
-console.log(titleName);
+createMarker();
+initMap();
 
+console.log(latitd,longtd);
+console.log(titleName); 
 });
 
 
@@ -89,27 +92,31 @@ iconic='durr.png';
 
 function getQuakes(){
     $.ajax({
-        url: "http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2014-01-01&endtime=2015-01-02",
+        url: "http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2014-01-01&endtime=2014-01-02",
         function(data){
         $.each(data.features, function(key, val) {
                 var coord = val.geometry.coordinates;
-                location = {
-                    lat: coord[0],
-                    lng: coord[1]
+                locationD = {
+                    latd: coord[0],
+                    lngd: coord[1]
                 };
+                latitd = locationD.latd;
+                longtd= locationD.lngd;
                  titleName = val.properties.title;
-            });
-         
-         
+                         
+            }); 
         }
+
     });
 
 }   
 
-    createMarker();
-    initMap();
-console.log(location);
+createMarker();
+initMap();
+
+console.log(latitd,longtd);
 console.log(titleName);
+
 });
 
 

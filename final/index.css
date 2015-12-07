@@ -122,6 +122,11 @@ html {
         float: initial;
         width: 100%;
     }
+    .linkdivider {
+    height: 4rem;
+display:none;
+}
+
 
         .mapsection {
             position: relative;

@@ -10,6 +10,7 @@ var iconic = 'durr.png';
 
 $(document).ready(function() {
     $('#hurricanes').click(function() {
+         $("#sideinfo ul").empty();
         iconic = 'hurr.png';
         getHurricanes();
         createMarker();
@@ -20,21 +21,28 @@ $(document).ready(function() {
 
 
     $('#earthquakes').click(function() {
+         $("#sideinfo ul").empty();
         iconic = 'durr.png';
         getQuakes();
         createMarker();
         initMap();
         console.log(latitd, longtd);
         console.log(titleName);
+        console.log(placeName);
+geocodeLatLng(geocoder, map);
+     
     });
 
     $('#meteors').click(function() {
-        iconic = 'durr.png';
+        iconic = 'murr.png';
+         $("#sideinfo ul").empty();
         getMeteors();
         createMarker();
         initMap();
         console.log(latitd, longtd);
         console.log(titleName);
+
+
     });
 
 
@@ -43,7 +51,7 @@ $(document).ready(function() {
 
 
 
-function getMeteors(){
+function getMeteors(latlng){
 
     $.ajax({
         url: "https://data.nasa.gov/resource/gh4g-9sfh.json",
@@ -58,10 +66,16 @@ function getMeteors(){
                 latitd = locationD.latd;
                 longtd = locationD.lngd;
 
-                titleName = val.name;                 
+                titleName = val.name;
+                yearofFall = val.year;                 
                 displayMarkers();
+                var placement = latitd + ',' + longtd;
+                         $("#sideinfo ul").append('<a href=\"http://maps.google.com/maps?q=loc:' + placement + '\">'+'<li>' + 'A meteorite named ' + titleName + ' fell near ' +placement+ ' in the year of '  +  yearofFall+ '</li>'+ '</a>');
                      console.log(data);
+                     console.log(latlng);
             });
+
+
         }
 
     });
@@ -100,7 +114,7 @@ function getHurricanes() {
 }
 
 
-function getQuakes() {
+function getQuakes(latlng) {
     console.log("get quakes");
     console.log(displayDate);
     console.log(yesterDate);
@@ -108,7 +122,7 @@ function getQuakes() {
         url: 'http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=' + yesterDate + '&endtime=' + displayDate,
         success: function(data) {
             console.log(data);
-            
+
             $.each(data.features, function(key, val) {
                 titleName = val.properties.title;
                 var coord = val.geometry.coordinates;
@@ -116,10 +130,13 @@ function getQuakes() {
                     latd: coord[1],
                     lngd: coord[0]
                 };
+                var magnit= val.properties.mag;
                 latitd = locationD.latd;
                 longtd = locationD.lngd;
-                
+                var placement = latitd + ',' + longtd;
+     $("#sideinfo ul").append('<a href=\"http://maps.google.com/maps?q=loc:' + placement + '\">'+'<li>' + 'Around the area of ' + titleName + ' there was an earthquake of '  +  magnit+  ' magnitude. ' + '</li>'+ '</a>');
 displayMarkers();
+
             });
         }
 
@@ -132,6 +149,7 @@ displayMarkers();
 
 function displayMarkers() {  
     var latlng = new google.maps.LatLng(latitd, longtd);
+    geocodeLatLng(geocoder, map, latlng);
     var name = titleName;
     createMarker(latlng, name);
     console.log(latitd, longtd);
@@ -149,6 +167,7 @@ function createMarker(latlng, name) {
 }
 
 function initMap() {
+    geocoder = new google.maps.Geocoder();
     map = new google.maps.Map(document.getElementById('map'), {
         center: {
             lat: -0.397,
@@ -162,3 +181,25 @@ function initMap() {
 
 }
 
+
+var placeName;
+
+function geocodeLatLng(geocoder, map, latlng) {  
+
+  geocoder.geocode({'location':latlng}, function(results, status) {
+    if (status === google.maps.GeocoderStatus.OK) {
+      if (results[1]) {     
+        displayMarkers();
+        placeName = (results[1].formatted_address);
+        console.log(placeName);
+       
+      } else {
+        window.alert('No results found');
+        
+      }
+    } else {
+      window.alert('Geocoder failed due to: ' + status);
+    
+    }
+  });
+}

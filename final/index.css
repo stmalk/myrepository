@@ -25,6 +25,43 @@ html {
 #map {
     height: 100%;
 }
+
+.eventfeed{
+    padding:25px;
+    margin-top:3px;
+    list-style-type:none !important;
+    text-decoration: none !important;
+    color:black !important;
+    font-size:1.3rem;
+    font-family: Arial, Helvetica, sans-serif !important;
+
+
+}
+/* unvisited link */
+a:link {
+    color: #dba7a7 !important;
+     text-decoration: none !important;
+}
+
+/* visited link */
+a:visited {
+    color: #dba7a7 !important;
+     text-decoration: none !important;
+}
+
+/* mouse over link */
+a:hover {
+    color: rgb(169, 162, 216) !important;
+     text-decoration: none !important;
+}
+
+/* selected link */
+a:active {
+    color: #dba7a7 !important;
+     text-decoration: none !important;
+}
+
+
 .tophead {
     height: 14rem;
     background: white;
@@ -53,6 +90,8 @@ html {
     border-color: #dba7a7;
     float: right;
     padding: 0rem 0rem 0rem 0rem;
+    overflow-x:scroll;
+     overflow-y:none;
 }
 .linkhead {
     background: white;
@@ -126,6 +165,8 @@ html {
     height: 4rem;
 display:none;
 }
+
+
 
 
         .mapsection {

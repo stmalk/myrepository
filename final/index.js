@@ -75,10 +75,12 @@ function getMeteors(){
 function getHurricanes() {
 
     $.ajax({
-        url: "http://api.sigimera.org/v1/crises?auth_token=-8PdNJJLLfW2oULwSW-g&type=cyclone",
+        url: "http://api.sigimera.org/v1/crises?callback=parseResponse&auth_token=-8PdNJJLLfW2oULwSW-g&type=cyclone",
         success: function(data) {
             console.log(data);
-           
+          data: '{"some":"json"}'
+            crossDomain: true    
+            dataType: 'json'
             $.each(data.features, function(key, val) {
                 var coord = val.foaf_based_near;
                 locationD = {

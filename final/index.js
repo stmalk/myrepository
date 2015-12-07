@@ -30,6 +30,7 @@ $(document).ready(function() {
         createMarker();
         initMap();
         console.log(placeName);
+
     });
 
     $('#meteors').click(function() {
@@ -143,8 +144,9 @@ function getQuakes() {
                 latitd = locationD.latd;
                 longtd = locationD.lngd;
                 var placement = latitd + ',' + longtd;
-                $("#sideinfo ul").append('<a href=\"http://maps.google.com/maps?q=loc:' + placement + '\">' + '<li>' + 'Around the area of ' + placeName + ' there was an earthquake of ' + magnit + ' magnitude. ' + '</li>' + '</a>');
+                $("#sideinfo ul").append('<a href=\"http://maps.google.com/maps?q=loc:' + placement + '\">' + '<li>' + 'Around the area of ' + placement + ' there was an earthquake of ' + magnit + ' magnitude. ' + '</li>' + '</a>');
                 displayMarkers();
+              
 
             });
         }
@@ -158,7 +160,7 @@ function getQuakes() {
 
 function displayMarkers() {
     var latlng = new google.maps.LatLng(latitd, longtd);
-    geocodeLatLng(geocoder, map, latlng, placeName);
+geocodeLatLng(geocoder, map, latlng);
     var name = titleName;
     createMarker(latlng, name);
     console.log(latitd, longtd);
@@ -203,10 +205,9 @@ function geocodeLatLng(geocoder, map, latlng) {
     }, function(results, status) {
         if (status === google.maps.GeocoderStatus.OK) {
             if (results[1]) {
-                displayMarkers();
-                console.log(results[1].formatted_address);
-                placeName = (results[1].formatted_address);
-
+             
+                 placeName = (results[1].formatted_address);
+console.log(placeName);
 
             } else {
                 window.alert('No results found');

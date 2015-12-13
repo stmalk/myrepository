@@ -193,10 +193,10 @@ function getQuakes() {
     $.ajax({
         url:"http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=" + yesterDate + '&endtime=' + displayDate,
         success: function(data) {
-            console.log(data);
+
 
             $.each(data.features, function(key, val) {
-                titleName = val.properties.title;
+                titleName = val.properties.place;
                 var coord = val.geometry.coordinates;
                 locationD = {
                     latd: coord[1],
@@ -220,20 +220,13 @@ var quakeTime = val.properties.time;
                 } else if (magnit >= 8) {
                     iconic = iconQuakes[5];
                 }
-
-
-
-
-
-
-   displayMarkers(); 
                 latitd = locationD.latd;
                 longtd = locationD.lngd;
                 placement = latitd + ',' + longtd;
                 $("#sideinfo ul").append('<li>' + 'On ' + dateMoment + ' around the area of ' + titleName + ' there was an earthquake of ' + magnit + ' magnitude. ' + '</li>');
-             
-
-
+                         console.log(titleName);
+console.log(locationD);
+  displayMarkers(); 
             });
         }
 

@@ -5,7 +5,8 @@ var myDate = new Date();
 var displayDate = myDate.getFullYear() + '-' + (myDate.getMonth() + 1) + '-' + (myDate.getDate());
 var yesterDate = myDate.getFullYear() + '-' + (myDate.getMonth() + 1) + '-' + (myDate.getDate() - 2);
 var iconBase = 'img/';
-var iconic = 'durr.png';
+var iconicGrades = ['durr1.svg','durr2.svg','durr3.svg','durr4.svg','durr5.svg'];
+var iconic;
 var firstLat;
 var firstLng;
 var firstZ = 2;
@@ -39,7 +40,7 @@ $('.topback').fadeTo( "slow" , 1.0);
 
     $('#earthquakes').click(function() {
         $("#sideinfo ul").empty();
-        iconic = 'durr.png';
+        
         getQuakes();
         createMarker();
         initMap();
@@ -149,6 +150,8 @@ function getHurricanes() {
                 var countryTwo = val.gn_parentCountry[1];
 
 
+
+
 var timeCyclone = val.dc_date;
                 latitd = locationD.latd;
                 longtd = locationD.lngd;
@@ -180,7 +183,27 @@ function getQuakes() {
                     latd: coord[1],
                     lngd: coord[0]
                 };
+
+
                 var magnit = val.properties.mag;
+
+                 if (magnit <= 3.9){
+                    iconic = iconicGrades[0];
+                 } else if (magnit <= 4.9 && magnit >= 4){
+                     iconic = iconicGrades[1];
+                 } else if (magnit <= 5.9 && magnit >= 5){
+                     iconic = iconicGrades[2];
+                 } else if (magnit <= 6.9 && magnit >= 6){
+                     iconic = iconicGrades[3];
+                 } else if (magnit <= 7.9 && magnit >= 7){
+                     iconic = iconicGrades[4];
+                 } else if (magnit >= 8){
+                     iconic = iconicGrades[5];
+                 }
+
+
+
+
                 latitd = locationD.latd;
                 longtd = locationD.lngd;
                 placement = latitd + ',' + longtd;

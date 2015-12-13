@@ -79,8 +79,21 @@ a:active {
 
 .tophead {
     height: 14rem;
-    background: white;
+    background-color: white;
+    position: relative;
 }
+
+.topback {
+    height: 100%;
+    width:100%;
+background-repeat:no-repeat;
+background-position: 55% 0%;
+    background-size: 100% auto;
+    background-attachment:fixed;
+    position:absolute;
+    background-color: transparent;
+}
+
 .footer {
     height: 8rem;
     background: white;

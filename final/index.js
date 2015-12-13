@@ -10,16 +10,30 @@ var firstLat;
 var firstLng;
 var firstZ = 2;
 
+var placeName;
+var coordIds = [];
+var placement;
 
 $(document).ready(function() {
+
+var firstImage = 'url(img/1.jpg)';
+var secondImage = 'url(img/2.jpg)';
+var thirdImage = 'url(img/3.jpg)';
+
+
+$('.topback').css("background-image", firstImage);
+
     $('#hurricanes').click(function() {
         $("#sideinfo ul").empty();
         iconic = 'hurr.png';
         getHurricanes();
         createMarker();
-        initMap();
-        console.log(latitd, longtd);
-        console.log(titleName);
+        initMap();       
+        $('.topback').fadeTo( "fast" , 0.0, function(){
+            $('.topback').css("background-image", firstImage);
+$('.topback').fadeTo( "slow" , 1.0);
+          
+        });
     });
 
 
@@ -30,7 +44,10 @@ $(document).ready(function() {
         createMarker();
         initMap();
         console.log(placeName);
-
+        $('.topback').fadeTo( "fast" , 0.0, function(){
+            $('.topback').css("background-image", secondImage);
+$('.topback').fadeTo( "slow" , 1.0);
+        });
     });
 
     $('#meteors').click(function() {
@@ -42,14 +59,20 @@ $(document).ready(function() {
         console.log(latitd, longtd);
         console.log(titleName);
 
-
+        $('.topback').fadeTo( "fast" , 0.0, function(){
+            $('.topback').css("background-image", thirdImage);
+$('.topback').fadeTo( "slow" , 1.0);
+        });
     });
 
-    $('body').on('click', '.logistic', function() {
+    $('body').on('click', '.logistic', function(e) {
+        
         firstLat = parseFloat(latitd);
         firstLng = parseFloat(longtd);
         firstZ = 12;
         initMap();
+        console.log(e);
+        coordIds[liIndex];
     });
 
 
@@ -70,18 +93,28 @@ function getMeteors(latlng) {
                     lngd: coord.longitude,
                     latd: coord.latitude
                 };
+
+                
+
+                coordIds.push(placement);
+
                 latitd = locationD.latd;
                 longtd = locationD.lngd;
+
+
 
                 titleName = val.name;
                 yearofFall = val.year;
                 displayMarkers();
-                var placement = latitd + ',' + longtd;
-                $("#sideinfo ul").append('<li class=\"logistic\" data-lat=\"' + latitd + '\" data-long=\"' + longtd + '\">' + 'A meteorite named ' + titleName + ' fell near ' + placement + ' in the year of ' + yearofFall + '</li>');
+                placement = latitd + ',' + longtd;
+                $("#sideinfo ul").append('<li class=\"logistic\" data-lat=\"' + latitd + '\" data-long=\"' + longtd + '\">' + 'A meteorite fell near ' + titleName + ' in the year of ' + yearofFall + '</li>');
                 console.log(data);
                 console.log(latlng);
 
-
+                // geocodeLatLng(g,m,ll, function(place){
+                //     console.log(place);
+                //     placeName = place;
+                // });
             });
 
 
@@ -101,21 +134,28 @@ function getHurricanes() {
 
     $.ajax({
         url: "http://api.sigimera.org/v1/crises?callback=parseResponse&auth_token=-8PdNJJLLfW2oULwSW-g&type=cyclone",
+        type: "GET",
+        crossDomain: true,    // used to prevent cross domain issues
+        dataType: 'jsonp',    // used to prevent cross domain issues
         success: function(data) {
             console.log(data);
-            data: '{"some":"json"}'
-            crossDomain: true
-            dataType: 'json'
-            $.each(data.features, function(key, val) {
+            $.each(data, function(key, val) {
                 var coord = val.foaf_based_near;
                 locationD = {
-                    latd: coord[0],
-                    lngd: coord[1]
+                    latd: coord[1],
+                    lngd: coord[0]
                 };
+                 var countryOne = val.gn_parentCountry[0];
+                var countryTwo = val.gn_parentCountry[1];
+
+
+var timeCyclone = val.dc_date;
                 latitd = locationD.latd;
                 longtd = locationD.lngd;
-                titleName = val.crisis_relatedGDACSResources.crisis_severity;
+                titleName = val.crisis_severity;
                 displayMarkers();
+                placement = latitd + ',' + longtd;
+                $("#sideinfo ul").append('<li>' + 'A ' + titleName + ' was noticed near the country of ' + countryOne + ' at the time of  ' + timeCyclone +  '</li>');
             });
         }
 
@@ -143,8 +183,8 @@ function getQuakes() {
                 var magnit = val.properties.mag;
                 latitd = locationD.latd;
                 longtd = locationD.lngd;
-                var placement = latitd + ',' + longtd;
-                $("#sideinfo ul").append('<a href=\"http://maps.google.com/maps?q=loc:' + placement + '\">' + '<li>' + 'Around the area of ' + placement + ' there was an earthquake of ' + magnit + ' magnitude. ' + '</li>' + '</a>');
+                placement = latitd + ',' + longtd;
+                $("#sideinfo ul").append('<li>' + 'Around the area of ' + titleName + ' there was an earthquake of ' + magnit + ' magnitude. ' + '</li>');
                 displayMarkers();
               
 
@@ -159,8 +199,9 @@ function getQuakes() {
 
 
 function displayMarkers() {
+    console.log("display markers");
     var latlng = new google.maps.LatLng(latitd, longtd);
-geocodeLatLng(geocoder, map, latlng);
+
     var name = titleName;
     createMarker(latlng, name);
     console.log(latitd, longtd);
@@ -197,29 +238,7 @@ function initMap() {
 
 
 
-var placeName;
-
-function geocodeLatLng(geocoder, map, latlng) {
-    geocoder.geocode({
-        'location': latlng
-    }, function(results, status) {
-        if (status === google.maps.GeocoderStatus.OK) {
-            if (results[1]) {
-             
-                 placeName = (results[1].formatted_address);
-console.log(placeName);
-
-            } else {
-                window.alert('No results found');
-
-            }
-        } else {
-            window.alert('Geocoder failed due to: ' + status);
-
-        }
-    });
-}
-
 //1. How to retrieve placeName variable from geocodeLatLng
 //2. How to make zoom on links work. (Pass lat/long every time a link is clicked)
 //3. What's wrong with hurricane query.
+

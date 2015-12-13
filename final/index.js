@@ -13,10 +13,13 @@ var firstLat;
 var firstLng;
 var firstZ = 2;
 var metMass;
+var displayMass;
 
-    var firstImage = 'url(img/1.jpg)';
-    var secondImage = 'url(img/2.jpg)';
-    var thirdImage = 'url(img/3.jpg)';
+
+
+    var firstImage = 'url(img/1.png)';
+    var secondImage = 'url(img/2.png)';
+    var thirdImage = 'url(img/3.png)';
 
 
 $(document).ready(function() {
@@ -26,12 +29,13 @@ $(document).ready(function() {
     $('.topback').css("background-image", firstImage);
 
     $('#hurricanes').click(function() {
-        $("#sideinfo ul").empty();
-
-
-        createMarker();
-        initMap();
-        getHurricanes();
+        $("#sideinfo ul").empty(function(){
+createMarker();
+ 
+      
+      
+        });   initMap();        
+            getHurricanes();        
         $('.topback').fadeTo("fast", 0.0, function() {
             $('.topback').css("background-image", firstImage);
             $('.topback').fadeTo("slow", 1.0);
@@ -41,12 +45,13 @@ $(document).ready(function() {
 
 
     $('#earthquakes').click(function() {
-        $("#sideinfo ul").empty();
-
-
-        createMarker();
+        $("#sideinfo ul").empty(function(){
+          createMarker(); 
+       
+        }); 
+     getQuakes();
         initMap();
-        getQuakes();
+       
         $('.topback').fadeTo("fast", 0.0, function() {
             $('.topback').css("background-image", secondImage);
             $('.topback').fadeTo("slow", 1.0);
@@ -55,11 +60,13 @@ $(document).ready(function() {
 
     $('#meteors').click(function() {
 
-        $("#sideinfo ul").empty();
-
-        createMarker();
-        initMap();
-        getMeteors();
+        $("#sideinfo ul").empty(function(){
+ createMarker();  
+        
+           
+        });initMap();
+           getMeteors(); 
+    
         $('.topback').fadeTo("fast", 0.0, function() {
             $('.topback').css("background-image", thirdImage);
             $('.topback').fadeTo("slow", 1.0);
@@ -83,12 +90,29 @@ function getMeteors(latlng) {
                 titleName = val.name;
                 metMass = parseInt(val.mass);
                 yearofFall = val.year;
-                displayMarkers();
+                displayMass = metMass;
+                var dateMoment = moment.utc(yearofFall).format('YYYY'); 
+          
                 placement = latitd + ',' + longtd;
 
+            if (metMass <= 2000) {
+                    iconic = iconMeteorites[0];
+                } else if ((metMass >= 2001) && (metMass <= 10000)) {
+                    iconic = iconMeteorites[1];
+                } else if ((metMass >= 10001) && (metMass <= 50000)) {
+                    iconic = iconMeteorites[2];
+                } else if ((metMass >= 50001) && (metMass <= 5000000000)) {
+                    iconic = iconMeteorites[3];
+                } else if(isNaN(parseFloat(metMass))) { 
+                    iconic = iconMeteorites[4];
+                    displayMass = 'nobody knows how many';
+                }
+                $("#sideinfo ul").append('<li class=\"logistic\" data-lat=\"' + latitd + '\" data-long=\"' + longtd + '\">' + 'A meteorite named ' + titleName + ' with a mass of ' + displayMass + ' grams fell in ' + dateMoment + '</li>');
 
-                $("#sideinfo ul").append('<li class=\"logistic\" data-lat=\"' + latitd + '\" data-long=\"' + longtd + '\">' + 'A meteorite named ' + titleName + ' with a mass of ' + metMass + ' gram fell in the year of ' + yearofFall + '</li>');
 
+    
+
+                   displayMarkers(); 
             });
 
 
@@ -123,16 +147,16 @@ function getHurricanes() {
                 var countryOne = val.gn_parentCountry[0];
                 var countryTwo = val.gn_parentCountry[1];
                 var windSpeed = parseInt(val.crisis_severity_hash.value);
-
+                
 
 
                 var timeCyclone = val.dc_date;
+                var dateMoment = moment.utc(timeCyclone).format('MMMM Do YYYY');
                 latitd = locationD.latd;
                 longtd = locationD.lngd;
                 titleName = val.crisis_severity;
-                displayMarkers();
                 placement = latitd + ',' + longtd;
-                $("#sideinfo ul").append('<li>' + 'A ' + titleName + ' was noticed near the country of ' + countryOne + ' at the time of  ' + timeCyclone + '</li>');
+                $("#sideinfo ul").append('<li>' + 'A ' + titleName + ' was noticed near the country of ' + countryOne + ' on ' + dateMoment + '</li>');
 
 
                 if ((windSpeed >= 0) && (windSpeed <= 118)) {
@@ -148,6 +172,8 @@ function getHurricanes() {
                 } else if (windSpeed >= 252) {
                     iconic = iconHurricanes[5];
                 }
+
+                   displayMarkers(); 
 
                 console.log(titleName);
                 console.log(windSpeed);
@@ -165,7 +191,7 @@ function getQuakes() {
 
 
     $.ajax({
-        url: 'http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=' + yesterDate + '&endtime=' + displayDate,
+        url:"http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=" + yesterDate + '&endtime=' + displayDate,
         success: function(data) {
             console.log(data);
 
@@ -177,7 +203,8 @@ function getQuakes() {
                     lngd: coord[0]
                 };
 
-
+var quakeTime = val.properties.time;
+ var dateMoment = moment(quakeTime).format('MMMM Do YYYY'); 
                 var magnit = val.properties.mag;
 
                 if (magnit <= 3.9) {
@@ -197,11 +224,14 @@ function getQuakes() {
 
 
 
+
+
+   displayMarkers(); 
                 latitd = locationD.latd;
                 longtd = locationD.lngd;
                 placement = latitd + ',' + longtd;
-                $("#sideinfo ul").append('<li>' + 'Around the area of ' + titleName + ' there was an earthquake of ' + magnit + ' magnitude. ' + '</li>');
-                displayMarkers();
+                $("#sideinfo ul").append('<li>' + 'On ' + dateMoment + ' around the area of ' + titleName + ' there was an earthquake of ' + magnit + ' magnitude. ' + '</li>');
+             
 
 
             });
@@ -213,30 +243,9 @@ function getQuakes() {
 
 
 function displayMarkers() {
-
     var latlng = new google.maps.LatLng(latitd, longtd);
-
     var name = titleName;
     createMarker(latlng, name);
-
-
-
-                if (metMass <= 2000) {
-                    iconic = iconMeteorites[0];
-                } else if ((metMass >= 2001) && (metMass <= 10000)) {
-                    iconic = iconMeteorites[1];
-                } else if ((metMass >= 10001) && (metMass <= 50000)) {
-                    iconic = iconMeteorites[2];
-                } else if ((metMass >= 50001) && (metMass <= 5000000000)) {
-                    iconic = iconMeteorites[3];
-                } else {
-                    iconic = iconMeteorites[4];
-                }
-
-
-
-    
-
 }
 
 function createMarker(latlng, name) {

@@ -31,7 +31,8 @@ html {
     margin-top:3px;
     list-style-type:none !important;
     text-decoration: none !important;
-    color:black !important;
+   
+    color:#EF7521 !important;
     font-size:1.3rem;
     font-family: Arial, Helvetica, sans-serif !important;
 
@@ -49,13 +50,13 @@ a{
 }
 
 a:link {
-    color: #dba7a7 !important;
-     text-decoration: none !important;
+    color: #E1E61E !important;
+     text-decoration: none !important; font-weight:bold !important;
 }
 
 /* visited link */
 a:visited {
-    color: #dba7a7 !important;
+    color: #E1E61E !important;
      text-decoration: none !important;
 }
 
@@ -72,7 +73,7 @@ a:hover {
 
 /* selected link */
 a:active {
-    color: #dba7a7 !important;
+    color: #E1E61E !important;
      text-decoration: none !important;
 }
 
@@ -88,17 +89,41 @@ a:active {
     width:100%;
 background-repeat:no-repeat;
 background-position: 55% 0%;
-    background-size: 100% auto;
+    background-size: contain;
     background-attachment:fixed;
     position:absolute;
     background-color: transparent;
 }
 
+
+
+
+.toplogo{
+background: url(img/logo.svg) no-repeat;
+    background-size: contain;
+    left: 35px;
+    bottom: 25px;
+    position: absolute;
+    height: 95px;
+    width: 80%;
+}
+
+
+@media (max-width: 576px) {
+ .topback{
+background-size: auto 100%; }
+
+ .toplogo{
+    bottom: 15px !important;}
+
+}
+
+
 .footer {
     height: 8rem;
     background: white;
     border-top-style: solid;
-    border-color: #dba7a7;
+    border-color: #EF7521;
     border-top-width: 1px;
 }
 .mapsection {
@@ -115,7 +140,7 @@ background-position: 55% 0%;
     background: white;
     border-left-width: 1px;
     border-left-style: solid;
-    border-color: #dba7a7;
+    border-color: #EF7521;
     float: right;
     padding: 0rem 0rem 0rem 0rem;
     overflow-x:scroll;
@@ -125,7 +150,7 @@ background-position: 55% 0%;
     background: white;
     border-top-style: solid;
     border-bottom-style: solid;
-    border-color: #dba7a7;
+    border-color: #EF7521;
     border-width: 1px;
     padding: 0rem 0rem 0rem 0rem;
 }
@@ -133,8 +158,7 @@ background-position: 55% 0%;
     height: 4rem;
     margin-top: 0.5rem;
     width: 0.1rem;
-    background-color: #dba7a7;
-
+    background-color: #EF7521;
     display: inline-block;
     margin-left: 0%;
     float:right;
@@ -151,7 +175,7 @@ background-position: 55% 0%;
     height: 3rem;
     background-color: white;
     text-align: center;
-    color: #dba7a7;
+    color: #EF7521;
     -webkit-transition: background-color 0.2s ease-out;
     -moz-transition: background-color 0.2s ease-out;
     -ms-transition: background-color 0.2s ease-out;
@@ -173,7 +197,7 @@ background-position: 55% 0%;
 .choices:hover {
     color: white;
     transition: background-color 0.2s ease-out;
-    background-color: #dba7a7;
+    background-color: #E1E61E;
 }
 
 
@@ -214,7 +238,7 @@ display:none;
             border-left-style: none;
             border-top-width: 1px;
             border-top-style: solid;
-            border-color: #dba7a7;
+            border-color: #E1E61E;
         }
 }
 
@@ -248,7 +272,7 @@ display:none;
             border-left-style: none;
             border-top-width: 1px;
             border-top-style: solid;
-            border-color: #dba7a7;
+            border-color: #E1E61E;
         }
 
 }

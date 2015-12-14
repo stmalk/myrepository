@@ -31,9 +31,9 @@ html {
     margin-top:3px;
     list-style-type:none !important;
     text-decoration: none !important;
-   
+
     color:#EF7521 !important;
-    font-size:1.3rem;
+    font-size:1.1rem;
     font-family: Arial, Helvetica, sans-serif !important;
 
 
@@ -50,13 +50,13 @@ a{
 }
 
 a:link {
-    color: #E1E61E !important;
+    color: #EF7521 !important;
      text-decoration: none !important; font-weight:bold !important;
 }
 
 /* visited link */
 a:visited {
-    color: #E1E61E !important;
+    color: #EF7521 !important;
      text-decoration: none !important;
 }
 
@@ -73,7 +73,7 @@ a:hover {
 
 /* selected link */
 a:active {
-    color: #E1E61E !important;
+    color: #EF7521 !important;
      text-decoration: none !important;
 }
 
@@ -145,6 +145,7 @@ background-size: auto 100%; }
     padding: 0rem 0rem 0rem 0rem;
     overflow-x:scroll;
      overflow-y:none;
+
 }
 .linkhead {
     background: white;

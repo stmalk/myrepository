@@ -14,8 +14,10 @@ var firstLng;
 var firstZ = 2;
 var metMass;
 var displayMass;
-
-
+var placement;
+var latlng;
+var gmarkers = []; 
+var infobox;
 
     var firstImage = 'url(img/1.png)';
     var secondImage = 'url(img/2.png)';
@@ -32,7 +34,7 @@ $(document).ready(function() {
         $("#sideinfo ul").empty(function(){
 createMarker();
  
-      
+
       
         });   initMap();        
             getHurricanes();        
@@ -47,7 +49,7 @@ createMarker();
     $('#earthquakes').click(function() {
         $("#sideinfo ul").empty(function(){
           createMarker(); 
-       
+
         }); 
      getQuakes();
         initMap();
@@ -62,8 +64,7 @@ createMarker();
 
         $("#sideinfo ul").empty(function(){
  createMarker();  
-        
-           
+
         });initMap();
            getMeteors(); 
     
@@ -72,7 +73,6 @@ createMarker();
             $('.topback').fadeTo("slow", 1.0);
         });
     });
-
 
 });
 
@@ -107,24 +107,15 @@ function getMeteors(latlng) {
                     iconic = iconMeteorites[4];
                     displayMass = 'nobody knows how many';
                 }
-                $("#sideinfo ul").append('<li class=\"logistic\" data-lat=\"' + latitd + '\" data-long=\"' + longtd + '\">' + 'A meteorite named ' + titleName + ' with a mass of ' + displayMass + ' grams fell in ' + dateMoment + '</li>');
+                $("#sideinfo ul").append('<a href=\"https://www.google.com/maps/place/' +placement+ '/@' +placement+ ',7.5z\" target=blank><li class=\"logistic\" data-lat=\"' + latitd + '\" data-long=\"' + longtd + '\">' + 'A meteorite named ' + titleName + ' with a mass of ' + displayMass + ' grams fell in ' + dateMoment + '</li></a>');
 
 
     
 
                    displayMarkers(); 
             });
-
-
-
         }
-
-
-
     });
-
-
-
 }
 
 
@@ -156,7 +147,7 @@ function getHurricanes() {
                 longtd = locationD.lngd;
                 titleName = val.crisis_severity;
                 placement = latitd + ',' + longtd;
-                $("#sideinfo ul").append('<li>' + 'A ' + titleName + ' was noticed near the country of ' + countryOne + ' on ' + dateMoment + '</li>');
+                $("#sideinfo ul").append('<a href=\"https://www.google.com/maps/place/' +placement+ '/@' +placement+ ',7.5z\" target=blank><li>' + 'A ' + titleName + ' was noticed near the country of ' + countryOne + ' on ' + dateMoment + '</li></a>');
 
 
                 if ((windSpeed >= 0) && (windSpeed <= 118)) {
@@ -174,6 +165,7 @@ function getHurricanes() {
                 }
 
                    displayMarkers(); 
+
 
                 console.log(titleName);
                 console.log(windSpeed);
@@ -223,7 +215,7 @@ var quakeTime = val.properties.time;
                 latitd = locationD.latd;
                 longtd = locationD.lngd;
                 placement = latitd + ',' + longtd;
-                $("#sideinfo ul").append('<li>' + 'On ' + dateMoment + ' around the area of ' + titleName + ' there was an earthquake of ' + magnit + ' magnitude. ' + '</li>');
+                $("#sideinfo ul").append('<a href=\"https://www.google.com/maps/place/' +placement+ '/@' +placement+ ',7.5z\" target=blank><li>' + 'On ' + dateMoment + ' around the area of ' + titleName + ' there was an earthquake of ' + magnit + ' magnitude. ' + '</li></a>');
                          console.log(titleName);
 console.log(locationD);
   displayMarkers(); 
@@ -235,10 +227,14 @@ console.log(locationD);
 }
 
 
+
+
+
 function displayMarkers() {
-    var latlng = new google.maps.LatLng(latitd, longtd);
+    latlng = new google.maps.LatLng(latitd, longtd);
     var name = titleName;
-    createMarker(latlng, name);
+    createMarker(latlng, name);        
+
 }
 
 function createMarker(latlng, name) {
@@ -248,6 +244,9 @@ function createMarker(latlng, name) {
         title: name,
         icon: iconBase + iconic
     });
+
+
+
 
 }
 
@@ -266,8 +265,11 @@ function initMap() {
         disableDefaultUI: true
     });
 
-
 }
+
+
+
+
 
 
 

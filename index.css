@@ -2,7 +2,7 @@ html, body{
 
 background-color:rgb(128,128,128);
 margin: 0;
-
+overflow:hidden;
 height: 100%;
 }
 
@@ -259,7 +259,7 @@ min-width:720px;
 .svgbottom {	
 	z-index:1;
 position:relative;
-bottom:-10%;
+    bottom: -4%;
 
 height:250px;
   width: 100%;

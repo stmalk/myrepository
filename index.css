@@ -209,6 +209,35 @@ color:rgba(255,255,255,255);
 transform: scale(6);
 }
 
+
+.cloud7{
+	text-align:center;
+		z-index:2;
+position:relative;
+ background-color:rgba(0,0,0,255);
+ border-radius: 50%;
+    left: 50%;
+    top: -200px;
+    width: 80px;
+    height: 80px;
+	-ms-transform-origin: center ; 
+ -webkit-transform-origin:  center; 
+ transform-origin:  center; 
+color:rgba(0,0,0,0);
+transition: all .2s ease-in-out;
+}
+
+.cloud7:hover{
+-ms-transform-origin: center ; 
+ -webkit-transform-origin:  center; 
+ transform-origin:  center; 
+color:rgba(255,255,255,255);
+transform: scale(6);
+}
+
+
+
+
 .svgtop {	
 	z-index:1;
 position:relative;
@@ -546,6 +575,67 @@ pointer-events: inherit;
 opacity:1;
 }
 
+.cloudback12{
+
+	    z-index: 9;
+    position: relative;
+    background-color: rgba(0,0,0,0);
+    display: block;
+    left: -50px;
+    top: -40px;
+    margin: 0;
+    padding: 0;
+    width: 120px;
+    height: 120px;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.text7 {
+
+	  height: auto;
+    margin: 0 auto;
+    padding: 10px;
+z-index:9;
+    font-size: 0.8rem;
+    color: inherit;
+    padding-top: 32px;
+    padding-left: 20px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	z-index:5;
+position:absolute;
+
+
+pointer-events: inherit;
+
+  background-color:rgba(0,0,0,0);
+
+
+}
+
+.text7:link{
+	font-size:4pt;
+	color:white;
+
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.text7:visited{
+	font-size:4pt;
+	color:white;
+
+	font-family: "Arial Black", Gadget, sans-serif;	
+}
+
+.text7:active {
+	font-size:4pt;
+	color:white;
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.text7:hover{
+opacity:1;
+}
 
 
 

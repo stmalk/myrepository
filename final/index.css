@@ -61,7 +61,7 @@ html {
     width: 88%;
     margin-top: 0px;
     margin-bottom: 0px;
-    color: black;
+    color: rgba(0,0,0,0.5);
     font-size: 1.1rem !important;
     font-weight: 600;
     font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;

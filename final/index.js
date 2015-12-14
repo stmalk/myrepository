@@ -16,28 +16,27 @@ var metMass;
 var displayMass;
 var placement;
 var latlng;
-var gmarkers = []; 
+var gmarkers = [];
 var infobox;
 var contentString;
-    var firstImage = 'url(img/1.png)';
-    var secondImage = 'url(img/2.png)';
-    var thirdImage = 'url(img/3.png)';
+var styleColor;
+var firstImage = 'url(img/1.png)';
+var secondImage = 'url(img/2.png)';
+var thirdImage = 'url(img/3.png)';
 
 
 $(document).ready(function() {
 
-
+    initMap();
 
     $('.topback').css("background-image", firstImage);
 
     $('#hurricanes').click(function() {
-        $("#sideinfo ul").empty(function(){
-createMarker();
- 
-
-      
-        });   initMap();        
-            getHurricanes();        
+        $("#sideinfo ul").empty(function() {
+            createMarker();
+        });
+        initMap();
+        getHurricanes();
         $('.topback').fadeTo("fast", 0.0, function() {
             $('.topback').css("background-image", firstImage);
             $('.topback').fadeTo("slow", 1.0);
@@ -47,13 +46,13 @@ createMarker();
 
 
     $('#earthquakes').click(function() {
-        $("#sideinfo ul").empty(function(){
-          createMarker(); 
+        $("#sideinfo ul").empty(function() {
+            createMarker();
 
-        }); 
-     getQuakes();
+        });
+        getQuakes();
         initMap();
-       
+
         $('.topback').fadeTo("fast", 0.0, function() {
             $('.topback').css("background-image", secondImage);
             $('.topback').fadeTo("slow", 1.0);
@@ -62,12 +61,13 @@ createMarker();
 
     $('#meteors').click(function() {
 
-        $("#sideinfo ul").empty(function(){
- createMarker();  
+        $("#sideinfo ul").empty(function() {
+            createMarker();
 
-        });initMap();
-           getMeteors(); 
-    
+        });
+        initMap();
+        getMeteors();
+
         $('.topback').fadeTo("fast", 0.0, function() {
             $('.topback').css("background-image", thirdImage);
             $('.topback').fadeTo("slow", 1.0);
@@ -91,11 +91,11 @@ function getMeteors(latlng) {
                 metMass = parseInt(val.mass);
                 yearofFall = val.year;
                 displayMass = metMass;
-                var dateMoment = moment.utc(yearofFall).format('YYYY'); 
-          var styleColor;
+                var dateMoment = moment.utc(yearofFall).format('YYYY');
+
                 placement = latitd + ',' + longtd;
 
-            if (metMass <= 2000) {
+                if (metMass <= 2000) {
 
                     iconic = iconMeteorites[0];
                     styleColor = '#ACC02A';
@@ -108,7 +108,7 @@ function getMeteors(latlng) {
                 } else if ((metMass >= 50001) && (metMass <= 5000000000)) {
                     iconic = iconMeteorites[3];
                     styleColor = '#B72026';
-                } else if(isNaN(parseFloat(metMass))) { 
+                } else if (isNaN(parseFloat(metMass))) {
                     iconic = iconMeteorites[4];
                     styleColor = '#9A928D';
                     displayMass = 'nobody knows how many';
@@ -116,9 +116,9 @@ function getMeteors(latlng) {
 
 
 
-                $("#sideinfo ul").append('<a href=\"https://www.google.com/maps/place/' +placement+ '/@' +placement+ ',7.5z\" target=blank><li  style=\"background:' +styleColor+ '!important;\" class=\"logistic\" data-lat=\"' + latitd + '\" data-long=\"' + longtd + '\">' + 'A meteorite named ' + titleName + ' with a mass of ' + displayMass + ' grams fell here in ' + dateMoment + '</li></a>');
-                     contentString = '<a href=\"https://www.google.com/maps/place/' +placement+ '/@' +placement+ ',7.5z\" target=blank><span  style=\"background:' +styleColor+ '!important;\" class=\"popup\" data-lat=\"' + latitd + '\" data-long=\"' + longtd + '\">' + 'A meteorite named ' + titleName + ' with a mass of ' + displayMass + ' grams fell here in ' + dateMoment + '</span></a>';
-                   displayMarkers(); 
+                $("#sideinfo ul").append('<a href=\"https://www.google.com/maps/place/' + placement + '/@' + placement + ',7.5z\" target=blank><li  style=\"background:' + styleColor + '!important;\" class=\"logistic\" data-lat=\"' + latitd + '\" data-long=\"' + longtd + '\">' + 'A meteorite named ' + titleName + ' with a mass of ' + displayMass + ' grams fell here in ' + dateMoment + '.</li></a>');
+                contentString = '<a href=\"https://www.google.com/maps/place/' + placement + '/@' + placement + ',7.5z\" target=blank><span  style=\"background:' + styleColor + '!important;\" class=\"popup\" data-lat=\"' + latitd + '\" data-long=\"' + longtd + '\">' + 'A meteorite named ' + titleName + ' with a mass of ' + displayMass + ' grams fell here in ' + dateMoment + '.</span></a>';
+                displayMarkers();
 
 
             });
@@ -145,8 +145,8 @@ function getHurricanes() {
                 var countryOne = val.gn_parentCountry[0];
                 var countryTwo = val.gn_parentCountry[1];
                 var windSpeed = parseInt(val.crisis_severity_hash.value);
-                
- var styleColor;
+
+
 
                 var timeCyclone = val.dc_date;
                 var dateMoment = moment.utc(timeCyclone).format('MMMM Do YYYY');
@@ -155,9 +155,7 @@ function getHurricanes() {
                 titleName = val.crisis_severity;
                 placement = latitd + ',' + longtd;
 
-  
 
-                
 
 
                 if ((windSpeed >= 0) && (windSpeed <= 118)) {
@@ -165,25 +163,25 @@ function getHurricanes() {
                     styleColor = '#85C559';
                 } else if ((windSpeed >= 119) && (windSpeed <= 153)) {
                     iconic = iconHurricanes[1];
-                     styleColor = '#BBC128';
+                    styleColor = '#BBC128';
                 } else if ((windSpeed >= 154) && (windSpeed <= 177)) {
                     iconic = iconHurricanes[2];
-                     styleColor = '#CDBE1A';
+                    styleColor = '#CDBE1A';
                 } else if ((windSpeed >= 178) && (windSpeed <= 208)) {
                     iconic = iconHurricanes[3];
-                     styleColor = '#F9A145';
+                    styleColor = '#F9A145';
                 } else if ((windSpeed >= 209) && (windSpeed <= 251)) {
                     iconic = iconHurricanes[4];
-                     styleColor = '#DE6134';
+                    styleColor = '#DE6134';
                 } else if (windSpeed >= 252) {
                     iconic = iconHurricanes[5];
-                     styleColor = '#A61B19';
+                    styleColor = '#A61B19';
                 }
 
-$("#sideinfo ul").append('<a href=\"https://www.google.com/maps/place/' +placement+ '/@' +placement+ ',7.5z\" target=blank><li style=\"background:' +styleColor+ '!important;\" class=\"logistic\"> ' + 'A ' + titleName + ' was noticed near ' + countryOne + ' on ' + dateMoment + '</li></a>');
-contentString = '<a href=\"https://www.google.com/maps/place/' +placement+ '/@' +placement+ ',7.5z\" target=blank><span style=\"background:' +styleColor+ '!important;\" class=\"popup\"> ' + 'A ' + titleName + ' was noticed near ' + countryOne + ' on ' + dateMoment + '</span></a>';
+                $("#sideinfo ul").append('<a href=\"https://www.google.com/maps/place/' + placement + '/@' + placement + ',7.5z\" target=blank><li style=\"background:' + styleColor + '!important;\" class=\"logistic\"> ' + 'A ' + titleName + ' was noticed near ' + countryOne + ' on ' + dateMoment + '.</li></a>');
+                contentString = '<a href=\"https://www.google.com/maps/place/' + placement + '/@' + placement + ',7.5z\" target=blank><span style=\"background:' + styleColor + '!important;\" class=\"popup\"> ' + 'A ' + titleName + ' was noticed near ' + countryOne + ' on ' + dateMoment + '.</span></a>';
 
-                   displayMarkers(); 
+                displayMarkers();
 
                 console.log(titleName);
                 console.log(windSpeed);
@@ -201,7 +199,7 @@ function getQuakes() {
 
 
     $.ajax({
-        url:"http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=" + yesterDate + '&endtime=' + displayDate,
+        url: "http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=" + yesterDate + '&endtime=' + displayDate,
         success: function(data) {
 
 
@@ -216,10 +214,10 @@ function getQuakes() {
 
 
 
-var quakeTime = val.properties.time;
- var dateMoment = moment(quakeTime).format('MMMM Do YYYY'); 
+                var quakeTime = val.properties.time;
+                var dateMoment = moment(quakeTime).format('MMMM Do YYYY');
                 var magnit = val.properties.mag;
- var styleColor;
+
                 if (magnit <= 3.9) {
                     iconic = iconQuakes[0];
                     styleColor = '#88C873';
@@ -242,16 +240,13 @@ var quakeTime = val.properties.time;
                 latitd = locationD.latd;
                 longtd = locationD.lngd;
                 placement = latitd + ',' + longtd;
-                $("#sideinfo ul").append('<a href=\"https://www.google.com/maps/place/' +placement+ '/@' +placement+ ',7.5z\" target=blank><li style=\"background:' +styleColor+ '!important;\" class=\"logistic\"> ' + 'On ' + dateMoment + ' around the area of ' + titleName + ' there was an earthquake of magnitude'  + magnit +  '.</li></a>');
-                         console.log(titleName);
-console.log(locationD);
+                $("#sideinfo ul").append('<a href=\"https://www.google.com/maps/place/' + placement + '/@' + placement + ',7.5z\" target=blank><li style=\"background:' + styleColor + '!important;\" class=\"logistic\"> ' + 'On ' + dateMoment + ' around the area of ' + titleName + ' there was an earthquake of magnitude ' + magnit + '.</li></a>');
+                console.log(titleName);
+                console.log(locationD);
 
-contentString = '<a href=\"https://www.google.com/maps/place/' +placement+ '/@' +placement+ ',7.5z\" target=blank><span style=\"background:' +styleColor+ '!important;\" class=\"popup\"> ' + 'On ' + dateMoment + ' around the area of ' + titleName + ' there was an earthquake of  magnitude '  + magnit +  '.</span></a>';
+                contentString = '<a href=\"https://www.google.com/maps/place/' + placement + '/@' + placement + ',7.5z\" target=blank><span style=\"background:' + styleColor + '!important;\" class=\"popup\"> ' + 'On ' + dateMoment + ' around the area of ' + titleName + ' there was an earthquake of  magnitude ' + magnit + '.</span></a>';
 
-  displayMarkers(); 
-
-
-
+                displayMarkers();
 
             });
         }
@@ -261,13 +256,10 @@ contentString = '<a href=\"https://www.google.com/maps/place/' +placement+ '/@' 
 }
 
 
-
-
-
 function displayMarkers() {
     latlng = new google.maps.LatLng(latitd, longtd);
     var name = titleName;
-    createMarker(latlng, name);        
+    createMarker(latlng, name);
 
 }
 
@@ -280,24 +272,39 @@ function createMarker(latlng, name) {
     });
 
 
-  var infowindow = new google.maps.InfoWindow({
-    content: contentString
-  });
-  marker.addListener('click', function() {
-    infowindow.open(map, marker);
-  });
+
+    var infoboxOptions = {
+        content: contentString,
+        disableAutoPan: false,
+        maxWidth: '200px',
+        pixelOffset: new google.maps.Size(0, 0),
+        zIndex: null,
+        boxStyle: {
+            background: styleColor,
+            opacity: 1
+
+        },
+        closeBoxMargin: "0px 0px 0px 0px",
+        closeBoxURL: "http://www.google.com/intl/en_us/mapfiles/close.gif",
+        infoBoxClearance: new google.maps.Size(1, 1),
+        isHidden: false,
+        pane: "floatPane",
+        enableEventPropagation: false
+    };
 
 
+    marker.addListener('click', function() {
+        var ib = new InfoBox(infoboxOptions);
+        ib.open(map, marker);
 
-
-
+    });
 
 }
 
 function initMap() {
     firstLat = 10;
     firstLng = 10;
- 
+
     map = new google.maps.Map(document.getElementById('map'), {
 
         center: {
@@ -312,11 +319,7 @@ function initMap() {
 
 
 
-
 }
-
-
-
 
 
 

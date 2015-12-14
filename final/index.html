@@ -11,19 +11,25 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <title>Earthquakes&Hurricanes</title>
     <script type='application/javascript' src='jquery-2.1.4.js'></script>
-    <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>
+
     <script type='application/javascript' src='fastclick.js'></script>
-    <script type='application/javascript' src='index.js'></script>
+
+
+
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="skeleton.css">
 
-<script src="moment.js"></script>
-<script>
-    moment().format();
-</script>
+    <script src="moment.js"></script>
+    <script>
+        moment().format();
+    </script>
+
+    <script src="https://maps.google.com/maps/api/js?"></script>
 
 
+    <script type='application/javascript' src='index.js'></script>
+    <script type="text/javascript" src="infobox.js"></script>
 </head>
 
 
@@ -36,11 +42,15 @@
         <div class="row">
 
             <div class="twelve columns">
-                <div class="tophead"><a href="index.html"><div class="topback">
-                    
-<div class="toplogo"></div>
+                <div class="tophead">
+                    <a href="index.html">
+                        <div class="topback">
 
-                </div></a></div>
+                            <div class="toplogo"></div>
+
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -48,9 +58,9 @@
         <div class="row linkhead">
 
             <div id="hurricanes" class="choices">HURRICANES</div>
-<div class="linkdivider"></div>
+            <div class="linkdivider"></div>
             <div id="earthquakes" class="choices">EARTHQUAKES</div>
-<div class="linkdivider"></div>
+            <div class="linkdivider"></div>
             <div id="meteors" class="choices">METEORITES</div>
 
 
@@ -61,7 +71,14 @@
             <div class="mapsection">
                 <div id="map"></div>
             </div>
-            <div id="sideinfo" class="sidebar"><div class="explain">EVENTS FEED LOG</div><ul class="eventfeed"></ul></div>
+            <div class="sidebar">
+                <div class="explain">EVENTS FEED LOG</div>
+                <div id="sideinfo" class="insideinfo">
+                    <ul class="eventfeed">
+                        <div style="font-size:1.2rem;" class="introduction">Feel free to click the buttons on top and observe all current earthquakes and major storms as well as all recent meteorite landing sites. The website is fully responisve. Clicking on map icons would show a short description of the event. Clicking on the sidepanel description logs will open an extrenal Google Maps tab. Good luck!</div>
+                    </ul>
+                </div>
+            </div>
 
         </div>
 
@@ -69,14 +86,16 @@
         <div class="row">
 
             <div class="twelve columns">
-                <div class="footer"></div>
+                <div class="footer">
+                    <div class="footnote">Designed by<a href="http://mnabievart.com" target='blank'>Murad Nabiev</a> 2015</div>
+                </div>
             </div>
         </div>
 
     </div>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPaIgvMxNV_FpeT7Dtb_h0QvWr1ZF1QFg&callback=initMap" async defer></script>
-</body>
+
+
 </body>
 
 </html>

@@ -23,6 +23,7 @@ var styleColor;
 var firstImage = 'url(img/1.png)';
 var secondImage = 'url(img/2.png)';
 var thirdImage = 'url(img/3.png)';
+var ib; 
 
 
 $(document).ready(function() {
@@ -296,7 +297,7 @@ function createMarker(latlng, name) {
     marker.addListener('click', function() {
         var ib = new InfoBox(infoboxOptions);
         ib.open(map, marker);
-
+ib.close();
     });
 
 }
@@ -314,6 +315,9 @@ function initMap() {
         zoom: firstZ,
         mapTypeId: google.maps.MapTypeId.TERRAIN,
         disableDefaultUI: true
+    });
+    map.addListener('click', function() {
+        ib.close();
     });
 
 

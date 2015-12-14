@@ -25,7 +25,6 @@ var secondImage = 'url(img/2.png)';
 var thirdImage = 'url(img/3.png)';
 var ib; 
 
-
 $(document).ready(function() {
 
     initMap();
@@ -295,10 +294,12 @@ function createMarker(latlng, name) {
 
 
     marker.addListener('click', function() {
-        var ib = new InfoBox(infoboxOptions);
+        ib = new InfoBox(infoboxOptions);
         ib.open(map, marker);
-ib.close();
+
     });
+
+
 
 }
 
@@ -316,18 +317,13 @@ function initMap() {
         mapTypeId: google.maps.MapTypeId.TERRAIN,
         disableDefaultUI: true
     });
+
     map.addListener('click', function() {
         ib.close();
     });
 
 
 
-
 }
 
 
-
-
-//1. How to retrieve placeName variable from geocodeLatLng
-//2. How to make zoom on links work. (Pass lat/long every time a link is clicked)
-//3. What's wrong with hurricane query.
